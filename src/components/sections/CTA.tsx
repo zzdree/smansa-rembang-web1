@@ -15,8 +15,18 @@ export default function CTA(){
           </div>
           <div className="bg-white text-[var(--text-dark)] rounded-[20px] p-5 border shadow-xl">
             <div className="text-sm font-bold">Kunjungi Kampus</div>
-            <div className="text-xs text-black/60">Jl. Pemuda No. 45, Rembang, Jawa Tengah — 08.00–15.00 WIB</div>
-            <div className="mt-4 aspect-[16/9] rounded-xl overflow-hidden bg-[var(--bg-light)] border grid place-items-center text-black/30 text-xs">Peta • Google Maps Embed (placeholder)</div>
+            <div className="text-xs text-black/60">SMA Negeri 5 Rembang — Kab. Rembang, Jawa Tengah — 08.00–15.00 WIB</div>
+            <div className="mt-4 aspect-[16/9] rounded-xl overflow-hidden bg-[var(--bg-light)] border">
+              <iframe
+                title="Peta SMA Negeri 5 Rembang"
+                src="https://www.google.com/maps?q=SMA+Negeri+3+Rembang,+Jawa+Tengah&z=14&output=embed"
+                className="w-full h-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            </div>
+            <a href="https://www.google.com/maps/search/SMA+Negeri+Rembang+Jawa+Tengah" target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex text-xs font-semibold text-[var(--green-dark)] underline underline-offset-4 hover:text-black">Buka di Google Maps →</a>
           </div>
         </div>
       </div>
