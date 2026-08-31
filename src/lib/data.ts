@@ -13,7 +13,7 @@ export const stats = [
 ]
 export const categories = [
   { title: "Sains", desc: "12 Program", icon: "🔬" },
-  { title: "Bahasa & Sastra", desc: "10 Program", icon: "📚", active: true },
+  { title: "Bahasa & Sastra", desc: "10 Program", icon: "📚" },
   { title: "Teknologi", desc: "14 Program", icon: "💻" },
   { title: "Seni & Budaya", desc: "9 Program", icon: "🎨" },
   { title: "Olahraga", desc: "11 Program", icon: "⚽" },
