@@ -13,9 +13,9 @@ const mutations=[
   doc('category',{title:'Bahasa & Sastra', slug:{_type:'slug',current:'bahasa-sastra'}, icon:'📚', color:'amber', featured:true}),
   doc('teacher',{name:'Drs. H. Supriyanto, M.Pd', slug:{_type:'slug',current:'supriyanto'}, role:'Kepala Sekolah'}),
   doc('teacher',{name:'Dra. Siti Aminah, M.Pd', slug:{_type:'slug',current:'siti-aminah'}, role:'Waka Kurikulum'}),
-  doc('post',{title:'SMA N 5 Rembang Juara 1 Lomba Cerdas Cermat Jateng 2026', slug:{_type:'slug',current:'juara-cerdas-cermat-2026'}, category:'Prestasi', author:'Humas', publishedAt:now, excerpt:'Tim cerdas cermat raih juara 1 tingkat provinsi.'}),
+  doc('post',{title:'SMA N 1 Rembang Juara 1 Lomba Cerdas Cermat Jateng 2026', slug:{_type:'slug',current:'juara-cerdas-cermat-2026'}, category:'Prestasi', author:'Humas', publishedAt:now, excerpt:'Tim cerdas cermat raih juara 1 tingkat provinsi.'}),
   doc('post',{title:'Workshop Digital Learning: Guru Siap Kurikulum Merdeka', slug:{_type:'slug',current:'workshop-digital-learning'}, category:'Akademik', author:'Kurikulum', publishedAt:now}),
-  doc('faq',{question:'Bagaimana cara daftar PPDB SMA N 5 Rembang?', answer:'Via ppdb.jatengprov.go.id jalur zonasi/afirmasi/prestasi.', order:1}),
+  doc('faq',{question:'Bagaimana cara daftar PPDB SMA N 1 Rembang?', answer:'Via ppdb.jatengprov.go.id jalur zonasi/afirmasi/prestasi.', order:1}),
   doc('testimonial',{name:'Nadia Putri', role:'Alumni 2024 — Kedokteran UNDIP', quote:'Guru-guru sangat suportif. Bimbingan OSN bikin aku lolos SNBP.', rating:5}),
 ]
 console.log('seeding',mutations.length,'docs...')

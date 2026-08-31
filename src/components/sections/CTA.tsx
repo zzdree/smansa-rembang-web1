@@ -9,14 +9,14 @@ export default function CTA(){
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center">
           <div>
             <p className="text-xs tracking-[0.16em] font-bold text-white/60">PPDB 2026/2027</p>
-            <h2 className="mt-2 text-[clamp(28px,4.5vw,42px)] font-extrabold tracking-[-0.02em] leading-[0.95]">Siap bergabung<br/>di <span className="text-[var(--yellow)]">SMA N 5 Rembang?</span></h2>
+            <h2 className="mt-2 text-[clamp(28px,4.5vw,42px)] font-extrabold tracking-[-0.02em] leading-[0.95]">Siap bergabung<br/>di <span className="text-[var(--yellow)]">SMA N 1 Rembang?</span></h2>
             <p className="mt-3 text-white/65 text-sm leading-relaxed max-w-[52ch]">PPDB Jateng segera dibuka. Konsultasi jurusan, beasiswa & asrama — hubungi TU kami, chat dibalas jam kerja.</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a href="#" className="h-11 px-7 rounded-full bg-[var(--yellow)] text-[var(--green-dark)] font-extrabold inline-flex items-center gap-2 hover:brightness-105 active:scale-[0.97] transition shadow-[0_8px_24px_rgba(255,184,0,0.35)]">Daftar PPDB Online →</a>
-              <a href="tel:+62295123456" className="h-11 px-6 rounded-full bg-white/10 border border-white/20 inline-flex items-center gap-2 hover:bg-white/15 active:scale-[0.97] transition text-sm font-semibold"><Phone size={16}/> 0295-123456</a>
+              <a href="tel:+62295123456" className="h-11 px-6 rounded-full bg-white/10 border border-white/20 inline-flex items-center gap-2 hover:bg-white/15 active:scale-[0.97] transition text-sm font-semibold"><Phone size={16}/> (0295) - 691375</a>
             </div>
             <div className="mt-5 flex flex-wrap gap-2 text-xs">
-              <span className="px-3 py-1.5 rounded-full bg-white/10 border border-white/15 inline-flex items-center gap-1.5"><Mail size={12}/> sman5rembang@sch.id</span>
+              <span className="px-3 py-1.5 rounded-full bg-white/10 border border-white/15 inline-flex items-center gap-1.5"><Mail size={12}/> sma1rbg@yahoo.co.id</span>
               <span className="px-3 py-1.5 rounded-full bg-white/10 border border-white/15">08.00–15.00 WIB • Senin–Jumat</span>
             </div>
           </div>

@@ -1,13 +1,13 @@
-# 🎓 PRD — SMA Negeri 5 Rembang
+# 🎓 PRD — SMA Negeri 1 Rembang
 
-> **Project:** `smanma-rembang-web` — Website Sekolah Modern (CMS-Driven + High Animation + Super Responsive)
-> **Brand di UI:** **SMA Negeri 5 Rembang**
+> **Project:** `smansa-rembang-web1` — Website Sekolah Modern (CMS-Driven + High Animation + Super Responsive)
+> **Brand di UI:** **SMA Negeri 1 Rembang**
 > **Owner:** zzdree (Andreas) — Portofolio
-> **Repo:** https://github.com/zzdree/smanma-rembang-web
-> **Referensi Visual:** https://dribbble.com/shots/24675256-LMS-Education-Website (adaptasi layout — bukan brand SMA N 5 Rembang)
-> **Catatan:** Dokumen referensi internal (GEMINI.md) sudah dihapus; yang berlaku adalah versi SMA N 5 Rembang ini
+> **Repo:** https://github.com/zzdree/smansa-rembang-web1
+> **Referensi Visual:** https://dribbble.com/shots/24675256-LMS-Education-Website (adaptasi layout — bukan brand SMA N 1 Rembang)
+> **Catatan:** Dokumen referensi internal (GEMINI.md) sudah dihapus; yang berlaku adalah versi SMA N 1 Rembang ini
 > **Tanggal:** 31 Agustus 2026
-> **Versi:** 0.3 — SMA N 5 Rembang (rebrand dari referensi)
+> **Versi:** 0.3 — SMA N 1 Rembang (rebrand dari referensi)
 
 ---
 
@@ -46,7 +46,7 @@
 
 Referensi adalah **LMS Education Landing Page** dengan 11 section berurutan (diadaptasi untuk profil SMA):
 
-1. **Header/Navbar:** Kiri Logo SMA N 5 Rembang | Tengah: Beranda, Profil, Program, Berita, Kontak | Kanan: Search + tombol PPDB/Kontak.
+1. **Header/Navbar:** Kiri Logo SMA N 1 Rembang | Tengah: Beranda, Profil, Program, Berita, Kontak | Kanan: Search + tombol PPDB/Kontak.
 2. **Hero (bg Dark Green `#093A27`):** 2 kolom — Kiri: tag "LMS EDUCATION", H1 "Developing Thoughts for the Future" (putih), deskripsi abu terang, CTA "Let's Talk Us" (kuning `#FFB800`) + "How it Works" (hijau + play icon) | Kanan: foto mahasiswa wisuda masking kreatif + floating widget "120+ Tutors" (avatar stack) + indikator slider "01 02 03 04" di bawah.
 3. **Trusted Companies:** Bar putih, teks "Trusted By Companies All Over The World", logo grayscale (Cambrian, DocuSign, Crompton, Seclock, Software, Aumni).
 4. **About Us:** 2 kolom — Kiri kolase (toga + badge lingkaran kuning "25 Years of experience" + foto lain) | Kanan tag "ABOUT US", H2 "Empower Your Learning Journey Everyday", paragraf, 3 stats ("5K+ Online Classes", "7K+ Students each year", "24+ Award Winning"), tombol hijau "View More Details".
@@ -58,7 +58,7 @@ Referensi adalah **LMS Education Landing Page** dengan 11 section berurutan (dia
 10. **Blog & Articles:** Headline kiri "Our Latest Blogs & Articles" + panah kanan, grid 3 kolom, card: thumbnail, badge kuning "Education", judul tebal, meta (Penulis, Tanggal, Komentar).
 11. **Footer (bg Dark Green):** Atas: kontak (Phone, Email, Address) + logo | Bawah: copyright, deskripsi singkat, sosmed, links (Home, About Us, Courses, Help Centre, News, Contact).
 
-**Adaptasi SMA N 5 Rembang:** Brand aktif adalah SMA Negeri 5 Rembang; layout referensi dipertahankan, copy & asset dikelola via CMS `siteSettings`.
+**Adaptasi SMA N 1 Rembang:** Brand aktif adalah SMA Negeri 1 Rembang; layout referensi dipertahankan, copy & asset dikelola via CMS `siteSettings`.
 
 ---
 
@@ -68,7 +68,7 @@ Referensi adalah **LMS Education Landing Page** dengan 11 section berurutan (dia
 
 | # | Modul (nama Dribbble) | Deskripsi | Prioritas | Sumber CMS |
 |---|------------------------|-----------|-----------|------------|
-| 1 | **Header/Navbar** | Logo SMA N 5 Rembang, nav, search, CTA PPDB | P0 | `siteSettings.navigation` |
+| 1 | **Header/Navbar** | Logo SMA N 1 Rembang, nav, search, CTA PPDB | P0 | `siteSettings.navigation` |
 | 2 | **Hero** | Dark bg `#093A27`, 2 kolom, floating tutors, slider indicator | P0 | `hero` |
 | 3 | **Trusted Companies** | Logo grayscale bar | P1 | `partners[]` |
 | 4 | **About Us** | Kolase + badge 25 Years + 3 stats | P0 | `about` |
@@ -80,7 +80,7 @@ Referensi adalah **LMS Education Landing Page** dengan 11 section berurutan (dia
 | 10 | **Blog & Articles** | Grid 3, badge Education + meta | P0 | `posts[]` |
 | 11 | **Footer** | Kontak bar + links + sosmed | P0 | `siteSettings.footer` |
 
-Tambahan SMA N 5 Rembang (opsional P2): `/ppdb`, `/program/[slug]`, `/berita/[slug]` untuk detail.
+Tambahan SMA N 1 Rembang (opsional P2): `/ppdb`, `/program/[slug]`, `/berita/[slug]` untuk detail.
 
 ### 4.2. CMS — Content Model
 
@@ -118,7 +118,7 @@ Halaman Detail (CMS-driven):
   /courses/[slug]
   /teachers/[slug]
   /blog/[slug]
-  /tentang, /ppdb, /kontak (opsional SMA N 5 Rembang)
+  /tentang, /ppdb, /kontak (opsional SMA N 1 Rembang)
 
 API:
   /api/revalidate

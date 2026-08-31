@@ -14,7 +14,7 @@ export default function Testimonials(){
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
         <p className="text-center text-xs tracking-[0.16em] font-bold text-[var(--green-bright)]">TESTIMONI</p>
         <h2 className="text-center mt-2 text-[clamp(28px,4vw,38px)] font-extrabold tracking-[-0.02em] leading-tight">Apa Kata Mereka</h2>
-        <p className="text-center text-sm text-black/50 mt-2">Alumni, orang tua & mitra tentang SMA N 5 Rembang.</p>
+        <p className="text-center text-sm text-black/50 mt-2">Alumni, orang tua & mitra tentang SMA N 1 Rembang.</p>
         <div className="mt-8 grid md:grid-cols-3 gap-5 lg:gap-6">
           {list.map((t:any)=> {
             const av = t.avatar && typeof t.avatar==='object' ? sanityImg(t.avatar,100) : t.avatar

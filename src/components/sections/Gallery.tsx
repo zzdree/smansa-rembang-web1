@@ -17,7 +17,7 @@ export default function Gallery(){
     <section id="galeri" className="bg-[var(--bg-light)] py-12 lg:py-16 scroll-mt-[64px]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
         <div className="flex items-end justify-between gap-6 flex-wrap">
-          <div><p className="text-xs tracking-[0.16em] font-bold text-[var(--green-bright)]">GALERI</p><h2 className="text-[clamp(28px,4vw,38px)] font-extrabold tracking-[-0.02em] leading-tight mt-1">Momen di SMA N 5 Rembang</h2></div>
+          <div><p className="text-xs tracking-[0.16em] font-bold text-[var(--green-bright)]">GALERI</p><h2 className="text-[clamp(28px,4vw,38px)] font-extrabold tracking-[-0.02em] leading-tight mt-1">Momen di SMA N 1 Rembang</h2></div>
           <span className="text-[11px] tracking-[0.14em] font-semibold text-black/35">FOTO KEGIATAN • 2025/2026</span>
         </div>
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-[220px]">

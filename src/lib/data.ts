@@ -27,7 +27,7 @@ export const courses = [
   { title: "Futsal & Basket – Tim Inti Sekolah", rating: 4.8, duration: "Selasa & Jumat", students: "44", instructor: "Coach Hendra", price: "Gratis", image: "/images/courses/olahraga.jpg", avatar: "/images/teachers/guru5.jpg" },
 ]
 export const testimonials = [
-  { name: "Nadia Putri", role: "Alumni 2024 — Kedokteran UNDIP", quote: "Guru-guru SMA N 5 Rembang sangat suportif. Bimbingan OSN dan tryout intensif bikin aku lolos SNBP impian.", avatar: "/images/teachers/avatar1.jpg", rating: 5 },
+  { name: "Nadia Putri", role: "Alumni 2024 — Kedokteran UNDIP", quote: "Guru-guru SMA N 1 Rembang sangat suportif. Bimbingan OSN dan tryout intensif bikin aku lolos SNBP impian.", avatar: "/images/teachers/avatar1.jpg", rating: 5 },
   { name: "Bapak Hartono", role: "Wali Murid Kelas XII", quote: "Fasilitas lengkap, lingkungan asri, dan pembinaan karakter yang kuat. Anak saya jadi lebih disiplin dan percaya diri.", avatar: "/images/teachers/avatar2.jpg", rating: 5 },
   { name: "Fajar Nugroho", role: "Alumni 2023 — Teknik Informatika UGM", quote: "Ekskul robotiknya keren! Dari nol sampai ikut lomba nasional. Bekal yang kepakai sampai kuliah.", avatar: "/images/teachers/avatar3.jpg", rating: 5 },
 ]
@@ -40,14 +40,14 @@ export const teachers = [
   { name: "Hendra Wijaya, S.Pd", role: "Guru Penjasorkes", image: "/images/teachers/guru5.jpg" },
 ]
 export const faqs = [
-  { q: "Bagaimana cara daftar PPDB SMA N 5 Rembang?", a: "Pendaftaran via jalur zonasi, afirmasi, perpindahan tugas & prestasi di ppdb.jatengprov.go.id. Info lengkap cek menu PPDB atau hubungi TU sekolah." },
+  { q: "Bagaimana cara daftar PPDB SMA N 1 Rembang?", a: "Pendaftaran via jalur zonasi, afirmasi, perpindahan tugas & prestasi di ppdb.jatengprov.go.id. Info lengkap cek menu PPDB atau hubungi TU sekolah." },
   { q: "Apa saja fasilitas unggulan sekolah?", a: "Lab komputer, lab IPA, perpustakaan digital, aula, lapangan olahraga, masjid, kantin sehat, dan akses WiFi di seluruh area." },
   { q: "Apakah ada asrama atau antar-jemput?", a: "Belum ada asrama. Tersedia koordinasi antar-jemput komite dan rute angkutan umum Rembang kota — Lasem." },
   { q: "Jam belajar dan ekstrakurikuler?", a: "KBM Senin–Jumat 07.00–15.00. Ekskul sore & Sabtu sesuai jadwal masing-masing pembina." },
-  { q: "Bagaimana menghubungi sekolah?", a: "Telp/WA 0295-123456, email sman5rembang@sch.id, atau datang langsung Jl. Pemuda No. 45, Rembang, Jawa Tengah." },
+  { q: "Bagaimana menghubungi sekolah?", a: "Telp/WA (0295) - 691375, email sma1rbg@yahoo.co.id, atau datang langsung Jl. Pemuda No. 45, Rembang, Jawa Tengah." },
 ]
 export const posts = [
-  { title: "SMA N 5 Rembang Juara 1 Lomba Cerdas Cermat Jateng 2026", cat: "Prestasi", date: "28 Agu 2026", author: "Humas", image: "/images/blog/berita1.jpg", comments: 12 },
+  { title: "SMA N 1 Rembang Juara 1 Lomba Cerdas Cermat Jateng 2026", cat: "Prestasi", date: "28 Agu 2026", author: "Humas", image: "/images/blog/berita1.jpg", comments: 12 },
   { title: "Workshop Digital Learning: Guru Siap Kurikulum Merdeka", cat: "Akademik", date: "25 Agu 2026", author: "Kurikulum", image: "/images/blog/berita2.jpg", comments: 8 },
   { title: "Pentas Seni & Bazar Kewirausahaan Meriahkan HUT Sekolah ke-32", cat: "Kesiswaan", date: "22 Agu 2026", author: "OSIS", image: "/images/blog/berita3.jpg", comments: 15 },
 ]

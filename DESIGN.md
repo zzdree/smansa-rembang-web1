@@ -1,8 +1,8 @@
-# 🎨 DESIGN.md — SMA Negeri 5 Rembang
+# 🎨 DESIGN.md — SMA Negeri 1 Rembang
 
 > Turunan dari `PRD.md` — blueprint visual & motion sebelum coding.
 > Referensi visual: https://dribbble.com/shots/24675256-LMS-Education-Website (adaptasi untuk SMA — bukan LMS komersial)
-> Branding aktif: **SMA Negeri 5 Rembang**
+> Branding aktif: **SMA Negeri 1 Rembang**
 
 ---
 
@@ -18,11 +18,11 @@
 | Instructor | Guru/Teacher Card | Foto portrait, role (Headteacher, Math, English) |
 | Category Pills | Kategori (Artist, Graphic & Multimedia active kuning, AI) | Horizontal slider dark bg |
 
-Brand aktif = **SMA Negeri 5 Rembang**. Palet & layout diadaptasi dari referensi; rebrand sekolah lain tinggal ganti tokens/copy via CMS tanpa ubah struktur.
+Brand aktif = **SMA Negeri 1 Rembang**. Palet & layout diadaptasi dari referensi; rebrand sekolah lain tinggal ganti tokens/copy via CMS tanpa ubah struktur.
 
 ---
 
-## 2. Creative Direction — "SMA N 5 Rembang — Pro + Organic Touch"
+## 2. Creative Direction — "SMA N 1 Rembang — Pro + Organic Touch"
 
 **Kata kunci:** *Kredibel · Modern · Energik*
 
@@ -32,7 +32,7 @@ Brand aktif = **SMA Negeri 5 Rembang**. Palet & layout diadaptasi dari referensi
 
 ---
 
-## 3. Design Tokens (Merged: Gemini Presisi + SMA N 5 Rembang Variant)
+## 3. Design Tokens (Merged: Gemini Presisi + SMA N 1 Rembang Variant)
 
 ### 3.1. Warna
 
@@ -47,7 +47,7 @@ Brand aktif = **SMA Negeri 5 Rembang**. Palet & layout diadaptasi dari referensi
   --text-muted: #6B7280;    /* Paragraf sekunder */
   --white: #FFFFFF;
 
-  /* === Ekstensi SMA N 5 Rembang (varian organik, opsional) === */
+  /* === Ekstensi SMA N 1 Rembang (varian organik, opsional) === */
   --green-900: #0E2E0E;
   --green-700: #1A5D1A;
   --green-400: #6BBE8A;
@@ -98,12 +98,12 @@ Via `next/font` (self-host, LCP optimal). Set aktif: **Inter** — konsisten di 
 - 2-kolom sections (Hero, About, Testimonial, FAQ) → stack 1 kolom di `<1024px`.
 
 ### 4.2. Navbar (Gemini Spec)
-- **Desktop:** Bar putih solid di atas hero dark, sticky on scroll dengan shadow. Kiri: Logo SMA N 5 Rembang (ikon hijau + teks tebal) | Tengah: Home, Courses, Pages, Blog, Contact (+ dropdown chevron di Home/Courses/Pages/Blog) | Kanan: Search icon + tombol outline hijau terang "Login/Register".
+- **Desktop:** Bar putih solid di atas hero dark, sticky on scroll dengan shadow. Kiri: Logo SMA N 1 Rembang (ikon hijau + teks tebal) | Tengah: Home, Courses, Pages, Blog, Contact (+ dropdown chevron di Home/Courses/Pages/Blog) | Kanan: Search icon + tombol outline hijau terang "Login/Register".
 - **Mobile:** Hamburger → full-screen drawer stagger, search di drawer, CTA sticky bottom.
 
 ### 4.3. Footer (Gemini Spec)
 - Bg `var(--green-dark)`, teks putih.
-- Atas: bar kontak (Phone, Email, Address) sejajar logo SMA N 5 Rembang.
+- Atas: bar kontak (Phone, Email, Address) sejajar logo SMA N 1 Rembang.
 - Bawah: copyright + deskripsi singkat + sosmed icons + links (Home, About Us, Courses, Help Centre, News, Contact).
 
 ---
@@ -260,4 +260,4 @@ Urutan build: Tokens → Navbar/Footer → Hero → Trusted → About → Catego
 
 ---
 
-*Siap eksekusi — branding SMA N 5 Rembang.*
+*Siap eksekusi — branding SMA N 1 Rembang.*
