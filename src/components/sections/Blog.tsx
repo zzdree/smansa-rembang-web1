@@ -37,10 +37,11 @@ export default function Blog(){
             {(() => { const im = active.image && typeof active.image==='object' ? sanityImg(active.image,800) : active.image; return im ? <img src={im} alt={active.title} className="w-full aspect-[16/10] object-cover rounded-xl" /> : null })()}
             <div className="text-xs text-black/40">{active.cat} • {active.date} • {active.author}</div>
             <p className="text-sm leading-relaxed text-black/60">Konten lengkap berita ini tersedia via CMS. Hubungi admin untuk pembaruan. Untuk sementara: ringkasan dan tautan pendaftaran ada di bagian Kontak/CTA.</p>
-            <a href="#cta" onClick={()=>setActive(null)} className="inline-flex h-10 px-6 rounded-full bg-[var(--green-bright)] text-white font-semibold hover:bg-[#009610]">Hubungi / Daftar</a>
+            <a href="#contact" onClick={()=>setActive(null)} className="inline-flex h-10 px-6 rounded-full bg-[var(--green-bright)] text-white font-semibold hover:bg-[#009610]">Hubungi / Daftar</a>
           </div>}
         </DetailModal>
       </div>
     </section>
   )
 }
+

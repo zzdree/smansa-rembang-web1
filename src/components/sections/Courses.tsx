@@ -57,7 +57,7 @@ export default function Courses(){
               </div>
               <div className="flex flex-wrap gap-2 text-xs"><span className="px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 font-semibold">{active.price}</span><span className="px-2.5 py-1 rounded-full bg-black/5 border">{active.instructor}</span></div>
               <p className="text-sm leading-relaxed text-black/60">Program {active.title} — pembinaan intensif, pendampingan guru berprestasi, dan jalur prestasi. Hubungi kesiswaan untuk pendaftaran & jadwal seleksi.</p>
-              <a href="#cta" onClick={()=>setActive(null)} className="inline-flex h-10 px-6 rounded-full bg-[var(--green-bright)] text-white font-semibold hover:bg-[#009610]">Daftar / Tanya</a>
+              <a href="#contact" onClick={()=>setActive(null)} className="inline-flex h-10 px-6 rounded-full bg-[var(--green-bright)] text-white font-semibold hover:bg-[#009610]">Daftar / Tanya</a>
             </div>
           )}
         </DetailModal>
@@ -65,3 +65,4 @@ export default function Courses(){
     </section>
   )
 }
+
