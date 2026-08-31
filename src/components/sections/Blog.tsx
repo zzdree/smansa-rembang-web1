@@ -1,6 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import { posts } from "@/lib/data"
+import { PhotoPlaceholder } from "@/components/illustrations/PhotoPlaceholder"
 export default function Blog(){
   return (
     <section id="blog" className="bg-[var(--bg-light)] py-12">
@@ -12,7 +13,7 @@ export default function Blog(){
         <motion.div initial="hidden" whileInView="visible" viewport={{once:true, margin:"-80px"}} variants={{hidden:{},visible:{transition:{staggerChildren:0.08}}}} className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
           {posts.map(p=>(
             <motion.article key={p.title} variants={{hidden:{opacity:0,y:16},visible:{opacity:1,y:0,transition:{duration:0.6}}}} className="bg-white rounded-2xl overflow-hidden border shadow-sm hover:shadow-lg transition-shadow">
-              <div className="aspect-[16/10] overflow-hidden relative"><img src={p.image} alt={p.title} className="w-full h-full object-cover" loading="lazy"/><span className="absolute top-3 left-3 bg-[var(--yellow)] text-[var(--green-dark)] text-xs font-bold px-3 py-1 rounded-full">{p.cat}</span></div>
+              <div className="aspect-[16/10] overflow-hidden relative"><PhotoPlaceholder label={p.cat} seed={p.title}/><img src={p.image} alt={p.title} className="absolute inset-0 w-full h-full object-cover" loading="lazy" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/><span className="absolute top-3 left-3 bg-[var(--yellow)] text-[var(--green-dark)] text-xs font-bold px-3 py-1 rounded-full">{p.cat}</span></div>
               <div className="p-5">
                 <h3 className="font-bold leading-tight line-clamp-2">{p.title}</h3>
                 <div className="mt-3 flex items-center gap-3 text-xs text-black/50"><span>{p.author}</span><span>•</span><span>{p.date}</span><span>•</span><span>{p.comments} komentar</span></div>

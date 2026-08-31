@@ -1,6 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import { Play, ArrowRight, Award } from "lucide-react"
+import { PhotoPlaceholder, AvatarSilhouette } from "@/components/illustrations/PhotoPlaceholder"
 const ease=[0.22,1,0.36,1] as const
 export default function Hero(){
   return (
@@ -18,12 +19,13 @@ export default function Hero(){
             <div className="mt-8 flex items-center gap-3 text-xs tracking-[0.2em] text-white/30"><span className="text-white">01</span> 02 03 04 <span className="ml-2 h-px w-12 bg-white/20 hidden sm:block"/></div>
           </div>
           <div className="relative">
-            <motion.div initial={{opacity:0,scale:0.96}} animate={{opacity:1,scale:1}} transition={{duration:0.8,ease,delay:0.15}} className="relative aspect-[4/3.2] rounded-[24px] overflow-hidden bg-white/5 border border-white/10">
-              <img src="https://picsum.photos/seed/sman5_hero/800/640" alt="SMA Negeri 5 Rembang" className="w-full h-full object-cover"/>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"/>
+            <motion.div initial={{opacity:0,scale:0.96}} animate={{opacity:1,scale:1}} transition={{duration:0.8,ease,delay:0.15}} className="relative aspect-[4/3.2] rounded-[24px] overflow-hidden bg-white border border-white/10">
+              <PhotoPlaceholder label="Gedung SMA N 5 Rembang" seed="sman5_hero" />
+              <img src="https://picsum.photos/seed/sman5_hero/800/640" alt="SMA Negeri 5 Rembang" className="absolute inset-0 w-full h-full object-cover" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"/>
             </motion.div>
             <motion.div animate={{y:[-6,6]}} transition={{duration:3.5,repeat:Infinity,repeatType:"reverse",ease:"easeInOut"}} className="absolute -bottom-4 -left-2 sm:left-2 bg-white text-[var(--text-dark)] rounded-2xl shadow-xl px-4 py-3 flex items-center gap-3">
-              <div className="flex -space-x-2">{[1,2,3].map(i=><img key={i} src={`https://i.pravatar.cc/100?img=${i+10}`} alt="" className="w-8 h-8 rounded-full border-2 border-white object-cover"/>)}</div>
+              <div className="flex -space-x-2">{[10,11,12].map(v=><span key={v} className="w-8 h-8 rounded-full border-2 border-white overflow-hidden bg-[var(--bg-light)]"><AvatarSilhouette color={v===10?"#1A6B2E":v===11?"#0EA5E9":"#7C3AED"}/></span>)}</div>
               <div><div className="font-bold text-sm leading-none">1.200+ Siswa</div><div className="text-xs text-black/50">Aktif & berprestasi</div></div>
             </motion.div>
           </div>

@@ -1,6 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import { stats } from "@/lib/data"
+import { PhotoPlaceholder } from "@/components/illustrations/PhotoPlaceholder"
 export default function About(){
   return (
     <section id="about" className="bg-[var(--bg-light)] py-12 lg:py-20">
@@ -8,8 +9,8 @@ export default function About(){
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <motion.div initial={{opacity:0,y:16}} whileInView={{opacity:1,y:0}} viewport={{once:true,margin:"-80px"}} transition={{duration:0.6}} className="relative">
             <div className="grid grid-cols-2 gap-4">
-              <img src="https://picsum.photos/seed/sman5_gedung/500/640" alt="Gedung SMA N 5 Rembang" className="rounded-2xl object-cover h-[280px] w-full"/>
-              <img src="https://picsum.photos/seed/sman5_siswa/500/480" alt="Kegiatan siswa" className="rounded-2xl object-cover h-[220px] w-full mt-8"/>
+              <div className="rounded-2xl overflow-hidden h-[280px] border relative"><PhotoPlaceholder label="Gedung Sekolah" seed="sman5_gedung"/><img src="https://picsum.photos/seed/sman5_gedung/500/640" alt="Gedung SMA N 5 Rembang" className="absolute inset-0 w-full h-full object-cover" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/></div>
+              <div className="rounded-2xl overflow-hidden h-[220px] mt-8 border relative"><PhotoPlaceholder label="Kegiatan Siswa" seed="sman5_siswa"/><img src="https://picsum.photos/seed/sman5_siswa/500/480" alt="Kegiatan siswa" className="absolute inset-0 w-full h-full object-cover" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/></div>
             </div>
             <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-[var(--yellow)] rounded-full w-[104px] h-[104px] grid place-items-center text-center shadow-lg">
               <div><div className="font-extrabold text-xl leading-none">32</div><div className="text-[10px] leading-tight font-semibold">Tahun<br/>mengabdi</div></div>
