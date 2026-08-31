@@ -32,16 +32,16 @@ export default function Courses(){
             const img = c.image && typeof c.image === 'object' ? sanityImg(c.image,600) : c.image
             const ava = c.avatar && typeof c.avatar === 'object' ? sanityImg(c.avatar,100) : c.avatar
             return (
-            <motion.button key={c.title} type="button" onClick={()=>setActive(c)} variants={{hidden:{opacity:0,y:16},visible:{opacity:1,y:0,transition:{duration:0.6,ease:[0.22,1,0.36,1]}}}} className="text-left bg-white rounded-2xl overflow-hidden border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 w-full">
+            <motion.button key={c.title} type="button" onClick={()=>setActive(c)} variants={{hidden:{opacity:0,y:16},visible:{opacity:1,y:0,transition:{duration:0.6,ease:[0.22,1,0.36,1]}}}} className="text-left bg-white rounded-2xl overflow-hidden border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 w-full flex flex-col h-full">
               <div className="aspect-[16/10] overflow-hidden relative bg-[var(--bg-light)]">
                 <PhotoPlaceholder label={c.title} seed={c.title} />
                 {img && <img src={img} alt={c.title} className="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/>}
               </div>
-              <div className="p-5">
+              <div className="p-5 flex flex-col flex-1">
                 <div className="flex items-center gap-1 text-xs"><Star size={14} className="fill-[var(--yellow)] text-[var(--yellow)]"/>{c.rating ?? '—'}</div>
-                <h3 className="mt-2 font-bold leading-tight line-clamp-2">{c.title}</h3>
+                <h3 className="mt-2 font-bold leading-tight line-clamp-2 min-h-[2.75rem]">{c.title}</h3>
                 <div className="mt-2 flex items-center gap-4 text-xs text-black/50"><span className="flex items-center gap-1"><Clock size={12}/>{c.duration ?? '-'}</span><span className="flex items-center gap-1"><Users size={12}/>{c.students ?? '-'} siswa</span></div>
-                <div className="mt-4 flex items-center justify-between border-t pt-4">
+                <div className="mt-auto flex items-center justify-between border-t pt-4">
                   <span className="flex items-center gap-2 text-sm"><span className="w-7 h-7 rounded-full overflow-hidden border bg-[var(--bg-light)]">{ava ? <img src={ava} alt="" className="w-full h-full object-cover"/> : <AvatarSilhouette/>}</span>{c.instructor ?? '-'}</span>
                   <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">{c.price ?? 'Gratis'}</span>
                 </div>

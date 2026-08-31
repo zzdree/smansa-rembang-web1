@@ -24,10 +24,10 @@ export default function About(){
               <h3 className="font-bold text-sm">Visi</h3><p className="text-sm text-black/60 mt-1 leading-relaxed">Terwujudnya peserta didik yang beriman, berilmu, berkarakter, dan berdaya saing global berlandaskan budaya Rembang.</p>
               <h3 id="sejarah" className="font-bold text-sm mt-4 scroll-mt-[80px]">Sejarah Singkat</h3><p className="text-sm text-black/60 mt-1 leading-relaxed">Berdiri 1994, SMA N 5 Rembang berawal dari 3 ruang kelas. Kini 32 tahun mengabdi dengan akreditasi A, 1.200+ siswa, dan puluhan prestasi tiap tahun.</p>
             </div>
-            <div className="mt-6 grid grid-cols-3 gap-4">
+            <div className="mt-6 grid grid-cols-3 gap-3 sm:gap-4">
               {stats.map(s=>(
-                <div key={s.label} className="bg-white rounded-2xl p-4 border shadow-sm text-center">
-                  <div className="text-[22px] font-extrabold">{s.value}</div><div className="text-xs text-black/50 leading-tight">{s.label}</div>
+                <div key={s.label} className="bg-white rounded-2xl p-3 sm:p-4 border shadow-sm text-center">
+                  <div className="text-[18px] sm:text-[22px] font-extrabold">{s.value}</div><div className="text-[11px] sm:text-xs text-black/50 leading-tight">{s.label}</div>
                 </div>
               ))}
             </div>
