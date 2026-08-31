@@ -1,5 +1,5 @@
 import {defineCliConfig} from 'sanity/cli'
 export default defineCliConfig({
-  api:{ projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'TBD', dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production' },
+  api:{ projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'g061zdty', dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production' },
   deployment:{ appId: undefined, autoUpdates: true },
 })
