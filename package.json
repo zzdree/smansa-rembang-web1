@@ -12,6 +12,7 @@
     "sanity:schema:extract": "sanity schema extract"
   },
   "dependencies": {
+    "@sanity/image-url": "^2.1.1",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^13.1.1",
     "lenis": "^1.3.26",

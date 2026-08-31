@@ -1,28 +1,33 @@
 "use client"
-import { motion } from "framer-motion"
-import { teachers } from "@/lib/data"
-import { PersonSilhouette } from "@/components/illustrations/Silhouette"
-const shirts=["#1A6B2E","#123A1A","#0B5C2F","#2E7D32","#0EA5E9","#7C3AED"]
+import { useEffect, useState } from "react"
+import { teachers as fallback } from "@/lib/data"
+import { AvatarSilhouette } from "@/components/illustrations/PhotoPlaceholder"
+import { client } from "@/sanity/client"
+import { qTeachers } from "@/sanity/queries"
+import { sanityImg } from "@/sanity/image"
 export default function Teachers(){
+  const [teachers,setTeachers]=useState<any[]|null>(null)
+  useEffect(()=>{ client.fetch(qTeachers).then((r:any)=>{ if(r?.length) setTeachers(r)}).catch(()=>{}) },[])
+  const list = teachers ?? fallback
   return (
-    <section id="teachers" className="bg-[var(--bg-light)] py-12">
+    <section className="py-14 bg-[var(--bg-light)]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-        <p className="text-center text-xs tracking-[0.16em] font-semibold text-[var(--green-bright)]">TENAGA PENDIDIK</p>
-        <h2 className="text-center text-[clamp(26px,4vw,36px)] font-bold">Guru Profesional & Berdedikasi</h2>
-        <p className="text-center text-sm text-black/50 mt-2">Didukung 65+ guru bersertifikasi dan berpengalaman</p>
-        <motion.div initial="hidden" whileInView="visible" viewport={{once:true, margin:"-80px"}} variants={{hidden:{},visible:{transition:{staggerChildren:0.07}}}} className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {teachers.map((t,i)=>(
-            <motion.div key={t.name} variants={{hidden:{opacity:0,y:16},visible:{opacity:1,y:0,transition:{duration:0.6}}}} className="bg-white rounded-2xl overflow-hidden border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
-              <div className="aspect-[4/3.6] bg-gradient-to-br from-[var(--bg-light)] to-white grid place-items-center p-6">
-                <PersonSilhouette className="w-28 h-28 drop-shadow-sm" shirt={shirts[i % shirts.length]} />
+        <p className="text-center text-xs tracking-[0.16em] font-semibold text-[var(--green-bright)]">GURU & TENDIK</p>
+        <h2 className="text-center text-[clamp(26px,4vw,36px)] font-bold">Tenaga Pendidik Berdedikasi</h2>
+        <div className="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+          {list.map((t:any)=> {
+            const img = t.image && typeof t.image==='object' ? sanityImg(t.image,400) : t.image
+            return (
+            <div key={t.name} className="text-center">
+              <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-white border relative">
+                <div className="absolute inset-0 grid place-items-center bg-[var(--bg-light)]"><AvatarSilhouette/></div>
+                {img && <img src={img} alt={t.name} className="absolute inset-0 w-full h-full object-cover" loading="lazy" onLoad={(e:any)=>e.currentTarget.previousElementSibling?.classList.add('hidden')} onError={(e:any)=>e.currentTarget.style.display='none'} />}
               </div>
-              <div className="p-4 text-center"><div className="font-bold text-sm">{t.name}</div><div className="text-xs text-black/50">{t.role}</div></div>
-            </motion.div>
-          ))}
-        </motion.div>
+              <p className="font-semibold text-sm mt-3 leading-tight">{t.name}</p><p className="text-xs text-black/50">{t.role}</p>
+            </div>
+          )})}
+        </div>
       </div>
     </section>
   )
 }
-
-

@@ -1,26 +1,29 @@
 "use client"
-import { motion } from "framer-motion"
-import { posts } from "@/lib/data"
+import { useEffect, useState } from "react"
+import { posts as fallback } from "@/lib/data"
 import { PhotoPlaceholder } from "@/components/illustrations/PhotoPlaceholder"
+import { client } from "@/sanity/client"
+import { qPosts } from "@/sanity/queries"
+import { sanityImg } from "@/sanity/image"
 export default function Blog(){
+  const [posts,setPosts]=useState<any[]|null>(null)
+  useEffect(()=>{ client.fetch(qPosts).then((r:any)=>{ if(r?.length) setPosts(r.map((p:any)=>({ ...p, date: p.date ? new Date(p.date).toLocaleDateString('id-ID',{day:'2-digit',month:'short',year:'numeric'}) : p.date, comments: p.comments ?? 0 })))}).catch(()=>{}) },[])
+  const list = posts ?? fallback
   return (
-    <section id="blog" className="bg-[var(--bg-light)] py-12">
+    <section id="blog" className="py-14 bg-white">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-        <div className="flex items-end justify-between gap-6 flex-wrap">
-          <div><p className="text-xs tracking-[0.16em] font-semibold text-[var(--green-bright)]">BERITA & PRESTASI</p><h2 className="text-[clamp(26px,4vw,36px)] font-bold leading-tight">Kabar Terbaru Sekolah</h2></div>
-          <a href="#" className="h-10 px-6 rounded-full border-2 border-[var(--green-dark)] font-semibold text-sm hover:bg-[var(--green-dark)] hover:text-white transition-colors inline-grid place-items-center">Lihat Semua</a>
+        <p className="text-center text-xs tracking-[0.16em] font-semibold text-[var(--green-bright)]">BERITA & INFORMASI</p>
+        <h2 className="text-center text-[clamp(26px,4vw,36px)] font-bold">Kabar Terbaru Sekolah</h2>
+        <div className="mt-8 grid md:grid-cols-3 gap-6">
+          {list.map((p:any)=> {
+            const img = p.image && typeof p.image === 'object' ? sanityImg(p.image,600) : p.image
+            return (
+            <article key={p.title} className="rounded-2xl overflow-hidden border bg-white hover:shadow-lg transition">
+              <div className="aspect-[16/10] relative bg-[var(--bg-light)] overflow-hidden"><PhotoPlaceholder label={p.title} seed={p.title}/>{img && <img src={img} alt={p.title} className="absolute inset-0 w-full h-full object-cover" loading="lazy" onLoad={(e:any)=>e.currentTarget.previousElementSibling?.classList.add('hidden')} onError={(e:any)=>e.currentTarget.style.display='none'} />}</div>
+              <div className="p-5"><span className="text-xs font-semibold text-[var(--green-bright)]">{p.cat}</span><h3 className="font-bold mt-1 line-clamp-2">{p.title}</h3><p className="text-xs text-black/40 mt-2">{p.date} • {p.author} {p.comments? '• '+p.comments+' komentar':''}</p></div>
+            </article>
+          )})}
         </div>
-        <motion.div initial="hidden" whileInView="visible" viewport={{once:true, margin:"-80px"}} variants={{hidden:{},visible:{transition:{staggerChildren:0.08}}}} className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-          {posts.map(p=>(
-            <motion.article key={p.title} variants={{hidden:{opacity:0,y:16},visible:{opacity:1,y:0,transition:{duration:0.6}}}} className="bg-white rounded-2xl overflow-hidden border shadow-sm hover:shadow-lg transition-shadow">
-              <div className="aspect-[16/10] overflow-hidden relative"><PhotoPlaceholder label={p.cat} seed={p.title}/><img src={p.image} alt={p.title} className="absolute inset-0 w-full h-full object-cover" loading="lazy" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/><span className="absolute top-3 left-3 bg-[var(--yellow)] text-[var(--green-dark)] text-xs font-bold px-3 py-1 rounded-full">{p.cat}</span></div>
-              <div className="p-5">
-                <h3 className="font-bold leading-tight line-clamp-2">{p.title}</h3>
-                <div className="mt-3 flex items-center gap-3 text-xs text-black/50"><span>{p.author}</span><span>•</span><span>{p.date}</span><span>•</span><span>{p.comments} komentar</span></div>
-              </div>
-            </motion.article>
-          ))}
-        </motion.div>
       </div>
     </section>
   )

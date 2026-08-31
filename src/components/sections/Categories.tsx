@@ -1,30 +1,23 @@
 "use client"
-import useEmblaCarousel from "embla-carousel-react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { categories } from "@/lib/data"
+import { useEffect, useState } from "react"
+import { categories as fallback } from "@/lib/data"
+import { client } from "@/sanity/client"
+import { qCategories } from "@/sanity/queries"
 export default function Categories(){
-  const [ref, api] = useEmblaCarousel({ align:"start", dragFree:true })
+  const [cats,setCats]=useState<any[]|null>(null)
+  useEffect(()=>{ client.fetch(qCategories).then((r:any)=>{ if(r?.length) setCats(r.map((c:any)=>({ title:c.title, desc:c.desc||c.title, icon:c.icon||'📚', active: !!c.featured })))}).catch(()=>{}) },[])
+  const list = cats ?? fallback
   return (
-    <section id="categories" className="bg-[var(--bg-light)] pb-8 lg:pb-12">
+    <section className="py-12 bg-white">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-        <div className="bg-[var(--green-dark)] rounded-[24px] p-6 lg:p-8">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-white text-xl lg:text-2xl font-bold">Bidang & Ekstrakurikuler Unggulan</h2>
-            <div className="flex gap-2">
-              <button onClick={()=>api?.scrollPrev()} className="w-9 h-9 rounded-full bg-white/10 text-white grid place-items-center hover:bg-white hover:text-[var(--green-dark)] transition-colors"><ChevronLeft size={16}/></button>
-              <button onClick={()=>api?.scrollNext()} className="w-9 h-9 rounded-full bg-white text-[var(--green-dark)] grid place-items-center hover:bg-[var(--yellow)] transition-colors"><ChevronRight size={16}/></button>
+        <p className="text-center text-xs tracking-[0.16em] font-semibold text-[var(--green-bright)]">KATEGORI</p>
+        <h2 className="text-center text-[clamp(26px,4vw,36px)] font-bold">Jelajahi Minat & Bakat</h2>
+        <div className="mt-8 grid grid-cols-2 md:grid-cols-5 gap-4">
+          {list.map((c:any)=>(
+            <div key={c.title} className={"rounded-2xl border p-5 text-center transition "+(c.active?"bg-[var(--green)] text-white border-[var(--green)] shadow":"bg-[var(--bg-light)]")}>
+              <div className="text-2xl">{c.icon}</div><p className="font-semibold text-sm mt-2">{c.title}</p><p className={"text-xs mt-1 "+(c.active?"text-white/80":"text-black/50")}>{c.desc}</p>
             </div>
-          </div>
-          <div className="overflow-hidden" ref={ref}>
-            <div className="flex gap-4">
-              {categories.map(c=>(
-                <div key={c.title} className={`min-w-[220px] flex-1 rounded-2xl p-6 border flex flex-col gap-3 ${c.active ? "bg-[var(--yellow)] border-[var(--yellow)]" : "bg-white border-white"}`}>
-                  <div className="text-2xl">{c.icon}</div>
-                  <div><div className="font-bold leading-tight">{c.title}</div><div className="text-xs opacity-60">{c.desc}</div></div>
-                </div>
-              ))}
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
