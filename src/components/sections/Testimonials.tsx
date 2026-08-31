@@ -3,6 +3,7 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { Quote, Star } from "lucide-react"
 import { testimonials } from "@/lib/data"
+import { PersonSilhouette } from "@/components/illustrations/Silhouette"
 export default function Testimonials(){
   const [idx,setIdx]=useState(0)
   const t=testimonials[idx]
@@ -15,14 +16,14 @@ export default function Testimonials(){
             <h2 className="mt-2 text-[clamp(26px,4vw,36px)] font-bold leading-tight">Apa Kata Alumni & Wali Murid</h2>
             <div className="mt-6 bg-white text-[var(--text-dark)] rounded-2xl p-6 relative">
               <Quote className="text-[var(--yellow)] fill-[var(--yellow)]" size={28}/>
-              <p className="mt-3 leading-relaxed text-[15px] text-black/70">“{t.quote}”</p>
+              <p className="mt-3 leading-relaxed text-[15px] text-black/70">"{t.quote}"</p>
               <div className="mt-4 flex items-center gap-3">
-                <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full object-cover"/>
+                <div className="w-10 h-10 rounded-full overflow-hidden bg-[var(--bg-light)] border grid place-items-center"><PersonSilhouette className="w-9 h-9" shirt={idx===0?"#1A6B2E":idx===1?"#0EA5E9":"#7C3AED"} /></div>
                 <div><div className="font-bold text-sm">{t.name}</div><div className="text-xs text-black/50">{t.role}</div></div>
                 <div className="ml-auto flex gap-0.5">{Array.from({length:t.rating}).map((_,i)=><Star key={i} size={12} className="fill-[var(--yellow)] text-[var(--yellow)]"/>)}</div>
               </div>
             </div>
-            <div className="mt-4 flex gap-2">{testimonials.map((_,i)=><button key={i} onClick={()=>setIdx(i)} className={`h-2 rounded-full transition-all ${i===idx?"w-8 bg-[var(--yellow)]":"w-2 bg-white/30"}`}/>)}</div>
+            <div className="mt-4 flex gap-2">{testimonials.map((_,i)=><button key={i} onClick={()=>setIdx(i)} aria-label={`testimoni ${i+1}`} className={`h-2 rounded-full transition-all ${i===idx?"w-8 bg-[var(--yellow)]":"w-2 bg-white/30"}`}/>)}</div>
           </motion.div>
           <motion.div initial={{opacity:0,scale:0.96}} whileInView={{opacity:1,scale:1}} viewport={{once:true}} transition={{duration:0.6,delay:0.1}} className="relative hidden lg:block">
             <div className="rounded-[24px] overflow-hidden aspect-[4/3.4] border border-white/10"><img src="https://picsum.photos/seed/sman5_testi/700/600" alt="Siswa berprestasi" className="w-full h-full object-cover"/></div>
@@ -33,3 +34,5 @@ export default function Testimonials(){
     </section>
   )
 }
+
+
