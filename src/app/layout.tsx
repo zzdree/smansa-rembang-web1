@@ -9,9 +9,15 @@ import { SearchProvider } from "@/components/search/SearchContext";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "SMA Negeri 5 Rembang — Sekolah Unggul, Berkarakter, Berprestasi",
+  metadataBase: new URL("https://green-school-web.pages.dev"),
+  title: { default: "SMA Negeri 5 Rembang — Sekolah Unggul, Berkarakter, Berprestasi", template: "%s | SMA N 5 Rembang" },
   description: "Website resmi SMA Negeri 5 Rembang. Sekolah unggul berkarakter di Kabupaten Rembang, Jawa Tengah. Informasi PPDB, profil, akademik & prestasi.",
-  openGraph: { title: "SMA Negeri 5 Rembang", description: "Sekolah Unggul, Berkarakter, Berprestasi — Kabupaten Rembang, Jawa Tengah", type: "website" },
+  keywords: ["SMA N 5 Rembang","SMA Rembang","sekolah Rembang","PPDB Rembang","Jawa Tengah"],
+  alternates: { canonical: "/" },
+  openGraph: { title: "SMA Negeri 5 Rembang", description: "Sekolah Unggul, Berkarakter, Berprestasi — Kabupaten Rembang, Jawa Tengah", type: "website", url: "https://green-school-web.pages.dev", siteName: "SMA N 5 Rembang", locale: "id_ID", images: [{ url: "/images/hero/hero-1.jpg", width: 1200, height: 630, alt: "Gedung SMA N 5 Rembang" }] },
+  twitter: { card: "summary_large_image", title: "SMA Negeri 5 Rembang", description: "Sekolah Unggul, Berkarakter, Berprestasi", images: ["/images/hero/hero-1.jpg"] },
+  robots: { index: true, follow: true },
+  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
