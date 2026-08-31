@@ -21,7 +21,7 @@ export default function Hero(){
           <div className="relative">
             <motion.div initial={{opacity:0,scale:0.96}} animate={{opacity:1,scale:1}} transition={{duration:0.8,ease,delay:0.15}} className="relative aspect-[4/3.2] rounded-[24px] overflow-hidden bg-white border border-white/10">
               <PhotoPlaceholder label="Gedung SMA N 5 Rembang" seed="sman5_hero" />
-              <img src="https://picsum.photos/seed/sman5_hero/800/640" alt="SMA Negeri 5 Rembang" className="absolute inset-0 w-full h-full object-cover" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/>
+              <img src="/images/hero/hero-1.jpg" alt="SMA Negeri 5 Rembang" className="absolute inset-0 w-full h-full object-cover" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/>
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"/>
             </motion.div>
             <motion.div animate={{y:[-6,6]}} transition={{duration:3.5,repeat:Infinity,repeatType:"reverse",ease:"easeInOut"}} className="absolute -bottom-4 -left-2 sm:left-2 bg-white text-[var(--text-dark)] rounded-2xl shadow-xl px-4 py-3 flex items-center gap-3">
