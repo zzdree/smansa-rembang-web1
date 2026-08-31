@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useMemo } from "react"
 import { motion } from "framer-motion"
 import { Star, Clock, Users } from "lucide-react"
 import { courses as fallback } from "@/lib/data"
@@ -7,11 +7,18 @@ import { PhotoPlaceholder, AvatarSilhouette } from "@/components/illustrations/P
 import { client } from "@/sanity/client"
 import { qCourses } from "@/sanity/queries"
 import { sanityImg } from "@/sanity/image"
+import { useSearch } from "@/components/search/SearchContext"
 
 export default function Courses(){
   const [courses,setCourses]=useState<any[]|null>(null)
+  const { q } = useSearch()
   useEffect(()=>{ client.fetch(qCourses).then((r:any)=>{ if(r?.length) setCourses(r)}).catch(()=>{}) },[])
-  const list = courses ?? fallback
+  const list = useMemo(()=>{
+    const base = courses ?? fallback
+    if(!q.trim()) return base
+    const s=q.toLowerCase()
+    return base.filter((c:any)=>`${c.title} ${c.instructor} ${c.price}`.toLowerCase().includes(s))
+  },[courses,q])
   return (
     <section id="courses" className="bg-[var(--bg-light)] py-12">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">

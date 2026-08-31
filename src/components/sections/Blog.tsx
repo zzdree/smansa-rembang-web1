@@ -1,14 +1,20 @@
 "use client"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useMemo } from "react"
 import { posts as fallback } from "@/lib/data"
 import { PhotoPlaceholder } from "@/components/illustrations/PhotoPlaceholder"
 import { client } from "@/sanity/client"
 import { qPosts } from "@/sanity/queries"
 import { sanityImg } from "@/sanity/image"
+import { useSearch } from "@/components/search/SearchContext"
 export default function Blog(){
   const [posts,setPosts]=useState<any[]|null>(null)
+  const { q } = useSearch()
   useEffect(()=>{ client.fetch(qPosts).then((r:any)=>{ if(r?.length) setPosts(r.map((p:any)=>({ ...p, date: p.date ? new Date(p.date).toLocaleDateString('id-ID',{day:'2-digit',month:'short',year:'numeric'}) : p.date, comments: p.comments ?? 0 })))}).catch(()=>{}) },[])
-  const list = posts ?? fallback
+  const list = useMemo(()=>{
+    const base = posts ?? fallback
+    if(!q.trim()) return base
+    const s=q.toLowerCase(); return base.filter((p:any)=>`${p.title} ${p.cat} ${p.author}`.toLowerCase().includes(s))
+  },[posts,q])
   return (
     <section id="blog" className="py-14 bg-white">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">

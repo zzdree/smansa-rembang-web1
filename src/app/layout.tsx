@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SmoothScroll from "@/components/motion/SmoothScroll";
+import { SearchProvider } from "@/components/search/SearchContext";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
@@ -17,11 +18,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="id" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        <SmoothScroll />
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <SearchProvider>
+          <SmoothScroll />
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </SearchProvider>
       </body>
     </html>
   );
 }
+

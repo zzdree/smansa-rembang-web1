@@ -3,11 +3,12 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Search, Menu, X, ChevronDown, GraduationCap } from "lucide-react"
 import { navItems } from "@/lib/data"
+import { useSearch } from "@/components/search/SearchContext"
 
 export default function Navbar(){
   const [open,setOpen]=useState(false)
   const [expanded,setExpanded]=useState<string|null>(null)
-  const [q,setQ]=useState("")
+  const { q, setQ } = useSearch()
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-black/5">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8 h-[64px] flex items-center justify-between gap-6">
