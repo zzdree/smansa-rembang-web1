@@ -32,7 +32,7 @@ export const testimonials = [
   { name: "Fajar Nugroho", role: "Alumni 2023 — Teknik Informatika UGM", quote: "Ekskul robotiknya keren! Dari nol sampai ikut lomba nasional. Bekal yang kepakai sampai kuliah.", avatar: "/images/teachers/avatar3.jpg", rating: 5 },
 ]
 export const teachers = [
-  { name: "Endang Sri Lestari, S.Pd.", role: "Kepala Sekolah", image: "/images/gallery/86f6378892c28953823ba1a3c4841bac.jpg" },
+  { name: "Endang Sri Lestari, S.Pd.", role: "Kepala Sekolah", image: "/images/pages/bu_endang.png" },
   { name: "Dwi Hastuti, M.Pd", role: "Wakasek — Sejarah", image: "/images/gallery/99472b6d5d1df8325a5f0e2880f4efc3.jpg" },
   { name: "Yulianto, S.Pd", role: "Wakasek — B. Inggris", image: "/images/gallery/8091f720499814cbb9d94c52f6414e9e.jpg" },
   { name: "Ulfah Rubiati, M.Pd", role: "Guru Matematika", image: "/images/gallery/c330c438fd2b078317d60395c289fb78.jpg" },

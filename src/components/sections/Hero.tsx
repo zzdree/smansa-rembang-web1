@@ -1,12 +1,22 @@
 "use client"
-import { motion } from "framer-motion"
+import { useEffect, useState } from "react"
+import { motion, AnimatePresence } from "framer-motion"
 import { Play, ArrowRight, Award, Sparkles } from "lucide-react"
 import { PhotoPlaceholder, AvatarSilhouette } from "@/components/illustrations/PhotoPlaceholder"
 const ease=[0.22,1,0.36,1] as const
+const slides=[
+  "/images/slider/slider-366f1df418221b4a90076788c95be20c.jpeg",
+  "/images/slider/slider-49b14460d7427bbc62fde3e7db75cb87.jpeg",
+  "/images/hero/hero-1.jpg",
+]
 export default function Hero(){
+  const [idx,setIdx]=useState(0)
+  useEffect(()=>{
+    const id=setInterval(()=>setIdx(i=>(i+1)%slides.length),4200)
+    return ()=>clearInterval(id)
+  },[])
   return (
     <section id="beranda" className="bg-[var(--green-dark)] text-white relative overflow-visible scroll-mt-[64px]">
-      {/* subtle texture */}
       <div aria-hidden className="absolute inset-0 opacity-[0.04]" style={{backgroundImage:"radial-gradient(circle at 1px 1px, white 1px, transparent 0)", backgroundSize:"24px 24px"}}/>
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8 relative">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-8 py-14 lg:py-20 items-center">
@@ -18,13 +28,20 @@ export default function Hero(){
               <a href="#contact" className="h-11 px-7 rounded-full bg-[var(--yellow)] text-[var(--green-dark)] font-bold inline-flex items-center gap-2 hover:brightness-[1.04] active:scale-[0.97] transition-all shadow-[0_8px_24px_rgba(255,184,0,0.35)] btn-press">Daftar PPDB <ArrowRight size={16}/></a>
               <a href="#about" className="h-11 px-6 rounded-full bg-white/10 border border-white/15 inline-flex items-center gap-2 hover:bg-white/15 active:scale-[0.97] transition-all backdrop-blur"><span className="w-7 h-7 rounded-full bg-[var(--green-bright)] grid place-items-center shadow-sm"><Play size={12} fill="white" className="ml-[1px]"/></span> Profil Sekolah</a>
             </motion.div>
-            <div className="mt-8 flex items-center gap-3 text-[11px] tracking-[0.2em] text-white/25 font-medium"><span className="text-white">01</span> 02 03 04 <span className="ml-2 h-px w-12 bg-white/15 hidden sm:block"/><span className="hidden sm:inline-flex items-center gap-1.5 text-white/50 normal-case tracking-normal text-xs ml-1"><Sparkles size={12}/> PPDB 2026/2027 segera dibuka</span></div>
+            <div className="mt-8 flex items-center gap-3 text-[11px] tracking-[0.2em] text-white/25 font-medium">
+              {slides.map((_,i)=><button key={i} onClick={()=>setIdx(i)} className={`h-1.5 rounded-full transition-all ${i===idx?"w-8 bg-white":"w-1.5 bg-white/30 hover:bg-white/50"}`} aria-label={`Slide ${i+1}`}/>)}
+              <span className="ml-2 h-px w-12 bg-white/15 hidden sm:block"/><span className="hidden sm:inline-flex items-center gap-1.5 text-white/50 normal-case tracking-normal text-xs ml-1"><Sparkles size={12}/> PPDB 2026/2027 segera dibuka</span></div>
           </div>
           <div className="relative">
             <motion.div initial={{opacity:0,scale:0.97}} animate={{opacity:1,scale:1}} transition={{duration:0.8,ease,delay:0.12}} className="relative aspect-[4/3.2] rounded-[24px] overflow-hidden bg-white border border-white/10 shadow-[0_24px_64px_rgba(0,0,0,0.35)]">
               <PhotoPlaceholder label="Gedung SMA N 1 Rembang" seed="sman5_hero" />
-              <img src="/images/hero/hero-1.jpg" alt="Gedung SMA Negeri 1 Rembang — Kabupaten Rembang" width={640} height={480} fetchPriority="high" className="absolute inset-0 w-full h-full object-cover" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/>
+              <AnimatePresence mode="wait">
+                <motion.img key={slides[idx]} src={slides[idx]} alt="SMA Negeri 1 Rembang — Kabupaten Rembang" width={640} height={480} initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.6}} className="absolute inset-0 w-full h-full object-cover" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/>
+              </AnimatePresence>
               <div className="absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-transparent pointer-events-none"/>
+              <div className="absolute bottom-3 right-3 flex gap-1.5">
+                {slides.map((_,i)=><span key={i} className={`h-1.5 rounded-full transition-all ${i===idx?"w-6 bg-white":"w-1.5 bg-white/60"}`}/>)}
+              </div>
             </motion.div>
             <motion.div animate={{y:[-5,5]}} transition={{duration:3.8,repeat:Infinity,repeatType:"reverse",ease:"easeInOut"}} className="absolute -bottom-4 left-2 sm:left-4 bg-white text-[var(--text-dark)] rounded-2xl shadow-[0_12px_32px_rgba(0,0,0,0.18)] px-4 py-3 flex items-center gap-3 border border-black/5">
               <div className="flex -space-x-2">{[10,11,12].map(v=><span key={v} className="w-8 h-8 rounded-full border-2 border-white overflow-hidden bg-[var(--bg-light)] shadow-sm"><AvatarSilhouette color={v===10?"#1A6B2E":v===11?"#0EA5E9":"#7C3AED"}/></span>)}</div>

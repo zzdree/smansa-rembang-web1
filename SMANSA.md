@@ -1,203 +1,1478 @@
 # SMANSA — SMA Negeri 1 Rembang — Data Lengkap Hasil Scraping
 
-> Sumber: https://smansarembang.sch.id/ (di-scrape 2026-09-01)
-> Metode: `Invoke-WebRequest` + `fetch` (Node 24), 13 URL internal.
-> Lokasi raw text: `scratch/raw_*.txt` dan `scratch/html_*.html`
+> Sumber: https://smansarembang.sch.id/ (di-scrape 2026-09-01 via Playwright headless Chromium, browser-use)
+> Metode: Playwright chromium.launch + page.goto domcontentloaded, 16 URL
+> Raw: scratch/raw2_*.txt + scratch/html2_*.html | All images: scratch/all_images.txt
 
 ---
 
-## 1. Identitas Umum
+## 1. Ringkasan Eksekusi
 
-| Field | Nilai |
-|---|---|
-| Nama resmi | **SMA Negeri 1 Rembang** / **SMA N 1 Rembang** |
-| Akronim | **SMANSA Rembang** |
-| Alamat | Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kab. Rembang, Jawa Tengah **59214** (dahulu Jl. Untung Suropati No.5) |
-| Luas tanah | 910 m² (pembebasan 6 April 1978) |
-| Telepon | **(0295) - 691375** |
-| Email | **sma1rbg@yahoo.co.id** |
-| Website | https://smansarembang.sch.id |
-| Instagram | smansarembangofficial (https://instagram.com/smansarembangofficial) |
-| YouTube | https://www.youtube.com/@smansarembang8720 |
-| Facebook/Twitter | placeholder `#` (belum aktif) |
-| Favicon / Logo | https://smansarembang.sch.id/sw-content/sw-sw-logoweb.png |
-| OG image | https://smansarembang.sch.id/sw-content/sw-sw-logoweb.jpg |
-| Tagline / Motto | **"Berprestasi, Berjati diri, dan Berakhlak Mulia"** |
-| Visi | **"Berjatidiri dan Maju dalam Prestasi"** |
-| Desain web oleh | Mohammad Mutho |
-| Statistik (per 2026-09-01) | Hari ini: 47 · Total: ~167.79k · Online: 2 |
+| URL | Title | Text | Imgs |
+|---|---|---|---|
+| / | SMA N 1 Rembang | 4146 | 137 |
+| /agenda | Agenda - SMA N 1 Rembang | 1414 | 72 |
+| /blog | Blog - SMA N 1 Rembang | 1021 | 67 |
+| /download | Download - SMA N 1 Rembang | 1039 | 60 |
+| /gallery | Gallery - SMA N 1 Rembang | 1118 | 165 |
+| /kontak | 404 Not Found | 257 | 1 |
+| /pages/2-profil-sekolah.html | Profil Sekolah - SMA N 1 Rembang | 8889 | 79 |
+| /pages/3-makna-lambang.html | Makna Lambang - SMA N 1 Rembang | 2572 | 81 |
+| /pages/5-fasilitas.html | Fasilitas - SMA N 1 Rembang | 1122 | 79 |
+| /pages/8-struktur-organisasi.html | Struktur Organisasi - SMA N 1 Rembang | 1155 | 79 |
+| /pages/9-mars-dan-himne.html | Mars dan Himne - SMA N 1 Rembang | 1835 | 79 |
+| /pengumuman | Pengumuman - SMA N 1 Rembang | 1589 | 78 |
+| /siswa | Siswa - SMA N 1 Rembang | 701 | 55 |
+| /team/guru | Guru - SMA N 1 Rembang | 1450 | 123 |
+| /team/pegawai | Pegawai - SMA N 1 Rembang | 1158 | 123 |
+| /video | Video - SMA N 1 Rembang | 702 | 57 |
+
+Kontak 404 — halaman /kontak tidak ada (234 bytes).
 
 ---
 
-## 2. Navigasi Website Resmi
+## SMA N 1 Rembang — https://smansarembang.sch.id/
 
 ```
+(0295) - 691375
+ sma1rbg@yahoo.co.id
+SMA N 1 Rembang
+
+SMA N 1 Rembang
+
+Travel Lampung Palembang, Travel Palembang Lampung
+
 Beranda
 Profil
-  ├─ Profil Sekolah        → /pages/2-profil-sekolah.html
-  ├─ Makna Lambang         → /pages/3-makna-lambang.html
-  ├─ Mars dan Himne        → /pages/9-mars-dan-himne.html
-  ├─ Fasilitas             → /pages/5-fasilitas.html
-  └─ Struktur Organisasi   → /pages/8-struktur-organisasi.html
 Publikasi
-  ├─ Semua Informasi       → /blog
-  └─ Pengumuman            → /pengumuman
 Data
-  ├─ Guru                  → /team/guru
-  ├─ Pegawai               → /team/pegawai
-  ├─ Data Siswa            → /siswa
-  └─ Download              → /download
-Agenda                     → /agenda
-Gallery                    → /gallery
-Video                      → /video
+Agenda
+Gallery
+Video
 Kontak
+Kepala Sekolah
+Bu Endang Sri Lestari, S.Pd.
+Selamat Datang di SMA N 1 Rembang
+
+SMA Negeri 1 Rembang, tempat di mana prestasi akademik, keterampilan, dan akhlak mulia berkembang bersama untuk membentuk generasi penerus bangsa yang unggul dan berkarakter.
+
+Staf dan para pendidik kami berkomitmen untuk memberdayakan siswa kami untuk mencapai potensi maksimalnya. Didukung dengan fasilitas, kami yakin SMAN 1 Rembang adalah tempat yang tepat untuk mempersiapkan generasi muda untuk masa depan.
+
+Berprestasi
+
+Tempat para siswa mengukir prestasi di berbagai bidang. Bergabunglah untuk melanjutkan langkah menuju masa depan yang gemilang.
+
+Learn More
+Kreatif
+
+Ruang untuk mengembangkan kreativitas dan bakat siswa. Temukan peluang baru untuk tumbuh dan berkarya bersama kami.
+
+Learn More
+Berteknologi
+
+SMA N 1 Rembang, didukung teknologi modern dan fasilitas lengkap untuk mendukung pembelajaran yang inovatif dan nyaman.
+
+Learn More
+Berakhlak Mulia
+
+SMA Negeri 1 Rembang, tempat tumbuhnya generasi berprestasi yang menjunjung tinggi nilai-nilai akhlak mulia dalam setiap langkahnya.
+
+Learn More
+Blog
+Semua Blog
+
+Berita dan Informasi terbaru
+
+61
+
+Pengajar/Guru
+
+20
+
+Pegawai
+
+0
+
+Siswa
+
+4
+
+File Download
+
+Pengumuman
+Pengumuman
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS REGULER T..
+06 Jan 20260 Komentar
+
+ 
+
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS REGULER T..
+25 Jul 20250 Komentar
+
+ 
+
+PENGADAAN BUKU TAHUN 2023
+05 Mei 20250 Komentar
+
+Agenda
+Agenda
+01
+03-2025
+11:09:45
+Kegiatan Bulan Ramadhan di SMA Negeri 1 Rembang
+Mohammad Mutho0 Komentar
+
+Kegiatan Bulan Ramadhan di SMA Negeri 1 Rembang
+
+23
+10-2024
+10:00:00
+Lomba Segara Buana
+Mohammad Mutho0 Komentar
+
+Lomba yang diadakan untuk memperingati Dies Natalis SMA N 1 Rembang tahun 2024
+
+Guru
+Selengkapnya
+
+Pengajar
+
+Sulis Prianto, S.Pd.
+Guru Bimbingan Konseling
+Aliyah Mufiqoh, S.Pd.
+Guru Bimbingan Konseling
+Endah Puspita Santi, S.Pd.
+Guru Bahasa Jawa (ML)
+Henri Prastyorini,S.Pd.
+Guru Bahasa Jawa (ML)
+Prastika Ristianingrum, S.Pd.
+Guru Geografi
+Eni Suciati, S.Pd.
+Guru Ekonomi
+Madichah, S.Pd.
+Guru Ekonomi
+Erinda Larasati, S.Pd.
+Guru Sosiologi
+Agnes Dewi Utami Retno M., S.Ag
+Guru Agama Katholik
+Mohammad Mutho, S.T.
+Guru Informatika
+Nur Sholihin, S.Kom.
+Guru Informatika
+Nur Khasanah, S.Pd.
+Guru Bimbingan Konseling
+Dais Arich Sifiana, S.Pd.
+Guru Bimbingan Konseling
+Dwi Aris Sutiyono, S.Pd.
+Guru Bimbingan Konseling
+Novia Elliswati, S. Pd.
+Guru Bimbingan Konseling
+Sulis Prianto, S.Pd.
+Guru Bimbingan Konseling
+Aliyah Mufiqoh, S.Pd.
+Guru Bimbingan Konseling
+Endah Puspita Santi, S.Pd.
+Guru Bahasa Jawa (ML)
+Henri Prastyorini,S.Pd.
+Guru Bahasa Jawa (ML)
+Prastika Ristianingrum, S.Pd.
+Guru Geografi
+Eni Suciati, S.Pd.
+Guru Ekonomi
+Madichah, S.Pd.
+Guru Ekonomi
+Erinda Larasati, S.Pd.
+Guru Sosiologi
+Agnes Dewi Utami Retno M., S.Ag
+Guru Agama Katholik
+Mohammad Mutho, S.T.
+Guru Informatika
+Nur Sholihin, S.Kom.
+Guru Informatika
+Nur Khasanah, S.Pd.
+Guru Bimbingan Konseling
+Dais Arich Sifiana, S.Pd.
+Guru Bimbingan Konseling
+Dwi Aris Sutiyono, S.Pd.
+Guru Bimbingan Konseling
+Novia Elliswati, S. Pd.
+Guru Bimbingan Konseling
+Sulis Prianto, S.Pd.
+Guru Bimbingan Konseling
+Testimoni
+Selengkapnya
+
+Apa Kata mereka
+
+SMA Negeri 1 Rembang adalah sekolah yang tidak hanya fokus pada prestasi akademik, tetapi juga pada pembentukan karakter siswa melalui nilai-nilai akhlak mulia, kreativitas, dan pemanfaatan teknologi modern dengan fasilitas yang lengkap.
+
+Mohammad Mutho
+
+SMA Negeri 1 Rembang merupakan wadah ideal bagi siswa untuk berkembang, dengan lingkungan yang mendukung prestasi, kreativitas, dan pembentukan karakter yang unggul.
+
+Rival Pahlewi
+
+Berpretasi, Berjati diri, dan Berakhlak Mulia
+
+Halaman
+Profil Sekolah
+Blog
+Agenda
+Gallery
+Video
+Blog Post
+Hubungi Kami
+
+Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+
+(0295) - 691375
+sma1rbg@yahoo.co.id
+
+© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+
+Hari ini : 49Total Pengunjung : 167806Online : 1
 ```
 
-Kategori sidebar: Info Beasiswa, Informasi, Karir, Pengumuman, Tips Belajar (semua 0 di snapshot).
-
 ---
 
-## 3. Sejarah Singkat (ringkas dari /pages/2-profil-sekolah.html, 3692 pembaca)
+## Agenda - SMA N 1 Rembang — https://smansarembang.sch.id/agenda
 
-- **1961** — Prakarsa Bupati KDH Tk.II Rembang **R. Islan Soebroto** → didirikan **SMA ABC Rembang** di gedung PGRI depan Alun-alun.
-- **1 Agustus 1962** — Mendikbud RI menegerikan → **SMA Negeri (gaya baru) Rembang**, filial **SMA Negeri Pati**. SK 21/SK/B/III tgl 10-09-1962.
-- **1963** — Pindah ke Jl. Sudirman No.127 (sekarang SMPN 2 Rembang).
-- **1975** — Sebagian siswa dialihkan ke Unit Gedung Baru (sekarang **SMA Negeri 2 Rembang**).
-- **6 April 1978** — Pembebasan tanah Desa Magersari (panitia Hartono B.A.) — lahir **SMA Negeri Rembang** di lokasi sekarang. SK Bupati No.Pu.B.1/20/1430/1979 (Bupati **Soemojo Hadiwinoto, SH**).
-- **1978-1979** — Kepsek **Sukemi Sisworaharjo** — pencipta **logo** yang dipakai hingga kini.
-- **Masa R. Samino Prodjosunaryo** — penambahan ruang keterampilan & kelas.
-- **1989** — Tambah 3 kelas (instruksi Kakandepdikbud); sebagian di SPG Negeri Rembang.
-- **2003** — Di bawah **Drs. Koesnandar** → SMU Negeri 1 Rembang jadi **mini piloting KBK** (SK Kadinas 425/082/2003).
-- **2005/2006** — Buka **2 kelas immerse** (pengantar Bahasa Inggris).
-- **2007** — Ditetapkan **Rintisan SMA Bertaraf Internasional (RSBI)** — SK Dir. Pembinaan SMA 697/C4/MN/2007 (1 dari 99 RSBI se-Indonesia). Persetujuan Disdik Kabupaten 000/8135.
-- **2011** — 4 tahun RSBI, kerjasama: Pusat Studi Asia FIB Undip, Nagoya University (Jepang), Eyup Anadolu Lisesi Istanbul, ISO 9001:2000, SEAMEO SEAMOLEC, Northlight School Singapura, SCUT China.
-- **2016-2018** — **SMA Rujukan** (1 dari 614) oleh Dit. Pembinaan SMA; kerjasama **Lincoln University Malaysia** & **Hatyai University Thailand** (2018).
-
----
-
-## 4. Visi, Misi, Tujuan
-
-**Visi:** “Berjatidiri dan Maju dalam Prestasi”
-
-**Misi:**
-1. Mewujudkan lembaga pendidikan yang bernuansa **keagamaan, kebangsaan, keilmuan, dan wawasan lingkungan**.
-2. Mewujudkan lembaga yang berdaya saing sampai **tingkat internasional**.
-
-**Tujuan:**
-- Warga sekolah beriman & bertaqwa.
-- Jiwa nasionalisme, patriotisme, demokratis.
-- Potensi peserta didik berkembang via pembelajaran antisipatif IPTEK.
-- Peran aktif pelestarian lingkungan.
-- Lingkungan **aman, bersih, tertib, indah, rindang, sehat (ABTIRS)**.
-- Peningkatan akses & mutu berkelanjutan.
-
-*(teks tujuan terpotong di scrape; lengkap ada di halaman profil)*
-
----
-
-## 5. Makna Lambang (17 Jan 2025, 1664 pembaca)
-
-- **Dominan biru:** biru muda = langit, biru = laut, batas gelombang putih.
-- **3 gambar berangkai = batang tubuh lambang:**
-  - **Sayap kuning** = jurusan **Budaya** (sastra). 3 helai bulu terpisah = Inggris, Jerman, Perancis.
-  - **Lima helai daun hijau** = jurusan **Sosial**.
-  - **Pipa pancuran (fountain) + ion & proton** di tengah daun = **IPA**.
-  - Jumlah **5** (bulu sayap, daun) = **Pancasila**.
-- Tulisan **SMA Negeri 1 Rembang** di bawah = domisili pantai Kab. Rembang.
-- **Arti warna:** Merah (aktif/optimis), Putih (tulus/ikhlas), Kuning (kesatria/maju), Biru (taat/luas wawasan), Hijau (sosial/damai).
-
----
-
-## 6. Mars & Himne (17 Jan 2025, 1568 pembaca)
-
-**Mars — SMA NEGERI SATU REMBANG**
-
-> SMA NEGERI SATU REMBANG
-> TEMPAT KITA MENUNTUT ILMU,
-> KETEKUNAN, KETERTIBAN TUK MENCAPAI KEBERHASILAN
->
-> SMA NEGERI SATU REMBANG
-> MENINGKATKAN PENGETAHUAN, TEKNOLOGI, KESENIAN
-> TUK MEMBENTUK KEPRIBADIAN
->
-> *Reff:* SMA NEGERI SATU REMBANG
-> BERJATI DIRI MAJU DALAM PRESTASI
-> PENYIAPAN PUTRA PUTRI BANGSA MELANJUTKAN PENDIDIKAN TINGGI
->
-> SMA NEGERI SATU REMBANG
-> TEMPAT KITA KEMBANGKAN BAKAT, PENGALAMAN, KETERAMPILAN
-> BEKAL HIDUP DI MASA DEPAN
-
-**Himne — DIRGAHAYU SMA NEGERI SATU REMBANG**
-
-> DIRGAHAYU SMA NEGERI SATU REMBANG
-> ENGKAU CERDASKAN KEHIDUPAN BANGSA
-> BENTUK GENERASI MUDA, BERIMAN DAN BERTAQWA
-> SERTA MEMBENTUK KEPRIBADIAN YANG LUHUR DAN KUAT
-> MEMBINA PUTRA PUTRI BERETOS KERJA TINGGI
-> LESTARIKAN BUDAYA, PERLUAS WAWASAN
-> MEMBANGUN MASA DEPAN GENERASI NAN JAYA
-
----
-
-## 7. Fasilitas & Struktur Organisasi
-
-- **Fasilitas** (`/pages/5-fasilitas.html`) — halaman ada (22 Okt 2020, 1427 pembaca) tapi konten teks tercatat minimal/bergambar. Judul: *Fasilitas SMAN 1 Way Lima* (kemungkinan template). Galeri `gallery` memuat kategori: Kegiatan Siswa, Prestasi Siswa/Guru, Fasilitas Sekolah, Perpustakaan, Parkir Siswa/Guru, Ruang UKS, Tata Usaha, Meeting, Media.
-- **Struktur Organisasi** (`/pages/8-struktur-organisasi.html`, 14 Jan 2025, 2267 pembaca) — judul *Struktur Organisasi SMA N 1 Rembang*; detail struktur berupa gambar (tidak ter-scrape teks, perlu ambil image).
-
----
-
-## 8. Guru & Tenaga Kependidikan (partial list — halaman /team/guru & /team/pegawai)
-
-Pengumuman tampil 4 pagination; daftar di bawah adalah yang ter-capture di halaman 1 (nama bisa double — ulangi untuk cek halaman penuh).
-
-**Kepala Sekolah:** **Endang Sri Lestari, S.Pd.**
-
-**Guru (cuplikan, 40+ terdata):**
-Dwi Hastuti, M.Pd (Sejarah/Wakasek), Yulianto, S.Pd (B Ing/Wakasek), Mohammad Thohir, S.Pd.I, Ahmad Farid, S.Pd.I, Siti Rohmah, S.Pd.I, Wahyu Puji Lestari, S.Th, Niwayan Nurasti, A.Ma, Anita Trianingrum, S.Pd (PPKn), Sutiyono, M.Pd, Desika Nur Rofiah, S.Pd, Endang Sri Sutarni, S.Pd, Naning Sukaningsih, S.Pd (B Indo), Galuh Pratidina, S.Pd., M.Pd, Eko Margoningtyas, S.Pd, Ariyati, S.Pd (B Ing), Siti Sriyatun, M.Pd, Rini Rakhmawati, M.Pd, Nur Irma Fitriani, S.Pd, Ulfah Rubiati, M.Pd (Matematika), ... *(halaman memuat ~20 per page, total 4 halaman — scrape lanjutan disarankan)*
-
-**Pegawai/TU (cuplikan):**
-Prihandoko Eko Putra, A.Md (Operator Dapodik), Siti Mardiyah, S.Pd, Heni Dwi Erinawati, S.Kom, Sumiyati, A.Ma.Pust, Sri Yuliani, S.Pd, Vita Arsanti, A.Md, Sugiarti, S.Pd, Lukito, Budiyono, Chandra Kurniawan, Muhamad Arip, Ulina Eka Astuti, S.Pd, Indah Maharini, A.Ma, Indah Kistiyani, A.Ma, Indra Laksana, Wignyo Eko Prasetyo, Warsito, Farid Leksono, Burhan Widiatmoko, Lanang Suyitno — *+ Tata Usaha/Pustakawan.*
-
-> Catatan: foto guru/pegawai di situs semuanya placeholder `profil_icon.jpeg`.
-
----
-
-## 9. Agenda, Blog, Pengumuman, Download
-
-- **Agenda:** Kegiatan Bulan Ramadhan (01-03-2025), Lomba Segara Buana (23-10-2024) — author Mohammad Mutho.
-- **Blog / Semua Informasi:** 1173 chars — daftar info umum (perlu paginasi).
-- **Pengumuman (4 item teratas):**
-  1. LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS REGULER TAHAP II 2025 (06 Jan 2026)
-  2. TAHAP I 2025 (25 Jul 2025)
-  3. PENGADAAN BUKU TAHUN 2023 (05 Mei 2025) — 8.48 MB, 11425 download
-  4. PENGADAAN BUKU TAHUN 2022 (05 Mei 2025) — 2.63 MB, 11176 download
-- **Download** — tabel Nama/Tipe/Ukuran/Statistik/Aksi; file dominan laporan BOS & pengadaan buku. URL download via `/download` (perlu auth/timthumb?).
-- **Siswa (/siswa):** datatable No/Nama/NISN/Kelas/Status/Aksi Detail (butuh login/modal detail).
-
----
-
-## 10. Gallery & Video
-
-- **Gallery (`/gallery`) — 41 gambar (timthumb):**
-  - Kategori: Show All, Kegiatan Siswa, Prestasi Siswa, Prestasi Guru, Fasilitas Sekolah, Perpustakaan, Parkir Siswa/Guru, Ruang UKS, Tata Usaha, Meeting, Media, Perpustakaan (duplikat).
-  - File fisik: `sw-content/upload/galery/*.jpg` (28 file unik terdeteksi — lihat daftar di §11).
-- **Video (`/video`):**
-  - Kategori: Video Kegiatan, Film Pendek Karya Siswa.
-  - Thumbnail YouTube: `Kr0qr8gKp-U`, `p9ki3cDlxOc`, `zpeUChv9rtk`, `oSr9wkE22go` (hqdefault.jpg) — judul: Film Pendek TANOS, Teaser HUT SMA Negeri (3 varian).
-  - Powered logos (footer): ITB, ITS, UNNES, UNDIP, UNS, UGM, UI, PIP — `sw-content/upload/powered/*.png`
-
----
-
-## 11. Daftar Gambar Hasil Scraping (pilah)
-
-### 11a. Logo & Identitas (WAJIB pakai di web kita)
-- `https://smansarembang.sch.id/sw-content/sw-sw-logoweb.png` — **logo utama** (navbar)
-- `https://smansarembang.sch.id/sw-content/sw-sw-logoweb.jpg` — OG image
-- `https://smansarembang.sch.id/favicon.png`
-
-### 11b. Gallery — 28 file asli (tanpa timthumb)
 ```
+(0295) - 691375
+ sma1rbg@yahoo.co.id
+SMA N 1 Rembang
+
+Agenda | SMA N 1 Rembang
+
+Travel Lampung Palembang, Travel Palembang Lampung
+
+Beranda
+Profil
+Publikasi
+Data
+Agenda
+Gallery
+Video
+Kontak
+Agenda
+BerandaAgenda
+01
+03-2025
+11:09:45
+Kegiatan Bulan Ramadhan di SMA Negeri 1 Rembang
+Mohammad Mutho01-03-20250 Komentar
+
+Kegiatan Bulan Ramadhan di SMA Negeri 1 Rembang
+
+23
+10-2024
+10:00:00
+Lomba Segara Buana
+Mohammad Mutho23-10-20240 Komentar
+
+Lomba yang diadakan untuk memperingati Dies Natalis SMA N 1 Rembang tahun 2024
+
+1
+Agenda Baru
+01
+03-2025
+Kegiatan Bulan Ramadhan di SMA Negeri 1 Rembang
+ 11:09:45
+23
+10-2024
+Lomba Segara Buana
+ 10:00:00
+Search
+Category
+Info Beasiswa
+0
+Informasi
+0
+Karir
+0
+Pengumuman
+0
+Tips Belajar
+0
+Blog Terbaru
+Populer
+nol
+Download
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 298.32 KB 10986 Download
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 349.78 KB 13265 Download
+PENGADAAN BUKU TAHUN 2023
+ 8.48 MB 11425 Download
+PENGADAAN BUKU TAHUN 2022
+ 2.63 MB 11177 Download
+Tags
+InformasiKarirBeasiswatips_belajarTips
+
+Berpretasi, Berjati diri, dan Berakhlak Mulia
+
+Halaman
+Profil Sekolah
+Blog
+Agenda
+Gallery
+Video
+Blog Post
+Hubungi Kami
+
+Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+
+(0295) - 691375
+sma1rbg@yahoo.co.id
+
+© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+
+Hari ini : 49Total Pengunjung : 167816Online : 1
+```
+
+---
+
+## Blog - SMA N 1 Rembang — https://smansarembang.sch.id/blog
+
+```
+(0295) - 691375
+ sma1rbg@yahoo.co.id
+SMA N 1 Rembang
+
+Blog | SMA N 1 Rembang
+
+Travel Lampung Palembang, Travel Palembang Lampung
+
+Beranda
+Profil
+Publikasi
+Data
+Agenda
+Gallery
+Video
+Kontak
+Blog
+BerandaBlog
+
+Kami tidak menemukan blog yang anda cari!
+
+Search
+Category
+Info Beasiswa
+0
+Informasi
+0
+Karir
+0
+Pengumuman
+0
+Tips Belajar
+0
+Blog Terbaru
+Populer
+nol
+Download
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 298.32 KB 10986 Download
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 349.78 KB 13265 Download
+PENGADAAN BUKU TAHUN 2023
+ 8.48 MB 11425 Download
+PENGADAAN BUKU TAHUN 2022
+ 2.63 MB 11177 Download
+Tags
+Tipstips_belajarKarirInformasiBeasiswa
+
+Berpretasi, Berjati diri, dan Berakhlak Mulia
+
+Halaman
+Profil Sekolah
+Blog
+Agenda
+Gallery
+Video
+Blog Post
+Hubungi Kami
+
+Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+
+(0295) - 691375
+sma1rbg@yahoo.co.id
+
+© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+
+Hari ini : 49Total Pengunjung : 167812Online : 1
+```
+
+---
+
+## Download - SMA N 1 Rembang — https://smansarembang.sch.id/download
+
+```
+(0295) - 691375
+ sma1rbg@yahoo.co.id
+SMA N 1 Rembang
+
+Download | SMA N 1 Rembang
+
+Travel Lampung Palembang, Travel Palembang Lampung
+
+Beranda
+Profil
+Publikasi
+Data
+Agenda
+Gallery
+Video
+Kontak
+Download
+BerandaDownload
+Show 
+30
+50
+100
+All
+ entries
+Search:
+Nama	Tipe	Ukuran	Statistik	Aksi
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS REGULER TAHAP 1 TAHUN 2025	
+	349.78 KB	13265 Download	 Download
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS REGULER TAHAP II TAHUN 2025	
+	298.32 KB	10986 Download	 Download
+PENGADAAN BUKU TAHUN 2022	
+	2.63 MB	11177 Download	 Download
+PENGADAAN BUKU TAHUN 2023	
+	8.48 MB	11425 Download	 Download
+Showing 1 to 4 of 4 entries
+Previous
+1
+Next
+
+Berpretasi, Berjati diri, dan Berakhlak Mulia
+
+Halaman
+Profil Sekolah
+Blog
+Agenda
+Gallery
+Video
+Blog Post
+Hubungi Kami
+
+Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+
+(0295) - 691375
+sma1rbg@yahoo.co.id
+
+© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+
+Hari ini : 49Total Pengunjung : 167819Online : 1
+```
+
+---
+
+## Gallery - SMA N 1 Rembang — https://smansarembang.sch.id/gallery
+
+```
+(0295) - 691375
+ sma1rbg@yahoo.co.id
+SMA N 1 Rembang
+
+Gallery | SMA N 1 Rembang
+
+Travel Lampung Palembang, Travel Palembang Lampung
+
+Beranda
+Profil
+Publikasi
+Data
+Agenda
+Gallery
+Video
+Kontak
+Gallery
+BerandaGallery
+Show AllKegiatan SiswaPrestasi SiswaPrestasi GuruFasilitas SekolahPerpustakaan Sekolah
+Parkir Siswa
+Parkir Guru
+Perpustakaan
+Perpustakaan
+Perpustakaan
+Perpustakaan
+Ruang UKS
+Ruang Tata Usah..
+Ruang Meeting
+Ruang Media
+Ruang Kepala Se..
+Ruang Kelas
+Ruang Guru
+Ruang Bimbingan..
+Musholla
+Lapangan Olahra..
+Laboratorium TI..
+Laboratorium TI..
+Laboratorium TI..
+Laboratorium Ki..
+Laboratorium Ke..
+Laboratorium IP..
+Laboratorium Fi..
+Laboratorium Bi..
+Laboratorium Ba..
+Lapangan Basket
+Prestasi Lomba ..
+Prestasi Lomba ..
+Gallery 3
+Gallery 2
+Gallery 1
+
+Berpretasi, Berjati diri, dan Berakhlak Mulia
+
+Halaman
+Profil Sekolah
+Blog
+Agenda
+Gallery
+Video
+Blog Post
+Hubungi Kami
+
+Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+
+(0295) - 691375
+sma1rbg@yahoo.co.id
+
+© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+
+Hari ini : 49Total Pengunjung : 167817Online : 1
+```
+
+---
+
+## 404 Not Found — https://smansarembang.sch.id/kontak
+
+```
+404
+Not Found
+
+The resource requested could not be found on this server!
+
+
+Proudly powered by LiteSpeed Web Server
+
+Please be advised that LiteSpeed Technologies Inc. is not a web hosting company and, as such, has no control over content found on this site.
+```
+
+---
+
+## Profil Sekolah - SMA N 1 Rembang — https://smansarembang.sch.id/pages/2-profil-sekolah.html
+
+```
+(0295) - 691375
+ sma1rbg@yahoo.co.id
+SMA N 1 Rembang
+
+Profil Sekolah | SMA N 1 Rembang
+
+Travel Lampung Palembang, Travel Palembang Lampung
+
+Beranda
+Profil
+Publikasi
+Data
+Agenda
+Gallery
+Video
+Kontak
+Pages
+BerandaAbouts
+Profil Sekolah
+ Mohammad Mutho17 Januari 20250 Comments3694 Pembaca
+Sejarah Singkat SMA Negeri 1 Rembang
+Tahun 1961
+Atas prakarsa Bupati KDH tk. II Rembang, R. Islan Soebroto, .maka didirikan “ SMA ABC Rembang” di Rembang. Sekolah Menengah Atas tersebut menempati gedung PGRI Rembang yang berlokasi di depan Alun - alun kota Rembang.
+Tahun 1962
+Menteri Pendidikan Dasar dan Kebudayaan Republik Indonesia memutuskan dan menetapkan bahwa terhitung mulai 1 Agustus 1962, membuka Sekolah Menengah Atas Negeri (gaya baru)  di Rermbang , Jawa Tengah, sekaligus mengambil alih SMA Swasta di  wilayah Kabupoaten Rembang  menjadi SMA Negeri gaya baru.  SMA ABC Rembang dinegerikan dengan SK. 21 / SK / B / III tgl. 10 - 9 – 1962. Pada saat itu dengan status filial SMA Negeri Pati.
+Tahun 1963
+Pada saat itu SMA ABC Rembang menempati gedung di jalan Sudirman No. 127 Rembang (sekarang SMP Negeri 2 Rembang).
+Tahun 1975
+Oleh karena daya tampung gedung yang tidak sebanding dengan jumlah siswa, maka  Sebagian siswa dialihkan pada Unit Gedung Baru (sekarang menjadi SMA Negeri 2 Rembang).
+Tahun 1978
+Pada tanggal 6 April1978 terjadi penandatanganan berita acara oleh panitia pembebasan tanah Kabupaten Daerah tingkat II Rembang, yang diketuai oleh Hartono B.A. (Kepala Sub Direktorat Agraria Kabupaten Daerah tingkat II Rembang). Adapun areal tanah seluas 910 m 2  yang telah dibebaskan tersebut terletak di Desa Magersari, Jalan Untung Suropati No.5 Rembang (sekarang Jalan Gajah Mada No. 5 Rembang). Pada saat itu berdirilah instansi Sekolah Menengah Atas dengan nama SMA Negeri Rembang. Keberadaan  SMA Negeri Rembang di lokasi tersebut    dibuktikan dengan adanya surat keputusan Bupati Kepala Daerah Tingkat II Rembang,  No : Pu. B.1 / 20 / 1430 / 1979 tentang penyerahan sebidang tanah milik pemerintah daerah Kabupaten Dati II Rembang kepada SMA Negeri Rembang yang berada di desa Magersari Kecamatan Kota Rembang Kabupaten Dati II Rembang.    Pada saat itu Kabupaten Rembang dipimpin oleh    Soemojo Hadiwinoto, SH.
+
+Pembangunan gedung SMA Negeri Rembang mulai pesat, pada saat instansi ini dipimpin oleh R. Samino Prodjosunaryo. Hal ini dibuktikan dengan adanya penambahan ruang ketrampilan dan ruang kelas baru.   Berturut-turut dengan pergantian pucuk pimpinan sampai sekarang pembangunan gedung dan pemenuhan sarana-prasarana terus dilaksanakan.
+Pada tahun 1978-1979 SMA Negeri Rembang dipimpin oleh   Sukemi Sisworaharjo. Beliau yang memprakarsai pembuatan logo SMA Negeri Rembang yang sampai sekarang tetap diabadikan.
+Tahun 1989
+SMA Negeri Rembang diijinkan untuk menambah jumlah anak didik sebanyak 3 kelas atas dasar instruksi Kakandepdikbud Kabupaten Rembang.  Oleh karena lokal tidak mencukupi daya tampung siswa, maka sebagian siswa ada yang di tempatkan di gedung SPG Negeri Rembang.
+Tahun 2003
+Dibawah pimpinan Drs Koesnandar, Sekolah Menengah Umum Negeri 1 Rembang ditunjuk sebagai sekolah percontohan (mini piloting) Kurikulum Berbasis Kompetensi tahun Pelajaran 2003/2004. Penunjukan ini dibuktikan dengan adanya keputusan Kepala Dinas Kabupaten Rembang no 425/082/tahun 2003.
+Tahun 2005
+Selain pembangunan dan pemenuhan sarana prasarana, sekolah membuka program baru yaitu kelas “immerse”, sejak tahun pelajaran 2005/2006. Berbeda dengan kelas regular, dua kelas immersi ini menggunakan pengantar Bahasa Inggris dalam proses belajar mengajar dengan persentase yang telah ditentukan.
+
+Undang-undang no 20 tahun 2003 tentang Sistem Pendidikan Nasional, pasal 50 ayat 3 mengamanatkan bahwa : Pemerintah Daerah menyelenggarakan sekurang-kurangnya satu satuan pendidikan pada setiap jenjang untuk dikembangkan menjadi bertaraf internasional. Sebagai upaya peningkatan mutu pendidikan di Kabupaten Rembang, SMAN 1 Rembang dipandang telah memiliki kesiapan dan kemampuan manajerial, kelengkapan sarana dan prasarana untuk disiapkan menjadi Sekolah Bertaraf Internasional (SBI). SMA N 1 Rembang ditunjuk oleh Dinas Pendidikan Kabupaten Rembang sebagai sekolah mandiri, serta menjadi anggota Association School pelaksanaan SNBI (Sekolah Nasional Bertaraf Internasional) di tingkat eks Karesidenan Pati.
+Tahun  2007
+Kelas immerse yang telah dibuka pada tahun 2005, merupakan embriyo Rintisan Sekolah Bertaraf Internasional. Telaah tentang SMAN 1 Rembang sebagai Rintisan Sekolah Bertaraf Internasional dilaksanakan oleh Kepala Dinas Pendidikan Kabupaten Rembang.
+
+Pada tahun 2007, SMA Negeri 1 Rembang mendapatkan kepercayaan dari pemerintah untuk menyelenggarakan Rintisan Sekolah Menengah Atas Bertaraf Internasional. Kepercayaan tersebut dikuatkan dengan :
+
+-  Persetujuan dari Dinas Pendidikan Kabupaten Rembang, nomor 000/8135.
+-  Penetapan Sekolah Penyelenggara Program SMA BI, dengan Surat keputusan Direktorat Pembinaan Sekolah Menengah Atas, Direktorat Jendral Manajemen Pendidikan Dasar dan Menengah, nomor 697/C4/MN/2007.
+
+Dengan demikian SMA Negeri 1 Rembang merupakan satu diantara sembilan puluh sembilan sekolah di Indonesia yang menyelenggarakan RSBI pada tahun tersebut.
+Tahun 2011
+Keberlangsungan RSBI SMA Negeri 1 Rembang selama 4 tahun diimbangi dengan upaya peningkatan kualitas pendidik yang secara tidak langsung dapat meningkatkan kualitas output siswa. Upaya tersebut dapat dilihat dari keaktifan dalam menjalin kerjasama SMA Negeri 1 Rembang dengan beberapa pihak antara lain:
+
+-  Pusat Studi Asia, Fakultas Sastra Universitas Diponegoro
+-  Nagoya University, Japan
+-  Sekolah Menengah Atas Negeri Eyup Anadolu Lisesi, Istanbul Turki.
+-  Jasa Sertifikasi Sistem Manajemen ISO 9001:2000
+-  Southeast Asian Minister of Education Organization Regional Open Learning Center (SEAMEO SEAMOLEC)
+-  Northlight School Singapura
+-  Sekolah RSBI lain sebagai School sisters
+-  South China University Technology (SCUT)
+Tahun 2016 - 2018
+SMA Negeri 1 Rembang mendapat kepercayaan dari Direktorat Pembinaan SMA sebagai satu dari 614 SMA Rujukan di Indonesia, artinya SMA Negeri 1 Rembang diakui memiliki praktik baik dan inovasi pendidikan berbasis Standar Nasional Pendidikan sebagai rujukan mutu bagi SMA lain di Kabupaten Rembang.Selain itu jalinan kerjasama dengan dua perguruan tinggi luar negeri yaitu Malaysia Lincoln University dan Thailand Hatyai University terselenggara di tahun 2018.
+ 
+Visi, Misi, Dan Tujuan Sekolah
+
+A. VISI SEKOLAH
+
+Visi SMA Negeri 1 Rembang adalah “Berjatidiri dan Maju dalam Prestasi”
+
+B. MISI SEKOLAH
+
+Misi yang diemban oleh SMAN 1 Rembang terdiri dari dua poin utama yang sangat urgen, yakni:
+
+Mewujudkan lembaga pendidikan yang bernuansa keagamaan, kebangsaan, keilmuan, dan wawasan lingkungan.
+Mewujudkan lembaga pendidikan yang memiliki daya saing sampai di tingkat internasional.
+
+C. TUJUAN SEKOLAH
+
+Berdasarkan visi dan misi di atas, maka tujuan yang hendak dicapai SMA Negeri1 Rembang adalah sebagai berikut:
+
+Terwujudnya warga sekolah yang beriman dan bertaqwa kepada Tuhan Yang Maha Esa.
+Terciptanya warga sekolah yang memiliki jiwa nasionalisme, patriotisme, dan demokratis.
+Berkembangnya potensi peserta didik di bidang pengetahuan dan ketrampilan melalui proses pembelajaran yang antisipatif terhadap perkembangan ilmu pengetahuan dan teknologi.
+Terselenggaranya proses pembelajaran yang antisipatif terhadap perkembangan ilmu pengetahuan dan teknologi.
+Terwujudnya peran aktif sekolah dalam memelihara kelestarian lingkungan.
+Terciptanya lingkungan sekolah yang aman, bersih, tertib, indah, rindang, dan sehat.
+Tercapainya peningkatan akses sekolah dengan berbagai lembaga pendidikan maupun non kependidikan dalam negeri maupun luar negeri.
+Diraihnya prestasi tinggi dalam berbagai lomba di bidang keilmuan dan teknologi, minat, dan bakat baik pada tingkat regional, nasional maupun Internasional.
+Tercapainya peningkatan jumlah tamatan yang diterima pada perguruan tinggi negeri atau swasta favorit nasional maupun int
+```
+
+---
+
+## Makna Lambang - SMA N 1 Rembang — https://smansarembang.sch.id/pages/3-makna-lambang.html
+
+```
+(0295) - 691375
+ sma1rbg@yahoo.co.id
+SMA N 1 Rembang
+
+Makna Lambang | SMA N 1 Rembang
+
+Travel Lampung Palembang, Travel Palembang Lampung
+
+Beranda
+Profil
+Publikasi
+Data
+Agenda
+Gallery
+Video
+Kontak
+Pages
+BerandaAbouts
+Makna Lambang
+ Mohammad Mutho17 Januari 20250 Comments1665 Pembaca
+MAKNA LAMBANG
+
+Lambang SMA Negeri 1 Rembang didominasi dengan warna biru. Latar belakang warna biru muda adalah langit, sedangkan warna biru adalah laut. Antara langit dan laut berbatasan gelombang putih.
+
+Tiga macam gambar berangkai menjadi satu, merupakan batang tubuh lambing, yaitu :
+
+Sayap terbang warna kuning
+Menunjukkan jurusan budaya, yaitu kelompok siswa yang menggeluti keahlian sastra. Bagian sayap yang tiga lembar bulunya pisah, menunjukkan bahwa siswa jurusan ini juga mempelajari : sastra Inggris, Jerman, dan Perancis.
+Lima helai daun hijau, menunjukkan jurusan sosial.
+Tengah pangkal daun berdiri tegak pipa pancuran (fountain). Tengah-tengah bagian luar pipa terdapat ion dan proton dengan garis lintasnya. Ini menunjukkan jurusan Ilmu Pengetahuan Alam (IPA).
+
+Bagian masing-masing lambang ini berjumlah lima, yaitu bagian bulu sayap, dan daun. Terkandung maksud bahwa SMA Negeri 1 Rembang dalam keaktifannya selalu berlandaskan Pancasila.
+
+Huruf SMA Negeri 1 Rembang ditulis dibawah batang tubuh lambang menyatakan bahwa SMA Negeri 1 Rembang berdomisili di daerah pantai Kabupaten Rembang. Adapun arti warna yang terkandung dalam lambang adalah :
+
+Merah : aktif, bersemangat, periang, dan optimis.
+Putih : menyatakan sifat tulus hati, ikhlas, suka berkorban
+Kuning : menunjukkan watak kesatria, menjaga keutamaan, dan selalu ingin maju.
+Biru : menunjukkan ketaatan, berwawasan luas, dan berbakti
+Hijau : menyatakan sifat sosial, tentram, dan damai.
+
+Bagikan :  
+Previous post
+Next post 
+Komentar
+Search
+Category
+Info Beasiswa
+0
+Informasi
+0
+Karir
+0
+Pengumuman
+0
+Tips Belajar
+0
+Blog Terbaru
+Populer
+nol
+Download
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 298.32 KB 10986 Download
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 349.78 KB 13265 Download
+PENGADAAN BUKU TAHUN 2023
+ 8.48 MB 11425 Download
+PENGADAAN BUKU TAHUN 2022
+ 2.63 MB 11177 Download
+Tags
+Informasitips_belajarBeasiswaKarirTips
+
+Berpretasi, Berjati diri, dan Berakhlak Mulia
+
+Halaman
+Profil Sekolah
+Blog
+Agenda
+Gallery
+Video
+Blog Post
+Hubungi Kami
+
+Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+
+(0295) - 691375
+sma1rbg@yahoo.co.id
+
+© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+
+Hari ini : 49Total Pengunjung : 167808Online : 1
+```
+
+---
+
+## Fasilitas - SMA N 1 Rembang — https://smansarembang.sch.id/pages/5-fasilitas.html
+
+```
+(0295) - 691375
+ sma1rbg@yahoo.co.id
+SMA N 1 Rembang
+
+Fasilitas | SMA N 1 Rembang
+
+Travel Lampung Palembang, Travel Palembang Lampung
+
+Beranda
+Profil
+Publikasi
+Data
+Agenda
+Gallery
+Video
+Kontak
+Pages
+BerandaAbouts
+Fasilitas
+ Mohammad Mutho22 Oktober 20200 Comments1428 Pembaca
+
+Fasilitas SMAN 1 Way Lima
+
+Bagikan :  
+Previous post
+Next post 
+Komentar
+Search
+Category
+Info Beasiswa
+0
+Informasi
+0
+Karir
+0
+Pengumuman
+0
+Tips Belajar
+0
+Blog Terbaru
+Populer
+nol
+Download
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 298.32 KB 10986 Download
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 349.78 KB 13265 Download
+PENGADAAN BUKU TAHUN 2023
+ 8.48 MB 11425 Download
+PENGADAAN BUKU TAHUN 2022
+ 2.63 MB 11177 Download
+Tags
+KarirBeasiswaTipsInformasitips_belajar
+
+Berpretasi, Berjati diri, dan Berakhlak Mulia
+
+Halaman
+Profil Sekolah
+Blog
+Agenda
+Gallery
+Video
+Blog Post
+Hubungi Kami
+
+Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+
+(0295) - 691375
+sma1rbg@yahoo.co.id
+
+© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+
+Hari ini : 49Total Pengunjung : 167810Online : 1
+```
+
+---
+
+## Struktur Organisasi - SMA N 1 Rembang — https://smansarembang.sch.id/pages/8-struktur-organisasi.html
+
+```
+(0295) - 691375
+ sma1rbg@yahoo.co.id
+SMA N 1 Rembang
+
+Struktur Organisasi | SMA N 1 Rembang
+
+Travel Lampung Palembang, Travel Palembang Lampung
+
+Beranda
+Profil
+Publikasi
+Data
+Agenda
+Gallery
+Video
+Kontak
+Pages
+BerandaAbouts
+Struktur Organisasi
+ Mohammad Mutho14 Januari 20250 Comments2268 Pembaca
+
+Struktur Organisasi SMA N 1 Rembang
+
+ 
+
+Bagikan :  
+Previous post
+Next post 
+Komentar
+Search
+Category
+Info Beasiswa
+0
+Informasi
+0
+Karir
+0
+Pengumuman
+0
+Tips Belajar
+0
+Blog Terbaru
+Populer
+nol
+Download
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 298.32 KB 10986 Download
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 349.78 KB 13265 Download
+PENGADAAN BUKU TAHUN 2023
+ 8.48 MB 11425 Download
+PENGADAAN BUKU TAHUN 2022
+ 2.63 MB 11177 Download
+Tags
+tips_belajarKarirTipsBeasiswaInformasi
+
+Berpretasi, Berjati diri, dan Berakhlak Mulia
+
+Halaman
+Profil Sekolah
+Blog
+Agenda
+Gallery
+Video
+Blog Post
+Hubungi Kami
+
+Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+
+(0295) - 691375
+sma1rbg@yahoo.co.id
+
+© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+
+Hari ini : 49Total Pengunjung : 167811Online : 1
+```
+
+---
+
+## Mars dan Himne - SMA N 1 Rembang — https://smansarembang.sch.id/pages/9-mars-dan-himne.html
+
+```
+(0295) - 691375
+ sma1rbg@yahoo.co.id
+SMA N 1 Rembang
+
+Mars dan Himne | SMA N 1 Rembang
+
+Travel Lampung Palembang, Travel Palembang Lampung
+
+Beranda
+Profil
+Publikasi
+Data
+Agenda
+Gallery
+Video
+Kontak
+Pages
+BerandaAbouts
+Mars dan Himne
+ Mohammad Mutho17 Januari 20250 Comments1569 Pembaca
+Mars
+
+SMA NEGERI SATU REMBANG
+
+TEMPAT KITA MENUNTUT ILMU, KETEKUNAN, KETERTIBAN
+
+TUK MENCAPAI KEBERHASILAN
+
+ 
+
+SMA NEGERI SATU REMBANG
+
+MENINGKATKAN PENGETAHUAN, TEKNOLOGI, KESENIAN
+
+TUK MEMBENTUK KEPRIBADIAN
+
+Reff
+
+SMA NEGERI SATU REMBANG
+
+BERJATI DIRI MAJU DALAM PRESTASI
+
+PENYIAPAN PUTRA PUTRI BANGSA
+
+MELANJUTKAN PENDIDIKAN TINGGI
+
+SMA NEGERI SATU REMBANG
+
+TEMPAT KITA KEMBANGKAN BAKAT, PENGALAMAN, KETERAMPILAN BEKAL HIDUP DI MASA DEPAN
+
+Himne
+
+DIRGAHAYU SMA NEGERI SATU REMBANG
+
+ENGKAU CERDASKAN KEHIDUPAN BANGSA
+
+BENTUK GENERASI MUDA, BERIMAN DAN BERTAQWA
+
+SERTA MEMBETNUK KEPRIBADIAN YANG LUHUR DAN KUAT
+
+MEMBINA PUTRA PUTRI BERETOS KERJA TINGGI
+
+LESTARIKAN BUDAYA, PERLUAS WAWASAN
+
+MEMBANGUN MASA DEPAN GENERASI NAN JAYA
+
+Bagikan :  
+Previous post
+Next post 
+Komentar
+Search
+Category
+Info Beasiswa
+0
+Informasi
+0
+Karir
+0
+Pengumuman
+0
+Tips Belajar
+0
+Blog Terbaru
+Populer
+nol
+Download
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 298.32 KB 10986 Download
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 349.78 KB 13265 Download
+PENGADAAN BUKU TAHUN 2023
+ 8.48 MB 11425 Download
+PENGADAAN BUKU TAHUN 2022
+ 2.63 MB 11177 Download
+Tags
+tips_belajarTipsKarirBeasiswaInformasi
+
+Berpretasi, Berjati diri, dan Berakhlak Mulia
+
+Halaman
+Profil Sekolah
+Blog
+Agenda
+Gallery
+Video
+Blog Post
+Hubungi Kami
+
+Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+
+(0295) - 691375
+sma1rbg@yahoo.co.id
+
+© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+
+Hari ini : 49Total Pengunjung : 167809Online : 1
+```
+
+---
+
+## Pengumuman - SMA N 1 Rembang — https://smansarembang.sch.id/pengumuman
+
+```
+(0295) - 691375
+ sma1rbg@yahoo.co.id
+SMA N 1 Rembang
+
+Pengumuman | SMA N 1 Rembang
+
+Travel Lampung Palembang, Travel Palembang Lampung
+
+Beranda
+Profil
+Publikasi
+Data
+Agenda
+Gallery
+Video
+Kontak
+Pengumuman
+BerandaPengumuman
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS REGULER TAHAP II TA..
+Mohammad Mutho06 Januari 20260 Komentar
+
+ 
+
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS REGULER TAHAP 1 TAH..
+Mohammad Mutho25 Juli 20250 Komentar
+
+ 
+
+PENGADAAN BUKU TAHUN 2023
+Mohammad Mutho05 Mei 20250 Komentar
+
+PENGADAAN BUKU TAHUN 2022
+Mohammad Mutho05 Mei 20250 Komentar
+
+1
+2
+»
+Pengumuman Baru
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 06 Januari 2026
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 25 Juli 2025
+PENGADAAN BUKU TAHUN 2023
+ 05 Mei 2025
+PENGADAAN BUKU TAHUN 2022
+ 05 Mei 2025
+Search
+Category
+Info Beasiswa
+0
+Informasi
+0
+Karir
+0
+Pengumuman
+0
+Tips Belajar
+0
+Blog Terbaru
+Populer
+nol
+Download
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 298.32 KB 10986 Download
+LAPORAN REKAPITULASI REALISASI PENGGUNAAN DANA BOS..
+ 349.78 KB 13265 Download
+PENGADAAN BUKU TAHUN 2023
+ 8.48 MB 11425 Download
+PENGADAAN BUKU TAHUN 2022
+ 2.63 MB 11177 Download
+Tags
+Informasitips_belajarTipsBeasiswaKarir
+
+Berpretasi, Berjati diri, dan Berakhlak Mulia
+
+Halaman
+Profil Sekolah
+Blog
+Agenda
+Gallery
+Video
+Blog Post
+Hubungi Kami
+
+Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+
+(0295) - 691375
+sma1rbg@yahoo.co.id
+
+© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+
+Hari ini : 49Total Pengunjung : 167813Online : 1
+```
+
+---
+
+## Siswa - SMA N 1 Rembang — https://smansarembang.sch.id/siswa
+
+```
+(0295) - 691375
+ sma1rbg@yahoo.co.id
+SMA N 1 Rembang
+
+Siswa | SMA N 1 Rembang
+
+Travel Lampung Palembang, Travel Palembang Lampung
+
+Beranda
+Profil
+Publikasi
+Data
+Agenda
+Gallery
+Video
+Kontak
+Siswa
+BerandaSiswa
+Show 
+30
+50
+100
+All
+ entries
+Search:
+No	Nama	NISN	Kelas	Status	Aksi
+No data available in table
+Showing 0 to 0 of 0 entries
+Previous
+Next
+
+Berpretasi, Berjati diri, dan Berakhlak Mulia
+
+Halaman
+Profil Sekolah
+Blog
+Agenda
+Gallery
+Video
+Blog Post
+Hubungi Kami
+
+Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+
+(0295) - 691375
+sma1rbg@yahoo.co.id
+
+© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+
+Hari ini : 49Total Pengunjung : 167820Online : 1
+```
+
+---
+
+## Guru - SMA N 1 Rembang — https://smansarembang.sch.id/team/guru
+
+```
+(0295) - 691375
+ sma1rbg@yahoo.co.id
+SMA N 1 Rembang
+
+Guru | SMA N 1 Rembang
+
+Travel Lampung Palembang, Travel Palembang Lampung
+
+Beranda
+Profil
+Publikasi
+Data
+Agenda
+Gallery
+Video
+Kontak
+Guru
+BerandaGuru
+Endang Sri Lestari, S.Pd.
+Kepala Sekolah
+Dwi Hastuti, M.Pd
+Guru Sejarah | Wakil Kepala Se
+Yulianto, S.Pd.
+Guru Bahasa Inggris | Wakil Ke
+Mohammad Thohir, S.Pd.I
+Guru Pendidikan Agama
+Ahmad Farid, S.Pd..I.
+Guru Pendidikan Agama
+Siti Rohmah, S. Pd. I.
+Guru Pendidikan Agama
+Wahyu Puji Lestari, S.Th.
+Guru Pendidikan Agama
+Niwayan Nurasti, A.Ma
+Guru Pendidikan Agama
+Anita Trianingrum, S. Pd.
+Guru Pendidikan Pancasila
+Sutiyono, M.Pd
+Guru Bahasa Indonesia
+Desika Nur Rofiah, S.Pd.
+Guru Bahasa Indonesia
+Endang Sri Sutarni, S.Pd.
+Guru Bahasa Indonesia
+Naning Sukaningsih, S.Pd.
+Guru Bahasa Indonesia
+Galuh Pratidina, S.Pd., M.Pd
+Guru Bahasa Inggris
+Eko Margoningtyas, S.Pd.
+Guru Bahasa Inggris
+Ariyati, S.Pd.
+Guru Bahasa Inggris
+Siti Sriyatun, M.Pd.
+Guru Matematika
+Rini Rakhmawati, M.Pd.
+Guru Matematika
+Nur Irma Fitriani, S.Pd.
+Guru Matematika
+Ulfah Rubiati, M.Pd.
+Guru Matematika
+1
+2
+3
+4
+»
+
+Berpretasi, Berjati diri, dan Berakhlak Mulia
+
+Halaman
+Profil Sekolah
+Blog
+Agenda
+Gallery
+Video
+Blog Post
+Hubungi Kami
+
+Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+
+(0295) - 691375
+sma1rbg@yahoo.co.id
+
+© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+
+Hari ini : 49Total Pengunjung : 167814Online : 1
+```
+
+---
+
+## Pegawai - SMA N 1 Rembang — https://smansarembang.sch.id/team/pegawai
+
+```
+(0295) - 691375
+ sma1rbg@yahoo.co.id
+SMA N 1 Rembang
+
+Pegawai | SMA N 1 Rembang
+
+Travel Lampung Palembang, Travel Palembang Lampung
+
+Beranda
+Profil
+Publikasi
+Data
+Agenda
+Gallery
+Video
+Kontak
+Pegawai
+BerandaPegawai
+Prihandoko Eko Putra, A.Md
+Operator Dapodik
+Siti Mardiyah, S.Pd
+Tata Usaha
+Heni Dwi Erinawati, S.Kom
+Tata Usaha
+Sumiyati, A.Ma. Pust
+Pustakawan
+Sri Yuliani, S.Pd
+Tata Usaha
+Vita Arsanti, A.Md
+Tata Usaha
+Sugiarti, S.Pd
+Tata Usaha
+Lukito
+Tata Usaha
+Budiyono
+Tata Usaha
+Chandra Kurniawan
+Tata Usaha
+Muhamad Arip
+Tata Usaha
+Ulina Eka Astuti, S.Pd
+Tata Usaha
+Indah Maharini, A.Ma Pust.
+Pustakawan
+Indah Kistiyani, A.Ma Pust.
+Pustakawan
+Indra Laksana
+Tata Usaha
+Wignyo Eko Prasetyo
+Tata Usaha
+Warsito
+Tata Usaha
+Farid Leksono
+Tata Usaha
+Burhan Widiatmoko
+Tata Usaha
+Lanang Suyitno
+Tata Usaha
+1
+
+Berpretasi, Berjati diri, dan Berakhlak Mulia
+
+Halaman
+Profil Sekolah
+Blog
+Agenda
+Gallery
+Video
+Blog Post
+Hubungi Kami
+
+Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+
+(0295) - 691375
+sma1rbg@yahoo.co.id
+
+© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+
+Hari ini : 49Total Pengunjung : 167815Online : 1
+```
+
+---
+
+## Video - SMA N 1 Rembang — https://smansarembang.sch.id/video
+
+```
+(0295) - 691375
+ sma1rbg@yahoo.co.id
+SMA N 1 Rembang
+
+Video | SMA N 1 Rembang
+
+Travel Lampung Palembang, Travel Palembang Lampung
+
+Beranda
+Profil
+Publikasi
+Data
+Agenda
+Gallery
+Video
+Kontak
+Video
+BerandaVideo
+Show AllVideo KegiatanFilm Pendek Karya Siswa
+Film Pendek - TANOS ..
+Teaser HUT SMA Neger..
+Teaser HUT SMA Neger..
+Teaser HUT SMA Neger..
+
+Berpretasi, Berjati diri, dan Berakhlak Mulia
+
+Halaman
+Profil Sekolah
+Blog
+Agenda
+Gallery
+Video
+Blog Post
+Hubungi Kami
+
+Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+
+(0295) - 691375
+sma1rbg@yahoo.co.id
+
+© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+
+Hari ini : 49Total Pengunjung : 167818Online : 1
+```
+
+---
+
+## Daftar Semua Image URL (73 unique)
+
+```
+https://smansarembang.sch.id/sw-content/sw-sw-logoweb.png
+https://smansarembang.sch.id/sw-content/slider/slider-366f1df418221b4a90076788c95be20c.jpeg
+https://smansarembang.sch.id/sw-content/slider/slider-49b14460d7427bbc62fde3e7db75cb87.jpeg
+https://smansarembang.sch.id/sw-content/pages/image/bu_endang.png
+https://smansarembang.sch.id/sw-content/upload/team/profil_icon.jpeg
+https://smansarembang.sch.id//sw-content/upload/powered/Logo_unnes.png
+https://smansarembang.sch.id//sw-content/upload/powered/undip-logo.png
+https://smansarembang.sch.id//sw-content/upload/powered/Logo_UNS.png
+https://smansarembang.sch.id//sw-content/upload/powered/UGM-Logo.png
+https://smansarembang.sch.id//sw-content/upload/powered/logo-ui.png
+https://smansarembang.sch.id//sw-content/upload/powered/logo-pip.png
+https://smansarembang.sch.id//sw-content/upload/powered/Logo_itb.png
+https://smansarembang.sch.id//sw-content/upload/powered/Logo_its.png
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/3b1071aab964e89dd25da7a9038c5fa9.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/31236a6ca4b64d5ff9aa644502b57498.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/88099fff5402d32cb61689380134e700.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/12108bbbc13568d02d4949a406f36b5b.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/ccec9ca3aaeb1796a28eaabf8dcb1a62.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/0ebcb65adab27065623df6b274095758.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/86f6378892c28953823ba1a3c4841bac.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/99472b6d5d1df8325a5f0e2880f4efc3.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/8091f720499814cbb9d94c52f6414e9e.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/c330c438fd2b078317d60395c289fb78.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/ace4b393463cdbde2ddd211f127773c9.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/ad7286dd300c40fd04883db5d8ea3781.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/fe2f2fa368a1d6e32b0c765db949c5fa.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/67e66ae4f02283c992284b97bb2ceacd.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/293005a5d741c661fe52c3b47ce303db.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/428b5effb3aacd742ebb4e326e81af54.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/dce156a87f1e634fdc495e5fc1f57398.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/2a96b6cfa52c459fc12844115413fc5e.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/756af809a7e0f2c217639de193a8794d.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/a8b4918f9b29e68e73552afbc828f195.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/a8013ef2b2df5c98752f818155e54222.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/38b772fe8c05709a38b226767409e1fc.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/127790fbbe062dec769c2f26a5b45392.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/cdfc16eef08ab3dbc7a488930a241347.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/baf52767aa0b192a8faf1da18496d0d0.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/25974b5e895095c52efb63bf4b9e3696.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/049c3ce2a740d7680bd34dad28bc3f00.png
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/e7e75f835299fe5f7ed1dac89b4f2c77.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/a3fa8017c83dfded6c10de14f548bbfc.jpg
+https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/05d0e7b29d64e56dc46ac86ef0afb3d7.jpg
 https://smansarembang.sch.id/sw-content/upload/galery/3b1071aab964e89dd25da7a9038c5fa9.jpg
 https://smansarembang.sch.id/sw-content/upload/galery/31236a6ca4b64d5ff9aa644502b57498.jpg
 https://smansarembang.sch.id/sw-content/upload/galery/88099fff5402d32cb61689380134e700.jpg
@@ -224,54 +1499,8 @@ https://smansarembang.sch.id/sw-content/upload/galery/127790fbbe062dec769c2f26a5
 https://smansarembang.sch.id/sw-content/upload/galery/cdfc16eef08ab3dbc7a488930a241347.jpg
 https://smansarembang.sch.id/sw-content/upload/galery/baf52767aa0b192a8faf1da18496d0d0.jpg
 https://smansarembang.sch.id/sw-content/upload/galery/25974b5e895095c52efb63bf4b9e3696.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/e7e75f835299fe5f7ed1dac89b4f2c77.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/a3fa8017c83dfded6c10de14f548bbfc.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/05d0e7b29d64e56dc46ac86ef0afb3d7.jpg
+https://smansarembang.sch.id/sw-content/upload/galery/049c3ce2a740d7680bd34dad28bc3f00.png
+https://smansarembang.sch.id/sw-content/upload/avatar/user-2025-01-12_15-10-20smansa.jpg.jpg
+https://smansarembang.sch.id/sman1-waylima/sw-content/pages/image/LOGO_SMAN_1_WAYLIMA.jpg
+https://smansarembang.sch.id/sekolah.v3/sw-content/pages/image/Makna_Lambang.png
 ```
-*Plus varian timthumb `timthumb?src=...&h=280&w=400` — gunakan file asli saja.*
-
-### 11c. Video thumbnails (YouTube)
-- https://img.youtube.com/vi/Kr0qr8gKp-U/hqdefault.jpg
-- https://img.youtube.com/vi/p9ki3cDlxOc/hqdefault.jpg
-- https://img.youtube.com/vi/zpeUChv9rtk/hqdefault.jpg
-- https://img.youtube.com/vi/oSr9wkE22go/hqdefault.jpg
-
-### 11d. Powered / Kampus (footer)
-- Logo_itb.png, Logo_its.png, Logo_unnes.png, undip-logo.png, Logo_UNS.png, UGM-Logo.png, logo-ui.png, logo-pip.png
-
-### 11e. Placeholder guru/pegawai
-- `sw-content/upload/team/profil_icon.jpeg` (dipakai semua guru)
-
-**Rekomendasi pilah untuk website:**
-- **Pakai:** logo utama + 28 gallery (prioritaskan 8-12 terbaik untuk hero & section), 4 thumbnail video (embed YouTube).
-- **Jangan pakai:** placeholder guru, powered logos (kecuali section kerjasama).
-
----
-
-## 12. Yang Perlu Dimasukkan ke Website Kita (checklist)
-
-- [ ] Logo asli `sw-sw-logoweb.png` → `public/logo.png` & favicon
-- [ ] Visi/Misi/Tujuan lengkap → section Profil
-- [ ] Sejarah lengkap (timeline) → halaman Tentang / Profil Sekolah
-- [ ] Makna Lambang → halaman / section tersendiri
-- [ ] Mars & Himne → halaman / modal lirik
-- [ ] Daftar guru/pegawai (nama+jabatan) → Sanity `teacher` seed
-- [ ] Pengumuman BOS & buku → Sanity `post` / Download section
-- [ ] Gallery 28 foto → `public/images/galery/` + lightbox
-- [ ] Video YouTube (4) → embed section
-- [ ] Kontak & alamat di footer (sudah ada — sinkronkan)
-- [ ] Download laporan BOS → link /download
-
----
-
-## 13. Catatan Teknis Scraping
-
-- `blog` & `pengumuman` butuh paginasi `?page=` — belum di-crawl semua.
-- `/siswa` butuh interaksi modal — data tidak terbaca statis.
-- Struktur organisasi berupa **gambar** — perlu download image dari `/pages/8-struktur-organisasi.html` (inspect `img` src di HTML).
-- Fasilitas minim teks — kemungkinan foto fasilitas ada di galeri (kategori Fasilitas Sekolah).
-- Semua halaman memakai Bootstrap + DataTables + Magnific Popup.
-
----
-
-*File ini adalah sumber kebenaran hasil scraping untuk pengembangan `smansa-rembang-web1`. Update jika ada crawl ulang.*
