@@ -2,12 +2,12 @@
 import { motion } from "framer-motion"
 import { Blob, RingGrid } from "@/components/illustrations/Ornaments"
 const items=[
-  { t:"Laboratorium IPA", d:"Fisika, Kimia, Biologi — alat lengkap & aman", icon:"🧪", img:"/images/gallery/86f6378892c28953823ba1a3c4841bac.jpg" },
-  { t:"Lab Komputer & TIK", d:"40+ unit, internet fiber & multimedia", icon:"💻", img:"/images/gallery/ace4b393463cdbde2ddd211f127773c9.jpg" },
-  { t:"Perpustakaan Digital", d:"Koleksi 8.000+ buku & e-library", icon:"📚", img:"/images/gallery/ccec9ca3aaeb1796a28eaabf8dcb1a62.jpg" },
-  { t:"Lapangan Olahraga", d:"Lapangan basket & voli — area siswa favorit", icon:"🏟️", img:"/images/gallery/756af809a7e0f2c217639de193a8794d.jpg" },
-  { t:"Musholla Sekolah", d:"Kapasitas 600 jamaah, kajian rutin", icon:"🕌", img:"/images/gallery/c330c438fd2b078317d60395c289fb78.jpg" },
-  { t:"Ruang Kelas Modern", d:"AC, proyektor & papan tulis interaktif", icon:"🏫", img:"/images/gallery/8091f720499814cbb9d94c52f6414e9e.jpg" },
+  { t:"Laboratorium IPA", d:"Fisika, Kimia, Biologi — alat lengkap & aman", icon:"🧪", img:"/images/facilities/lab-ipa.svg" },
+  { t:"Lab Komputer & TIK", d:"40+ unit, internet fiber & multimedia", icon:"💻", img:"/images/facilities/lab-komputer.svg" },
+  { t:"Perpustakaan Digital", d:"Koleksi 8.000+ buku & e-library", icon:"📚", img:"/images/facilities/library.svg" },
+  { t:"Lapangan Olahraga", d:"Lapangan basket & voli — area siswa favorit", icon:"🏟️", img:"/images/facilities/sports.svg" },
+  { t:"Musholla Sekolah", d:"Kapasitas 600 jamaah, kajian rutin", icon:"🕌", img:"/images/facilities/musholla.svg" },
+  { t:"Ruang Kelas Modern", d:"AC, proyektor & papan tulis interaktif", icon:"🏫", img:"/images/facilities/classroom.svg" },
 ]
 export default function Facilities(){
   return (
@@ -17,7 +17,7 @@ export default function Facilities(){
       <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8">
         <p className="text-xs tracking-[0.16em] font-bold text-[var(--green-bright)]">FASILITAS</p>
         <h2 className="mt-2 text-[clamp(28px,4vw,38px)] font-extrabold tracking-[-0.02em] leading-tight">Lengkap untuk belajar & berkarya</h2>
-        <p className="mt-2.5 text-sm text-black/55 max-w-[60ch] leading-relaxed">Foto asli SMAN 1 Rembang — sarana modern terawat untuk akademik, ibadah, olahraga & kreativitas.</p>
+        <p className="mt-2.5 text-sm text-black/55 max-w-[60ch] leading-relaxed">Fasilitas representatif sekolah fiktif — ilustrasi umum untuk template, bukan foto sekolah spesifik.</p>
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
           {items.map((x,i)=>(
             <motion.div key={x.t} initial={{opacity:0,y:14}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:i*0.04,duration:0.5, ease:[0.22,1,0.36,1]}} className="group rounded-[20px] overflow-hidden border border-black/5 bg-white card-hover">

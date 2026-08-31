@@ -20,7 +20,7 @@ export default function About(){
           <motion.div initial={{opacity:0,y:16}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{duration:0.6,delay:0.08, ease:[0.22,1,0.36,1]}}>
             <p className="text-xs tracking-[0.16em] font-bold text-[var(--green-bright)]">TENTANG KAMI</p>
             <h2 className="mt-2 text-[clamp(28px,4vw,38px)] font-extrabold leading-[1.05] tracking-[-0.02em]">Berjatidiri dan Maju<br/>dalam Prestasi</h2>
-            <p className="mt-3 text-[15px] leading-relaxed text-black/60 max-w-[52ch]">SMA Negeri 1 Rembang berdiri 1961 (SMA ABC Rembang), dinegerikan 1962. Kini di Jl. Gajah Mada No.5 — RSBI 2007 (1 dari 99 se-Indonesia), SMA Rujukan 2016-2018, Akreditasi A. Membina &gt;1.200 peserta didik.</p>
+            <p className="mt-3 text-[15px] leading-relaxed text-black/60 max-w-[52ch]">SMA Negeri X — sekolah fiktif berdiri 1961 (SMA ABC Rembang), dinegerikan 1962. Kini di Jl. Gajah Mada No.5 — RSBI 2007 (1 dari 99 se-Indonesia), SMA Rujukan 2016-2018, Akreditasi A. Membina &gt;1.200 peserta didik.</p>
             <div id="visi" className="mt-6 rounded-2xl bg-white border border-black/5 p-5 lg:p-6 shadow-sm scroll-mt-[80px]">
               <h3 className="font-bold text-sm">Visi</h3><p className="text-sm text-black/60 mt-1.5 leading-relaxed">“Berjatidiri dan Maju dalam Prestasi”</p>
               <h3 className="font-bold text-sm mt-4">Misi</h3>

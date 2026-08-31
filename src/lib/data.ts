@@ -19,12 +19,12 @@ export const categories = [
   { title: "Ekstrakurikuler", desc: "26+ ekskul aktif", icon: "⚽" },
 ]
 export const courses = [
-  { title: "Kelas Olimpiade Sains Nasional", rating: 4.9, duration: "Setiap Sabtu", students: "42", instructor: "Dra. Siti Aminah, M.Pd", price: "Gratis", image: "/images/gallery/99472b6d5d1df8325a5f0e2880f4efc3.jpg", avatar: "/images/teachers/guru1.jpg" },
-  { title: "Ekstrakurikuler Robotik & Coding", rating: 4.8, duration: "Jumat Sore", students: "38", instructor: "Budi Santoso, S.Kom", price: "Gratis", image: "/images/gallery/a8013ef2b2df5c98752f818155e54222.jpg", avatar: "/images/teachers/guru2.jpg" },
-  { title: "Bahasa Inggris Intensive + TOEFL Prep", rating: 5.0, duration: "Senin & Rabu", students: "56", instructor: "Rina Wulandari, M.Pd", price: "Gratis", image: "/images/gallery/a8b4918f9b29e68e73552afbc828f195.jpg", avatar: "/images/teachers/guru3.jpg" },
-  { title: "Seni Tari & Gamelan Jawa", rating: 4.7, duration: "Kamis Sore", students: "35", instructor: "Sukardi, S.Sn", price: "Gratis", image: "/images/gallery/31236a6ca4b64d5ff9aa644502b57498.jpg", avatar: "/images/teachers/guru4.jpg" },
-  { title: "Pramuka & Paskibra Prestasi", rating: 4.9, duration: "Sabtu Pagi", students: "78", instructor: "Kapten Agus P.", price: "Gratis", image: "/images/gallery/0ebcb65adab27065623df6b274095758.jpg", avatar: "/images/teachers/kepsek.jpg" },
-  { title: "Futsal & Basket – Tim Inti Sekolah", rating: 4.8, duration: "Selasa & Jumat", students: "44", instructor: "Coach Hendra", price: "Gratis", image: "/images/gallery/88099fff5402d32cb61689380134e700.jpg", avatar: "/images/teachers/guru5.jpg" },
+  { title: "Kelas Olimpiade Sains Nasional", rating: 4.9, duration: "Setiap Sabtu", students: "42", instructor: "Dra. Siti Aminah, M.Pd", price: "Gratis", image: "/images/teachers/silhouette-2.svg", avatar: "/images/teachers/silhouette-1.svg" },
+  { title: "Ekstrakurikuler Robotik & Coding", rating: 4.8, duration: "Jumat Sore", students: "38", instructor: "Budi Santoso, S.Kom", price: "Gratis", image: "/images/courses/course-robotik.svg", avatar: "/images/teachers/silhouette-2.svg" },
+  { title: "Bahasa Inggris Intensive + TOEFL Prep", rating: 5.0, duration: "Senin & Rabu", students: "56", instructor: "Rina Wulandari, M.Pd", price: "Gratis", image: "/images/courses/course-english.svg", avatar: "/images/teachers/silhouette-3.svg" },
+  { title: "Seni Tari & Gamelan Jawa", rating: 4.7, duration: "Kamis Sore", students: "35", instructor: "Sukardi, S.Sn", price: "Gratis", image: "/images/courses/course-seni.svg", avatar: "/images/teachers/silhouette-4.svg" },
+  { title: "Pramuka & Paskibra Prestasi", rating: 4.9, duration: "Sabtu Pagi", students: "78", instructor: "Kapten Agus P.", price: "Gratis", image: "/images/courses/course-pramuka.svg", avatar: "/images/teachers/kepsek.jpg" },
+  { title: "Futsal & Basket – Tim Inti Sekolah", rating: 4.8, duration: "Selasa & Jumat", students: "44", instructor: "Coach Hendra", price: "Gratis", image: "/images/courses/course-futsal.svg", avatar: "/images/teachers/silhouette-5.svg" },
 ]
 export const testimonials = [
   { name: "Nadia Putri", role: "Alumni 2024 — Kedokteran UNDIP", quote: "Guru-guru SMA Negeri X Rembang sangat suportif. Bimbingan OSN dan tryout intensif bikin aku lolos SNBP impian.", avatar: "/images/teachers/avatar1.jpg", rating: 5 },
@@ -32,12 +32,12 @@ export const testimonials = [
   { name: "Fajar Nugroho", role: "Alumni 2023 — Teknik Informatika UGM", quote: "Ekskul robotiknya keren! Dari nol sampai ikut lomba nasional. Bekal yang kepakai sampai kuliah.", avatar: "/images/teachers/avatar3.jpg", rating: 5 },
 ]
 export const teachers = [
-  { name: "Kepala Sekolah", role: "Kepala Sekolah", image: "/images/pages/bu_endang.png" },
-  { name: "Dwi Hastuti, M.Pd", role: "Wakasek — Sejarah", image: "/images/gallery/99472b6d5d1df8325a5f0e2880f4efc3.jpg" },
-  { name: "Yulianto, S.Pd", role: "Wakasek — B. Inggris", image: "/images/gallery/8091f720499814cbb9d94c52f6414e9e.jpg" },
-  { name: "Ulfah Rubiati, M.Pd", role: "Guru Matematika", image: "/images/gallery/c330c438fd2b078317d60395c289fb78.jpg" },
+  { name: "Kepala Sekolah", role: "Kepala Sekolah", image: "/images/teachers/silhouette-kepsek.svg" },
+  { name: "Dwi Hastuti, M.Pd", role: "Wakasek — Sejarah", image: "/images/teachers/silhouette-2.svg" },
+  { name: "Yulianto, S.Pd", role: "Wakasek — B. Inggris", image: "/images/teachers/silhouette-3.svg" },
+  { name: "Ulfah Rubiati, M.Pd", role: "Guru Matematika", image: "/images/teachers/silhouette-4.svg" },
   { name: "Naning Sukaningsih, S.Pd", role: "Guru B. Indonesia", image: "/images/gallery/ace4b393463cdbde2ddd211f127773c9.jpg" },
-  { name: "Prihandoko Eko Putra, A.Md", role: "Operator Dapodik", image: "/images/gallery/ad7286dd300c40fd04883db5d8ea3781.jpg" },
+  { name: "Prihandoko Eko Putra, A.Md", role: "Operator Dapodik", image: "/images/teachers/silhouette-1.svg" },
 ]
 export const faqs = [
   { q: "Bagaimana cara daftar PPDB SMA Negeri X Rembang?", a: "Pendaftaran via jalur zonasi, afirmasi, perpindahan tugas & prestasi di ppdb.jatengprov.go.id. Info lengkap cek menu PPDB atau hubungi TU sekolah." },
@@ -47,7 +47,7 @@ export const faqs = [
   { q: "Bagaimana menghubungi sekolah?", a: "Telp (0295) - 000000, email info@example.sch.id, atau datang langsung Jl. Pendidikan No. X, Rembang 59214." },
 ]
 export const posts = [
-  { title: "Laporan Rekap Realisasi Dana BOS Reguler Tahap II 2025", cat: "Pengumuman", date: "06 Jan 2026", author: "Bendahara BOS", image: "/images/gallery/12108bbbc13568d02d4949a406f36b5b.jpg", comments: 0 },
-  { title: "Laporan Dana BOS Reguler Tahap I 2025", cat: "Pengumuman", date: "25 Jul 2025", author: "Bendahara BOS", image: "/images/gallery/ccec9ca3aaeb1796a28eaabf8dcb1a62.jpg", comments: 0 },
-  { title: "Pengadaan Buku Tahun 2023 — 8.48 MB", cat: "Pengadaan", date: "05 Mei 2025", author: "Sarpras", image: "/images/gallery/0ebcb65adab27065623df6b274095758.jpg", comments: 11425 },
+  { title: "Laporan Rekap Realisasi Dana BOS Reguler Tahap II 2025", cat: "Pengumuman", date: "06 Jan 2026", author: "Bendahara BOS", image: "/images/courses/course-olimpiade.svg", comments: 0 },
+  { title: "Laporan Dana BOS Reguler Tahap I 2025", cat: "Pengumuman", date: "25 Jul 2025", author: "Bendahara BOS", image: "/images/courses/course-english.svg", comments: 0 },
+  { title: "Pengadaan Buku Tahun 2023 — 8.48 MB", cat: "Pengadaan", date: "05 Mei 2025", author: "Sarpras", image: "/images/courses/course-pramuka.svg", comments: 11425 },
 ]
