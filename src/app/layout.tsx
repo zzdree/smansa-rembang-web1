@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: { title: "SMA Negeri 5 Rembang", description: "Sekolah Unggul, Berkarakter, Berprestasi — Kabupaten Rembang, Jawa Tengah", type: "website", url: siteUrl, siteName: "SMA N 5 Rembang", locale: "id_ID", images: [{ url: "/images/hero/hero-1.jpg", width: 1200, height: 630, alt: "Gedung SMA N 5 Rembang" }] },
   twitter: { card: "summary_large_image", title: "SMA Negeri 5 Rembang", description: "Sekolah Unggul, Berkarakter, Berprestasi", images: ["/images/hero/hero-1.jpg"] },
   robots: { index: true, follow: true },
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: "/icon.svg", shortcut: "/icon.svg", apple: "/icon.svg" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

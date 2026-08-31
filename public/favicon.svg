@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#093a27"/>
+  <!-- book -->
+  <path d="M8 10.5C8 9.67 8.67 9 9.5 9H16V23H9.5C8.67 23 8 22.33 8 21.5V10.5Z" fill="#ffde59"/>
+  <path d="M16 9H22.5C23.33 9 24 9.67 24 10.5V21.5C24 22.33 23.33 23 22.5 23H16V9Z" fill="#f5c800"/>
+  <path d="M16 9V23" stroke="#093a27" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- cap -->
+  <path d="M16 7L6.5 12L16 17L25.5 12L16 7Z" fill="#ffde59" stroke="#093a27" stroke-width="0.7" stroke-linejoin="round"/>
+  <circle cx="20.8" cy="15.2" r="1.1" fill="#ffde59" stroke="#093a27" stroke-width="0.6"/>
+  <path d="M20.8 15.2V19" stroke="#ffde59" stroke-width="0.9" stroke-linecap="round"/>
+</svg>
