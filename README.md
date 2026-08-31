@@ -1,11 +1,11 @@
-# SMA Negeri 5 Rembang — Green School Web
+# SMA Negeri 5 Rembang — smanma-rembang-web
 
 > Website profil sekolah modern untuk **SMA Negeri 5 Rembang**. Animasi halus, 100% responsive, performa ngebut, dan sudah terhubung **Sanity CMS** — kelola berita, guru & galeri langsung dari browser tanpa coding.
 
 <p>
 
-[![Live — Website Utama](https://img.shields.io/badge/LIVE-green--school--web.pages.dev-0ea5e9?style=for-the-badge&logo=cloudflare&logoColor=white)](https://smanma-rembang-web.pages.dev)
-[![CMS — Sanity Studio](https://img.shields.io/badge/CMS-green--school--web.sanity.studio-ff615b?style=for-the-badge&logo=sanity&logoColor=white)](https://smanma-rembang-web.sanity.studio)
+[![Live — Website Utama](https://img.shields.io/badge/LIVE-smanma--rembang--web.pages.dev-0ea5e9?style=for-the-badge&logo=cloudflare&logoColor=white)](https://smanma-rembang-web.pages.dev)
+[![CMS — Sanity Studio](https://img.shields.io/badge/CMS-smanma--rembang--web.sanity.studio-ff615b?style=for-the-badge&logo=sanity&logoColor=white)](https://smanma-rembang-web.sanity.studio)
 
 </p>
 
@@ -111,7 +111,7 @@ SANITY_API_READ_TOKEN=sk...   # read token Sanity (jangan commit)
 
 ```bash
 npm run build
-npx wrangler pages deploy out --project-name smanma-rembang-web --branch master
+npx wrangler pages deploy out --project-name smanma-rembang-web --branch main
 # atau hubungkan repo di Cloudflare Dashboard → Pages → Create → Git
 # Build command: npm run build / Output: out
 ```
@@ -157,4 +157,6 @@ Skema ada di `src/sanity/schemaTypes/`. Tambah field baru → `npm run sanity:sc
   <br/>
   <a href="https://smanma-rembang-web.pages.dev">🌐 Website</a> · <a href="https://smanma-rembang-web.sanity.studio">🛠️ CMS</a> · <a href="https://github.com/zzdree/smanma-rembang-web">💻 Repo</a>
 </p>
+
+
 

@@ -32,7 +32,7 @@ Brand aktif = **SMA Negeri 5 Rembang**. Palet & layout diadaptasi dari referensi
 
 ---
 
-## 3. Design Tokens (Merged: Gemini Presisi + Green School Variant)
+## 3. Design Tokens (Merged: Gemini Presisi + SMA N 5 Rembang Variant)
 
 ### 3.1. Warna
 
@@ -47,7 +47,7 @@ Brand aktif = **SMA Negeri 5 Rembang**. Palet & layout diadaptasi dari referensi
   --text-muted: #6B7280;    /* Paragraf sekunder */
   --white: #FFFFFF;
 
-  /* === Ekstensi Green School (varian organik, opsional) === */
+  /* === Ekstensi SMA N 5 Rembang (varian organik, opsional) === */
   --green-900: #0E2E0E;
   --green-700: #1A5D1A;
   --green-400: #6BBE8A;

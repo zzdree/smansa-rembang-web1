@@ -1,4 +1,4 @@
-# 🎓 PRD — Green School Web
+# 🎓 PRD — SMA Negeri 5 Rembang
 
 > **Project:** `smanma-rembang-web` — Website Sekolah Modern (CMS-Driven + High Animation + Super Responsive)
 > **Brand di UI:** **SMA Negeri 5 Rembang**
@@ -80,7 +80,7 @@ Referensi adalah **LMS Education Landing Page** dengan 11 section berurutan (dia
 | 10 | **Blog & Articles** | Grid 3, badge Education + meta | P0 | `posts[]` |
 | 11 | **Footer** | Kontak bar + links + sosmed | P0 | `siteSettings.footer` |
 
-Tambahan Green School (opsional P2): `/ppdb`, `/program/[slug]`, `/berita/[slug]` untuk detail.
+Tambahan SMA N 5 Rembang (opsional P2): `/ppdb`, `/program/[slug]`, `/berita/[slug]` untuk detail.
 
 ### 4.2. CMS — Content Model
 
@@ -118,7 +118,7 @@ Halaman Detail (CMS-driven):
   /courses/[slug]
   /teachers/[slug]
   /blog/[slug]
-  /tentang, /ppdb, /kontak (opsional Green School)
+  /tentang, /ppdb, /kontak (opsional SMA N 5 Rembang)
 
 API:
   /api/revalidate
@@ -241,3 +241,4 @@ Total ~8 hari fokus (3-4 hari sprint jika MDX).
 ---
 
 *Next: `DESIGN.md` (visual & motion spec presisi).*
+
