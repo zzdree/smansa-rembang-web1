@@ -18,6 +18,7 @@
   --color-yellow: var(--yellow);
 }
 * { scrollbar-width: thin; scrollbar-color: var(--green-dark) transparent; }
+html { scroll-behavior: smooth; }
 html.lenis { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto; }
 body { background: var(--bg-light); color: var(--text-dark); font-family: var(--font-inter), system-ui, sans-serif; -webkit-font-smoothing: antialiased; }

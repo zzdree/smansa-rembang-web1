@@ -10,7 +10,7 @@ export default function Teachers(){
   useEffect(()=>{ client.fetch(qTeachers).then((r:any)=>{ if(r?.length) setTeachers(r)}).catch(()=>{}) },[])
   const list = teachers ?? fallback
   return (
-    <section className="py-14 bg-[var(--bg-light)]">
+    <section id="teachers" className="py-14 bg-[var(--bg-light)] scroll-mt-[64px]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
         <p className="text-center text-xs tracking-[0.16em] font-semibold text-[var(--green-bright)]">GURU & TENDIK</p>
         <h2 className="text-center text-[clamp(26px,4vw,36px)] font-bold">Tenaga Pendidik Berdedikasi</h2>

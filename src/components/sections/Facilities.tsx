@@ -11,7 +11,7 @@ const items=[
 ]
 export default function Facilities(){
   return (
-    <section id="fasilitas" className="relative bg-white py-12 lg:py-20 overflow-hidden">
+    <section id="fasilitas" className="relative bg-white py-12 lg:py-20 overflow-hidden scroll-mt-[64px]">
       <Blob className="absolute -right-24 -top-24 w-[520px] text-[var(--green-dark)] pointer-events-none" />
       <RingGrid className="absolute left-6 top-10 w-28 text-[var(--green-dark)] pointer-events-none hidden lg:block" />
       <div className="relative max-w-[1280px] mx-auto px-6 lg:px-8">

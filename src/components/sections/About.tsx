@@ -4,7 +4,7 @@ import { stats } from "@/lib/data"
 import { PhotoPlaceholder } from "@/components/illustrations/PhotoPlaceholder"
 export default function About(){
   return (
-    <section id="about" className="bg-[var(--bg-light)] py-12 lg:py-20">
+    <section id="about" className="bg-[var(--bg-light)] py-12 lg:py-20 scroll-mt-[64px]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <motion.div initial={{opacity:0,y:16}} whileInView={{opacity:1,y:0}} viewport={{once:true,margin:"-80px"}} transition={{duration:0.6}} className="relative">
@@ -20,6 +20,10 @@ export default function About(){
             <p className="text-xs tracking-[0.16em] font-semibold text-[var(--green-bright)]">TENTANG KAMI</p>
             <h2 className="mt-2 text-[clamp(26px,4vw,36px)] font-bold leading-tight">Mencetak Generasi Unggul<br/>Sejak 1994</h2>
             <p className="mt-3 text-[15px] leading-relaxed text-black/60">SMA Negeri 5 Rembang berkomitmen menghadirkan pendidikan berkualitas, lingkungan asri, dan pembinaan karakter. Akreditasi A, guru profesional, dan puluhan prestasi tiap tahun.</p>
+            <div id="visi" className="mt-6 rounded-2xl bg-white border p-5 scroll-mt-[80px]">
+              <h3 className="font-bold text-sm">Visi</h3><p className="text-sm text-black/60 mt-1 leading-relaxed">Terwujudnya peserta didik yang beriman, berilmu, berkarakter, dan berdaya saing global berlandaskan budaya Rembang.</p>
+              <h3 id="sejarah" className="font-bold text-sm mt-4 scroll-mt-[80px]">Sejarah Singkat</h3><p className="text-sm text-black/60 mt-1 leading-relaxed">Berdiri 1994, SMA N 5 Rembang berawal dari 3 ruang kelas. Kini 32 tahun mengabdi dengan akreditasi A, 1.200+ siswa, dan puluhan prestasi tiap tahun.</p>
+            </div>
             <div className="mt-6 grid grid-cols-3 gap-4">
               {stats.map(s=>(
                 <div key={s.label} className="bg-white rounded-2xl p-4 border shadow-sm text-center">

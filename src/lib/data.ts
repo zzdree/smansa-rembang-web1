@@ -1,8 +1,8 @@
-export const navItems = [
-  { label: "Beranda", href: "#", children: ["Profil Sekolah","Visi Misi"] },
-  { label: "Profil", href: "#about", children: ["Sejarah","Guru & Tendik","Fasilitas"] },
-  { label: "Akademik", href: "#courses", children: ["Program Unggulan","Ekstrakurikuler"] },
-  { label: "Berita", href: "#blog", children: ["Berita Terbaru","Prestasi"] },
+export const navItems: { label: string; href: string; children?: { label: string; href: string }[] }[] = [
+  { label: "Beranda", href: "#beranda", children: [{ label: "Profil Sekolah", href: "#about" }, { label: "Visi Misi", href: "#visi" }] },
+  { label: "Profil", href: "#about", children: [{ label: "Sejarah", href: "#sejarah" }, { label: "Guru & Tendik", href: "#teachers" }, { label: "Fasilitas", href: "#fasilitas" }] },
+  { label: "Akademik", href: "#courses", children: [{ label: "Program Unggulan", href: "#courses" }, { label: "Ekstrakurikuler", href: "#unggulan" }] },
+  { label: "Berita", href: "#blog", children: [{ label: "Berita Terbaru", href: "#blog" }, { label: "Prestasi", href: "#prestasi" }] },
   { label: "Kontak", href: "#contact" },
 ]
 export const partners = ["Kemdikbud","Disdik Jateng","Kampus Merdeka","BUMN","Telkom","BRI"]

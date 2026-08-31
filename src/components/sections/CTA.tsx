@@ -2,7 +2,7 @@
 import { Wave } from "@/components/illustrations/Ornaments"
 export default function CTA(){
   return (
-    <section id="contact" className="relative bg-[var(--green-dark)] text-white overflow-hidden">
+    <section id="contact" className="relative bg-[var(--green-dark)] text-white overflow-hidden scroll-mt-[64px]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-12 lg:py-16 relative">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div>

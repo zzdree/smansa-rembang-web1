@@ -5,7 +5,7 @@ import { PhotoPlaceholder, AvatarSilhouette } from "@/components/illustrations/P
 const ease=[0.22,1,0.36,1] as const
 export default function Hero(){
   return (
-    <section className="bg-[var(--green-dark)] text-white overflow-hidden relative">
+    <section id="beranda" className="bg-[var(--green-dark)] text-white overflow-hidden relative scroll-mt-[64px]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-6 py-12 lg:py-16 items-center">
           <div>
