@@ -1,13 +1,13 @@
 # 🎓 PRD — Green School Web
 
 > **Project:** `green-school-web` — Website Sekolah Modern (CMS-Driven + High Animation + Super Responsive)
-> **Brand di UI:** **EduVen** (diadaptasi → "Green School / EduVen") — sesuai brief Gemini
+> **Brand di UI:** **SMA Negeri 5 Rembang**
 > **Owner:** zzdree (Andreas) — Portofolio
 > **Repo:** https://github.com/zzdree/green-school-web
-> **Referensi Utama:** https://dribbble.com/shots/24675256-LMS-Education-Website (LMS Education Website - EduVen)
-> **Sumber Presisi:** GEMINI.md (EduVen LMS spec dari Gemini - sudah di-merge ke dokumen ini, file dihapus)
+> **Referensi Visual:** https://dribbble.com/shots/24675256-LMS-Education-Website (adaptasi layout — bukan brand SMA N 5 Rembang)
+> **Catatan:** Dokumen referensi internal (GEMINI.md) sudah dihapus; yang berlaku adalah versi SMA N 5 Rembang ini
 > **Tanggal:** 31 Agustus 2026
-> **Versi:** 0.2 — Big Plan (Merged: PRD awal + Gemini EduVen breakdown)
+> **Versi:** 0.3 — SMA N 5 Rembang (rebrand dari referensi)
 
 ---
 
@@ -17,7 +17,7 @@
 
 **Tujuan Bisnis:**
 1. Portofolio *high-end* pixel-perfect: Next.js, Headless CMS, Motion Design (Framer Motion + Lenis), Performance (Lighthouse ≥95), Responsive (mobile-first).
-2. Template yang bisa dipakai untuk sekolah SD-SMA, lembaga kursus, LMS — rebrand mudah EduVen ↔ Green School hanya via tokens/CMS.
+2. Template yang bisa dipakai untuk sekolah SD-SMA — ganti identitas sekolah lain hanya via tokens/CMS.
 3. Admin non-teknis bisa kelola konten tanpa coding (Sanity/MDX).
 
 **USP:**
@@ -42,11 +42,11 @@
 
 ---
 
-## 3. Referensi Analisis — Dribbble EduVen (24675256) — Presisi dari GEMINI.md
+## 3. Referensi Analisis — Dribbble (24675256) — Diadaptasi
 
-Shot ini adalah **LMS Education Landing Page (EduVen)** dengan 11 section berurutan:
+Referensi adalah **LMS Education Landing Page** dengan 11 section berurutan (diadaptasi untuk profil SMA):
 
-1. **Header/Navbar:** Kiri Logo "EduVen" (ikon hijau + teks tebal) | Tengah: Home, Courses, Pages, Blog, Contact (dropdown di Home/Courses/Pages/Blog) | Kanan: Search icon + tombol outline hijau `Login/Register`.
+1. **Header/Navbar:** Kiri Logo SMA N 5 Rembang | Tengah: Beranda, Profil, Program, Berita, Kontak | Kanan: Search + tombol PPDB/Kontak.
 2. **Hero (bg Dark Green `#093A27`):** 2 kolom — Kiri: tag "LMS EDUCATION", H1 "Developing Thoughts for the Future" (putih), deskripsi abu terang, CTA "Let's Talk Us" (kuning `#FFB800`) + "How it Works" (hijau + play icon) | Kanan: foto mahasiswa wisuda masking kreatif + floating widget "120+ Tutors" (avatar stack) + indikator slider "01 02 03 04" di bawah.
 3. **Trusted Companies:** Bar putih, teks "Trusted By Companies All Over The World", logo grayscale (Cambrian, DocuSign, Crompton, Seclock, Software, Aumni).
 4. **About Us:** 2 kolom — Kiri kolase (toga + badge lingkaran kuning "25 Years of experience" + foto lain) | Kanan tag "ABOUT US", H2 "Empower Your Learning Journey Everyday", paragraf, 3 stats ("5K+ Online Classes", "7K+ Students each year", "24+ Award Winning"), tombol hijau "View More Details".
@@ -58,7 +58,7 @@ Shot ini adalah **LMS Education Landing Page (EduVen)** dengan 11 section beruru
 10. **Blog & Articles:** Headline kiri "Our Latest Blogs & Articles" + panah kanan, grid 3 kolom, card: thumbnail, badge kuning "Education", judul tebal, meta (Penulis, Tanggal, Komentar).
 11. **Footer (bg Dark Green):** Atas: kontak (Phone, Email, Address) + logo | Bawah: copyright, deskripsi singkat, sosmed, links (Home, About Us, Courses, Help Centre, News, Contact).
 
-**Adaptasi Green School:** Brand tetap EduVen di v1 portofolio (sesuai Dribbble), tapi semua copy & asset bisa di-switch ke "Green School" via CMS `siteSettings` tanpa ubah layout.
+**Adaptasi SMA N 5 Rembang:** Brand aktif adalah SMA Negeri 5 Rembang; layout referensi dipertahankan, copy & asset dikelola via CMS `siteSettings`.
 
 ---
 
@@ -68,7 +68,7 @@ Shot ini adalah **LMS Education Landing Page (EduVen)** dengan 11 section beruru
 
 | # | Modul (nama Dribbble) | Deskripsi | Prioritas | Sumber CMS |
 |---|------------------------|-----------|-----------|------------|
-| 1 | **Header/Navbar** | Logo EduVen, nav + dropdown, search, Login/Register | P0 | `siteSettings.navigation` |
+| 1 | **Header/Navbar** | Logo SMA N 5 Rembang, nav, search, CTA PPDB | P0 | `siteSettings.navigation` |
 | 2 | **Hero** | Dark bg `#093A27`, 2 kolom, floating tutors, slider indicator | P0 | `hero` |
 | 3 | **Trusted Companies** | Logo grayscale bar | P1 | `partners[]` |
 | 4 | **About Us** | Kolase + badge 25 Years + 3 stats | P0 | `about` |

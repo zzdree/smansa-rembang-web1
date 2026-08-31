@@ -1,28 +1,28 @@
-# 🎨 DESIGN.md — Green School Web (EduVen)
+# 🎨 DESIGN.md — SMA Negeri 5 Rembang
 
 > Turunan dari `PRD.md` — blueprint visual & motion sebelum coding.
-> Referensi: https://dribbble.com/shots/24675256-LMS-Education-Website (EduVen)
-> Sumber presisi: GEMINI.md (palet & 11 section breakdown — sudah di-merge, file dihapus)
+> Referensi visual: https://dribbble.com/shots/24675256-LMS-Education-Website (adaptasi untuk SMA — bukan LMS komersial)
+> Branding aktif: **SMA Negeri 5 Rembang**
 
 ---
 
 ## 1. Analisis Referensi → Translasi
 
-### 1.1. DNA Visual EduVen (Presisi Gemini)
+### 1.1. DNA Visual (Adaptasi Referensi)
 11 section berurutan dengan gaya clean, rounded-xl/2xl, shadow soft, whitespace lega, sans-serif bold, palet dark green dominan.
 
 ### 1.2. Translasi
 | Referensi | Adaptasi | Catatan |
 |-----------|----------|---------|
-| Course Card | Tetap Course Card (LMS) + varian Program Card Green School | Switch via CMS `siteSettings.brand` |
+| Course Card | Program Unggulan SMA (Ekskul / Mapel unggulan) | Konten via CMS |
 | Instructor | Guru/Teacher Card | Foto portrait, role (Headteacher, Math, English) |
 | Category Pills | Kategori (Artist, Graphic & Multimedia active kuning, AI) | Horizontal slider dark bg |
 
-Brand v1 = **EduVen** pixel-perfect sesuai Dribbble. Rebrand ke Green School tinggal ganti tokens/copy via CMS tanpa ubah layout.
+Brand aktif = **SMA Negeri 5 Rembang**. Palet & layout diadaptasi dari referensi; rebrand sekolah lain tinggal ganti tokens/copy via CMS tanpa ubah struktur.
 
 ---
 
-## 2. Creative Direction — "EduVen Pro + Organic Touch"
+## 2. Creative Direction — "SMA N 5 Rembang — Pro + Organic Touch"
 
 **Kata kunci:** *Kredibel · Modern · Energik*
 
@@ -34,11 +34,11 @@ Brand v1 = **EduVen** pixel-perfect sesuai Dribbble. Rebrand ke Green School tin
 
 ## 3. Design Tokens (Merged: Gemini Presisi + Green School Variant)
 
-### 3.1. Warna — Sumber Utama Gemini
+### 3.1. Warna
 
 ```css
 :root {
-  /* === Palet Utama EduVen (dari GEMINI.md — presisi) === */
+  /* === Palet Utama (adaptasi referensi) === */
   --green-dark: #093A27;    /* Hero, Categories bg, Testimonial bg, Footer */
   --green-bright: #00B014;  /* Tombol utama, icon highlight, aksen */
   --yellow: #FFB800;        /* Tombol sekunder, rating bintang, badge */
@@ -74,7 +74,7 @@ Brand v1 = **EduVen** pixel-perfect sesuai Dribbble. Rebrand ke Green School tin
 --font-body: "Inter", sans-serif;                         /* Regular 400, 15-16px */
 ```
 
-Via `next/font` (self-host, LCP optimal). Alternatif: **Plus Jakarta Sans + DM Sans** tetap kompatibel, pilih salah satu set dan konsisten.
+Via `next/font` (self-host, LCP optimal). Set aktif: **Inter** — konsisten di seluruh halaman.
 
 **Scale (fluid):**
 - H1 Hero: `clamp(32px, 6vw, 56px)` / 1.05 / -0.02em / 700
@@ -98,12 +98,12 @@ Via `next/font` (self-host, LCP optimal). Alternatif: **Plus Jakarta Sans + DM S
 - 2-kolom sections (Hero, About, Testimonial, FAQ) → stack 1 kolom di `<1024px`.
 
 ### 4.2. Navbar (Gemini Spec)
-- **Desktop:** Bar putih solid di atas hero dark, sticky on scroll dengan shadow. Kiri: Logo EduVen (ikon hijau + teks tebal) | Tengah: Home, Courses, Pages, Blog, Contact (+ dropdown chevron di Home/Courses/Pages/Blog) | Kanan: Search icon + tombol outline hijau terang "Login/Register".
+- **Desktop:** Bar putih solid di atas hero dark, sticky on scroll dengan shadow. Kiri: Logo SMA N 5 Rembang (ikon hijau + teks tebal) | Tengah: Home, Courses, Pages, Blog, Contact (+ dropdown chevron di Home/Courses/Pages/Blog) | Kanan: Search icon + tombol outline hijau terang "Login/Register".
 - **Mobile:** Hamburger → full-screen drawer stagger, search di drawer, CTA sticky bottom.
 
 ### 4.3. Footer (Gemini Spec)
 - Bg `var(--green-dark)`, teks putih.
-- Atas: bar kontak (Phone, Email, Address) sejajar logo EduVen.
+- Atas: bar kontak (Phone, Email, Address) sejajar logo SMA N 5 Rembang.
 - Bawah: copyright + deskripsi singkat + sosmed icons + links (Home, About Us, Courses, Help Centre, News, Contact).
 
 ---
@@ -260,4 +260,4 @@ Urutan build: Tokens → Navbar/Footer → Hero → Trusted → About → Catego
 
 ---
 
-*Siap eksekusi → `npx create-next-app@latest` + Tailwind + Framer Motion + Lenis + Embla. GEMINI.md merged & deleted.*
+*Siap eksekusi — branding SMA N 5 Rembang.*
