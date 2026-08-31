@@ -1,6 +1,8 @@
 "use client"
+import { useState } from "react"
 import { motion } from "framer-motion"
 import { PhotoPlaceholder } from "@/components/illustrations/PhotoPlaceholder"
+import { Lightbox } from "@/components/ui/Modals"
 const pics=[
   { src:"/images/gallery/g1.jpg", cap:"Upacara Senin — disiplin & nasionalisme" },
   { src:"/images/gallery/g2.jpg", cap:"Praktikum IPA di laboratorium" },
@@ -10,6 +12,7 @@ const pics=[
   { src:"/images/gallery/g6.jpg", cap:"Pentas seni & budaya Jawa" },
 ]
 export default function Gallery(){
+  const [light,setLight]=useState<{src:string;cap:string}|null>(null)
   return (
     <section id="galeri" className="bg-[var(--bg-light)] py-12 lg:py-16">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
@@ -19,13 +22,14 @@ export default function Gallery(){
         </div>
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-[220px]">
           {pics.map((p,i)=>(
-            <motion.figure key={p.src} initial={{opacity:0,scale:0.98}} whileInView={{opacity:1,scale:1}} viewport={{once:true}} transition={{delay:i*0.05,duration:0.5}} className={`relative overflow-hidden rounded-2xl border bg-white ${i===0?"lg:row-span-2 lg:col-span-1":""} ${i===4?"lg:col-span-2":""}`}>
+            <motion.button key={p.src} type="button" onClick={()=>setLight(p)} initial={{opacity:0,scale:0.98}} whileInView={{opacity:1,scale:1}} viewport={{once:true}} transition={{delay:i*0.05,duration:0.5}} className={`relative overflow-hidden rounded-2xl border bg-white text-left group ${i===0?"lg:row-span-2 lg:col-span-1":""} ${i===4?"lg:col-span-2":""}`}>
               <PhotoPlaceholder label={p.cap} seed={p.src}/>
-              <img src={p.src} alt={p.cap} className="absolute inset-0 w-full h-full object-cover" loading="lazy" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/>
-              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white text-xs leading-tight">{p.cap}</figcaption>
-            </motion.figure>
+              <img src={p.src} alt={p.cap} className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition duration-500" loading="lazy" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/>
+              <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white text-xs leading-tight text-left">{p.cap}</span>
+            </motion.button>
           ))}
         </div>
+        {light && <Lightbox src={light.src} alt={light.cap} onClose={()=>setLight(null)} />}
       </div>
     </section>
   )
