@@ -5,9 +5,9 @@ const items=[
   { t:"Laboratorium IPA", d:"Fisika, Kimia, Biologi — alat lengkap & aman", icon:"🧪", img:"/images/gallery/86f6378892c28953823ba1a3c4841bac.jpg" },
   { t:"Lab Komputer & TIK", d:"40+ unit, internet fiber & multimedia", icon:"💻", img:"/images/gallery/ace4b393463cdbde2ddd211f127773c9.jpg" },
   { t:"Perpustakaan Digital", d:"Koleksi 8.000+ buku & e-library", icon:"📚", img:"/images/gallery/ccec9ca3aaeb1796a28eaabf8dcb1a62.jpg" },
-  { t:"Lapangan Olahraga", d:"Futsal, basket, voli & atletik", icon:"🏟️", img:"/images/gallery/0ebcb65adab27065623df6b274095758.jpg" },
+  { t:"Lapangan Olahraga", d:"Lapangan basket & voli — area siswa favorit", icon:"🏟️", img:"/images/gallery/756af809a7e0f2c217639de193a8794d.jpg" },
   { t:"Musholla Sekolah", d:"Kapasitas 600 jamaah, kajian rutin", icon:"🕌", img:"/images/gallery/c330c438fd2b078317d60395c289fb78.jpg" },
-  { t:"Aula Serbaguna", d:"800 kursi, sound & proyektor — kegiatan besar", icon:"🎤", img:"/images/gallery/12108bbbc13568d02d4949a406f36b5b.jpg" },
+  { t:"Ruang Kelas Modern", d:"AC, proyektor & papan tulis interaktif", icon:"🏫", img:"/images/gallery/8091f720499814cbb9d94c52f6414e9e.jpg" },
 ]
 export default function Facilities(){
   return (

@@ -19,9 +19,9 @@ export const categories = [
   { title: "Ekstrakurikuler", desc: "26+ ekskul aktif", icon: "⚽" },
 ]
 export const courses = [
-  { title: "Kelas Olimpiade Sains Nasional", rating: 4.9, duration: "Setiap Sabtu", students: "42", instructor: "Dra. Siti Aminah, M.Pd", price: "Gratis", image: "/images/gallery/86f6378892c28953823ba1a3c4841bac.jpg", avatar: "/images/teachers/guru1.jpg" },
-  { title: "Ekstrakurikuler Robotik & Coding", rating: 4.8, duration: "Jumat Sore", students: "38", instructor: "Budi Santoso, S.Kom", price: "Gratis", image: "/images/gallery/ace4b393463cdbde2ddd211f127773c9.jpg", avatar: "/images/teachers/guru2.jpg" },
-  { title: "Bahasa Inggris Intensive + TOEFL Prep", rating: 5.0, duration: "Senin & Rabu", students: "56", instructor: "Rina Wulandari, M.Pd", price: "Gratis", image: "/images/gallery/8091f720499814cbb9d94c52f6414e9e.jpg", avatar: "/images/teachers/guru3.jpg" },
+  { title: "Kelas Olimpiade Sains Nasional", rating: 4.9, duration: "Setiap Sabtu", students: "42", instructor: "Dra. Siti Aminah, M.Pd", price: "Gratis", image: "/images/gallery/99472b6d5d1df8325a5f0e2880f4efc3.jpg", avatar: "/images/teachers/guru1.jpg" },
+  { title: "Ekstrakurikuler Robotik & Coding", rating: 4.8, duration: "Jumat Sore", students: "38", instructor: "Budi Santoso, S.Kom", price: "Gratis", image: "/images/gallery/a8013ef2b2df5c98752f818155e54222.jpg", avatar: "/images/teachers/guru2.jpg" },
+  { title: "Bahasa Inggris Intensive + TOEFL Prep", rating: 5.0, duration: "Senin & Rabu", students: "56", instructor: "Rina Wulandari, M.Pd", price: "Gratis", image: "/images/gallery/a8b4918f9b29e68e73552afbc828f195.jpg", avatar: "/images/teachers/guru3.jpg" },
   { title: "Seni Tari & Gamelan Jawa", rating: 4.7, duration: "Kamis Sore", students: "35", instructor: "Sukardi, S.Sn", price: "Gratis", image: "/images/gallery/31236a6ca4b64d5ff9aa644502b57498.jpg", avatar: "/images/teachers/guru4.jpg" },
   { title: "Pramuka & Paskibra Prestasi", rating: 4.9, duration: "Sabtu Pagi", students: "78", instructor: "Kapten Agus P.", price: "Gratis", image: "/images/gallery/0ebcb65adab27065623df6b274095758.jpg", avatar: "/images/teachers/kepsek.jpg" },
   { title: "Futsal & Basket – Tim Inti Sekolah", rating: 4.8, duration: "Selasa & Jumat", students: "44", instructor: "Coach Hendra", price: "Gratis", image: "/images/gallery/88099fff5402d32cb61689380134e700.jpg", avatar: "/images/teachers/guru5.jpg" },
