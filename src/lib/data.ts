@@ -1,53 +1,53 @@
 export const navItems = [
-  { label: "Home", href: "#", children: ["Overview","Features"] },
-  { label: "Courses", href: "#courses", children: ["All Courses","Categories"] },
-  { label: "Pages", href: "#", children: ["About","Teachers","FAQ"] },
-  { label: "Blog", href: "#blog", children: ["Latest","Articles"] },
-  { label: "Contact", href: "#contact" },
+  { label: "Beranda", href: "#", children: ["Profil Sekolah","Visi Misi"] },
+  { label: "Profil", href: "#about", children: ["Sejarah","Guru & Tendik","Fasilitas"] },
+  { label: "Akademik", href: "#courses", children: ["Program Unggulan","Ekstrakurikuler"] },
+  { label: "Berita", href: "#blog", children: ["Berita Terbaru","Prestasi"] },
+  { label: "Kontak", href: "#contact" },
 ]
-export const partners = ["Cambrian","DocuSign","Crompton","Seclock","Software","Aumni"]
+export const partners = ["Kemdikbud","Disdik Jateng","Kampus Merdeka","BUMN","Telkom","BRI"]
 export const stats = [
-  { value: "5K+", label: "Online Classes" },
-  { value: "7K+", label: "Students each year" },
-  { value: "24+", label: "Award Winning" },
+  { value: "1.200+", label: "Peserta Didik Aktif" },
+  { value: "65+", label: "Guru & Tendik" },
+  { value: "28", label: "Prestasi Tahun Ini" },
 ]
 export const categories = [
-  { title: "Artist", desc: "12 Courses", icon: "🎨" },
-  { title: "Graphic & Multimedia", desc: "18 Courses", icon: "🖌️", active: true },
-  { title: "Artificial Intelligence", desc: "24 Courses", icon: "🤖" },
-  { title: "Business", desc: "15 Courses", icon: "💼" },
-  { title: "Photography", desc: "9 Courses", icon: "📸" },
+  { title: "Sains", desc: "12 Program", icon: "🔬" },
+  { title: "Bahasa & Sastra", desc: "10 Program", icon: "📚", active: true },
+  { title: "Teknologi", desc: "14 Program", icon: "💻" },
+  { title: "Seni & Budaya", desc: "9 Program", icon: "🎨" },
+  { title: "Olahraga", desc: "11 Program", icon: "⚽" },
 ]
 export const courses = [
-  { title: "Introduction to Digital Marketing", rating: 4.9, duration: "8h 30m", students: "2.4k", instructor: "Alex Morgan", price: "$32.50", image: "https://picsum.photos/seed/course1/600/400", avatar: "https://i.pravatar.cc/100?img=11" },
-  { title: "UI/UX Design Fundamentals", rating: 4.8, duration: "12h 15m", students: "3.1k", instructor: "Sarah Chen", price: "$45.00", image: "https://picsum.photos/seed/course2/600/400", avatar: "https://i.pravatar.cc/100?img=32" },
-  { title: "Complete Web Development Bootcamp", rating: 5.0, duration: "20h 00m", students: "5.6k", instructor: "David Kim", price: "$59.00", image: "https://picsum.photos/seed/course3/600/400", avatar: "https://i.pravatar.cc/100?img=15" },
-  { title: "Data Science with Python", rating: 4.7, duration: "15h 45m", students: "1.8k", instructor: "Lisa Park", price: "$38.00", image: "https://picsum.photos/seed/course4/600/400", avatar: "https://i.pravatar.cc/100?img=26" },
-  { title: "Photography Masterclass", rating: 4.9, duration: "6h 20m", students: "2.9k", instructor: "James Wilson", price: "$29.50", image: "https://picsum.photos/seed/course5/600/400", avatar: "https://i.pravatar.cc/100?img=8" },
-  { title: "Business Strategy & Leadership", rating: 4.8, duration: "10h 00m", students: "1.5k", instructor: "Emma Brown", price: "$42.00", image: "https://picsum.photos/seed/course6/600/400", avatar: "https://i.pravatar.cc/100?img=9" },
+  { title: "Kelas Olimpiade Sains Nasional", rating: 4.9, duration: "Setiap Sabtu", students: "42", instructor: "Dra. Siti Aminah, M.Pd", price: "Gratis", image: "https://picsum.photos/seed/sman5_olimpiade/600/400", avatar: "https://i.pravatar.cc/100?img=5" },
+  { title: "Ekstrakurikuler Robotik & Coding", rating: 4.8, duration: "Jumat Sore", students: "38", instructor: "Budi Santoso, S.Kom", price: "Gratis", image: "https://picsum.photos/seed/sman5_robotik/600/400", avatar: "https://i.pravatar.cc/100?img=12" },
+  { title: "Bahasa Inggris Intensive + TOEFL Prep", rating: 5.0, duration: "Senin & Rabu", students: "56", instructor: "Rina Wulandari, M.Pd", price: "Gratis", image: "https://picsum.photos/seed/sman5_english/600/400", avatar: "https://i.pravatar.cc/100?img=32" },
+  { title: "Seni Tari & Gamelan Jawa", rating: 4.7, duration: "Kamis Sore", students: "35", instructor: "Sukardi, S.Sn", price: "Gratis", image: "https://picsum.photos/seed/sman5_seni/600/400", avatar: "https://i.pravatar.cc/100?img=15" },
+  { title: "Pramuka & Paskibra Prestasi", rating: 4.9, duration: "Sabtu Pagi", students: "78", instructor: "Kapten Agus P.", price: "Gratis", image: "https://picsum.photos/seed/sman5_pramuka/600/400", avatar: "https://i.pravatar.cc/100?img=8" },
+  { title: "Futsal & Basket – Tim Inti Sekolah", rating: 4.8, duration: "Selasa & Jumat", students: "44", instructor: "Coach Hendra", price: "Gratis", image: "https://picsum.photos/seed/sman5_olahraga/600/400", avatar: "https://i.pravatar.cc/100?img=9" },
 ]
 export const testimonials = [
-  { name: "Jessamine Mumtaz", role: "UI/UX Student", quote: "EduVen transformed my learning experience. The courses are well-structured and the instructors are incredibly supportive.", avatar: "https://i.pravatar.cc/100?img=5", rating: 5 },
-  { name: "Michael Torres", role: "Web Dev Student", quote: "Best investment I made in my career. Landed a job within 2 months after completing the bootcamp.", avatar: "https://i.pravatar.cc/100?img=12", rating: 5 },
-  { name: "Aisha Patel", role: "Data Science Student", quote: "The AI course was mind-blowing. Practical projects that actually prepare you for real work.", avatar: "https://i.pravatar.cc/100?img=23", rating: 5 },
+  { name: "Nadia Putri", role: "Alumni 2024 — Kedokteran UNDIP", quote: "Guru-guru SMA N 5 Rembang sangat suportif. Bimbingan OSN dan tryout intensif bikin aku lolos SNBP impian.", avatar: "https://i.pravatar.cc/100?img=23", rating: 5 },
+  { name: "Bapak Hartono", role: "Wali Murid Kelas XII", quote: "Fasilitas lengkap, lingkungan asri, dan pembinaan karakter yang kuat. Anak saya jadi lebih disiplin dan percaya diri.", avatar: "https://i.pravatar.cc/100?img=33", rating: 5 },
+  { name: "Fajar Nugroho", role: "Alumni 2023 — Teknik Informatika UGM", quote: "Ekskul robotiknya keren! Dari nol sampai ikut lomba nasional. Bekal yang kepakai sampai kuliah.", avatar: "https://i.pravatar.cc/100?img=14", rating: 5 },
 ]
 export const teachers = [
-  { name: "Dr. Robert Fox", role: "Headteacher", image: "https://picsum.photos/seed/teacher1/400/500" },
-  { name: "Jenny Wilson", role: "Math Teacher", image: "https://picsum.photos/seed/teacher2/400/500" },
-  { name: "Cody Fisher", role: "English Teacher", image: "https://picsum.photos/seed/teacher3/400/500" },
-  { name: "Kristin Watson", role: "Science Teacher", image: "https://picsum.photos/seed/teacher4/400/500" },
-  { name: "Floyd Miles", role: "Art Teacher", image: "https://picsum.photos/seed/teacher5/400/500" },
-  { name: "Dianne Russell", role: "History Teacher", image: "https://picsum.photos/seed/teacher6/400/500" },
+  { name: "Drs. H. Supriyanto, M.Pd", role: "Kepala Sekolah", image: "https://picsum.photos/seed/sman5_kepsek/400/500" },
+  { name: "Dra. Siti Aminah, M.Pd", role: "Waka Kurikulum", image: "https://picsum.photos/seed/sman5_guru1/400/500" },
+  { name: "Budi Santoso, S.Kom", role: "Guru Informatika", image: "https://picsum.photos/seed/sman5_guru2/400/500" },
+  { name: "Rina Wulandari, M.Pd", role: "Guru Bahasa Inggris", image: "https://picsum.photos/seed/sman5_guru3/400/500" },
+  { name: "Sukardi, S.Sn", role: "Guru Seni Budaya", image: "https://picsum.photos/seed/sman5_guru4/400/500" },
+  { name: "Hendra Wijaya, S.Pd", role: "Guru Penjasorkes", image: "https://picsum.photos/seed/sman5_guru5/400/500" },
 ]
 export const faqs = [
-  { q: "What is EduVen LMS?", a: "EduVen is a modern learning management system offering 100+ courses across design, development, AI, and business with expert instructors." },
-  { q: "How do I enroll in a course?", a: "Browse courses, click on any course card, and hit Enroll. You will get instant access after payment." },
-  { q: "Do you offer certificates?", a: "Yes! Every course completion grants a verified certificate you can share on LinkedIn." },
-  { q: "Can I get a refund?", a: "30-day money-back guarantee, no questions asked." },
-  { q: "Is there a mobile app?", a: "Our web app is fully responsive. Native apps for iOS & Android are coming soon." },
+  { q: "Bagaimana cara daftar PPDB SMA N 5 Rembang?", a: "Pendaftaran via jalur zonasi, afirmasi, perpindahan tugas & prestasi di ppdb.jatengprov.go.id. Info lengkap cek menu PPDB atau hubungi TU sekolah." },
+  { q: "Apa saja fasilitas unggulan sekolah?", a: "Lab komputer, lab IPA, perpustakaan digital, aula, lapangan olahraga, masjid, kantin sehat, dan akses WiFi di seluruh area." },
+  { q: "Apakah ada asrama atau antar-jemput?", a: "Belum ada asrama. Tersedia koordinasi antar-jemput komite dan rute angkutan umum Rembang kota — Lasem." },
+  { q: "Jam belajar dan ekstrakurikuler?", a: "KBM Senin–Jumat 07.00–15.00. Ekskul sore & Sabtu sesuai jadwal masing-masing pembina." },
+  { q: "Bagaimana menghubungi sekolah?", a: "Telp/WA 0295-123456, email sman5rembang@sch.id, atau datang langsung Jl. Pemuda No. 45, Rembang, Jawa Tengah." },
 ]
 export const posts = [
-  { title: "How to Master UI/UX in 30 Days", cat: "Education", date: "Aug 28, 2026", author: "Alex Morgan", image: "https://picsum.photos/seed/blog1/600/400", comments: 12 },
-  { title: "The Future of AI in Education", cat: "Education", date: "Aug 25, 2026", author: "Sarah Chen", image: "https://picsum.photos/seed/blog2/600/400", comments: 8 },
-  { title: "10 Tips for Effective Online Learning", cat: "Education", date: "Aug 22, 2026", author: "David Kim", image: "https://picsum.photos/seed/blog3/600/400", comments: 15 },
+  { title: "SMA N 5 Rembang Juara 1 Lomba Cerdas Cermat Jateng 2026", cat: "Prestasi", date: "28 Agu 2026", author: "Humas", image: "https://picsum.photos/seed/sman5_berita1/600/400", comments: 12 },
+  { title: "Workshop Digital Learning: Guru Siap Kurikulum Merdeka", cat: "Akademik", date: "25 Agu 2026", author: "Kurikulum", image: "https://picsum.photos/seed/sman5_berita2/600/400", comments: 8 },
+  { title: "Pentas Seni & Bazar Kewirausahaan Meriahkan HUT Sekolah ke-32", cat: "Kesiswaan", date: "22 Agu 2026", author: "OSIS", image: "https://picsum.photos/seed/sman5_berita3/600/400", comments: 15 },
 ]

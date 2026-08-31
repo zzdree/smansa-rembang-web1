@@ -8,9 +8,9 @@ import SmoothScroll from "@/components/motion/SmoothScroll";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "EduVen — Green School Web | LMS Education",
-  description: "Developing Thoughts for the Future — LMS Education Website (Green School / EduVen). Portfolio by zzdree.",
-  openGraph: { title: "EduVen — Green School Web", description: "Developing Thoughts for the Future", type: "website" },
+  title: "SMA Negeri 5 Rembang — Sekolah Unggul, Berkarakter, Berprestasi",
+  description: "Website resmi SMA Negeri 5 Rembang. Sekolah unggul berkarakter di Kabupaten Rembang, Jawa Tengah. Informasi PPDB, profil, akademik & prestasi.",
+  openGraph: { title: "SMA Negeri 5 Rembang", description: "Sekolah Unggul, Berkarakter, Berprestasi — Kabupaten Rembang, Jawa Tengah", type: "website" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
