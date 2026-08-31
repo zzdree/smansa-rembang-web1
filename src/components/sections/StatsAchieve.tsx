@@ -9,13 +9,14 @@ const stats=[
 ]
 export default function StatsAchieve(){
   return (
-    <section className="bg-[var(--yellow)] py-8">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+    <section className="bg-[var(--yellow)] py-7 lg:py-8 relative overflow-hidden">
+      <div aria-hidden className="absolute inset-0 opacity-[0.06]" style={{backgroundImage:"radial-gradient(circle at 1px 1px, black 1px, transparent 0)", backgroundSize:"20px 20px"}}/>
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-8 relative">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
           {stats.map((s,i)=>(
-            <motion.div key={s.l} initial={{opacity:0,y:10}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:i*0.06}} className="flex items-center gap-3 bg-white/80 backdrop-blur rounded-2xl px-5 py-4 border">
-              <s.icon className="text-[var(--green-dark)]" size={22}/>
-              <div><div className="font-extrabold text-lg leading-none">{s.k}</div><div className="text-xs text-black/60 leading-tight">{s.l}</div></div>
+            <motion.div key={s.l} initial={{opacity:0,y:10}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:i*0.05, duration:0.5, ease:[0.22,1,0.36,1]}} className="flex items-center gap-3 bg-white rounded-2xl px-4 lg:px-5 py-3.5 lg:py-4 border border-black/5 shadow-sm">
+              <span className="w-10 h-10 rounded-xl bg-[var(--bg-light)] border border-black/5 grid place-items-center shrink-0"><s.icon className="text-[var(--green-dark)]" size={18}/></span>
+              <div className="min-w-0"><div className="font-extrabold text-[17px] leading-none tracking-tight">{s.k}</div><div className="text-[11px] lg:text-xs text-black/55 leading-tight font-medium truncate">{s.l}</div></div>
             </motion.div>
           ))}
         </div>
@@ -23,4 +24,3 @@ export default function StatsAchieve(){
     </section>
   )
 }
-
