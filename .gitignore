@@ -57,3 +57,11 @@ public/images/_browser/
 public/images/_browser2/
 public/images/_browser_use/
 public/images/_browser_use_batch2/
+
+# harvest scripts (local only)
+scripts/browser_*.mjs
+scripts/browser_*.py
+scripts/fetch_*.mjs
+scripts/check_sites.mjs
+scripts/wire.ps1
+scripts/browser_v2.mjs
