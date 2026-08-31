@@ -23,7 +23,7 @@ export default function Blog(){
     <section id="blog" className="py-14 lg:py-20 bg-white scroll-mt-[64px]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
         <p className="text-center text-xs tracking-[0.16em] font-bold text-[var(--green-bright)]">BERITA & INFORMASI</p>
-        <h2 className="text-center mt-2 text-[clamp(28px,4vw,38px)] font-extrabold tracking-[-0.02em] leading-tight">Kabar Terbaru SMA N 1 Rembang</h2>
+        <h2 className="text-center mt-2 text-[clamp(28px,4vw,38px)] font-extrabold tracking-[-0.02em] leading-tight">Kabar Terbaru SMA Negeri X Rembang</h2>
         <motion.div layout className="mt-8 grid md:grid-cols-3 gap-6">
           <AnimatePresence mode="popLayout">
           {list.length ? list.map((p:any)=> {
@@ -54,7 +54,7 @@ export default function Blog(){
             {(() => { const im = active.image && typeof active.image==='object' ? sanityImg(active.image,800) : active.image; return im ? <img src={im} alt={active.title} className="w-full aspect-[16/10] object-cover rounded-xl"/> : null })()}
             <p className="text-xs text-black/50">{active.date ? new Date(active.date).toLocaleDateString('id-ID',{day:'2-digit',month:'long',year:'numeric'}) : ''}</p>
             <p className="text-sm leading-relaxed text-black/70">{active.excerpt ?? ""}</p>
-            <p className="text-sm leading-relaxed text-black/60">Informasi lengkap hubungi TU / wali kelas. Berita diterbitkan oleh Humas SMA N 1 Rembang.</p>
+            <p className="text-sm leading-relaxed text-black/60">Informasi lengkap hubungi TU / wali kelas. Berita diterbitkan oleh Humas SMA Negeri X Rembang.</p>
           </div>}
         </DetailModal>
       </div>

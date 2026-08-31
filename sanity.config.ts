@@ -3,8 +3,8 @@ import {structureTool} from 'sanity/structure'
 import {schemaTypes} from './src/sanity/schemas'
 
 export default defineConfig({
-  name: 'smansa-rembang-web1',
-  title: 'SMA N 1 Rembang',
+  name: 'webschool-cms-template1',
+  title: 'SMA Negeri X Rembang',
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'g061zdty',
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
   basePath: '/studio',

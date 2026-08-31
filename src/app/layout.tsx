@@ -8,16 +8,16 @@ import { SearchProvider } from "@/components/search/SearchContext";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://smansa-rembang-web1.pages.dev";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://webschool-cms-template1.pages.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: { default: "SMA Negeri 1 Rembang — Berjatidiri dan Maju dalam Prestasi", template: "%s | SMA N 1 Rembang" },
-  description: "Website resmi SMA Negeri 1 Rembang (SMANSA) — Jl. Gajah Mada No.5, Rembang. Berdiri 1961, RSBI 2007, SMA Rujukan 2016. Visi: Berjatidiri dan Maju dalam Prestasi.",
-  keywords: ["SMA N 1 Rembang","SMANSA Rembang","SMA Rembang","PPDB Rembang","Jawa Tengah"],
+  title: { default: "SMA Negeri X Rembang — Template CMS Sekolah Modern", template: "%s | SMA Negeri X Rembang" },
+  description: "Template CMS sekolah modern untuk SMA — profil, akademik, berita, galeri, dan manajemen konten via Sanity. Mudah dikustom untuk sekolah mana pun.",
+  keywords: ["template sekolah","CMS sekolah","SMA","website sekolah","Sanity CMS","Next.js"],
   alternates: { canonical: "/" },
-  openGraph: { title: "SMA Negeri 1 Rembang — SMANSA", description: "Berjatidiri dan Maju dalam Prestasi — Jl. Gajah Mada No.5, Rembang", type: "website", url: siteUrl, siteName: "SMA N 1 Rembang", locale: "id_ID", images: [{ url: "/images/gallery/3b1071aab964e89dd25da7a9038c5fa9.jpg", width: 1200, height: 630, alt: "Gedung SMA N 1 Rembang" }] },
-  twitter: { card: "summary_large_image", title: "SMA Negeri 1 Rembang", description: "Berjatidiri dan Maju dalam Prestasi", images: ["/images/gallery/3b1071aab964e89dd25da7a9038c5fa9.jpg"] },
+  openGraph: { title: "SMA Negeri X Rembang — Template CMS Sekolah", description: "Template website sekolah modern, cepat, dan mudah dikelola.", type: "website", url: siteUrl, siteName: "SMA Negeri X Rembang", locale: "id_ID", images: [{ url: "/images/gallery/3b1071aab964e89dd25da7a9038c5fa9.jpg", width: 1200, height: 630, alt: "Gedung sekolah" }] },
+  twitter: { card: "summary_large_image", title: "SMA Negeri X Rembang", description: "Template CMS sekolah modern", images: ["/images/gallery/3b1071aab964e89dd25da7a9038c5fa9.jpg"] },
   robots: { index: true, follow: true },
   icons: { icon: "/favicon.png", shortcut: "/favicon.png", apple: "/favicon.png" },
 };
@@ -26,10 +26,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "HighSchool",
-    name: "SMA Negeri 1 Rembang",
+    name: "SMA Negeri X Rembang",
     url: siteUrl,
     address: { "@type": "PostalAddress", addressLocality: "Rembang", addressRegion: "Jawa Tengah", addressCountry: "ID" },
-    description: "SMA Negeri 1 Rembang — Sekolah Unggul, Berkarakter, Berprestasi. Akreditasi A.",
+    description: "SMA Negeri X Rembang — Template CMS Sekolah Modern. Akreditasi A.",
   }
   return (
     <html lang="id" className={`${inter.variable} h-full antialiased`}>
@@ -46,5 +46,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-
 

@@ -1,6 +1,6 @@
-# SMANSA — SMA Negeri 1 Rembang — Data Lengkap Hasil Scraping
+# WebSchool — SMA Negeri X Rembang — Data Lengkap Hasil Scraping
 
-> Sumber: https://smansarembang.sch.id/ (di-scrape 2026-09-01 via Playwright headless Chromium, browser-use)
+> Sumber: https://example.sch.id/ (di-scrape 2026-09-01 via Playwright headless Chromium, browser-use)
 > Metode: Playwright chromium.launch + page.goto domcontentloaded, 16 URL
 > Raw: scratch/raw2_*.txt + scratch/html2_*.html | All images: scratch/all_images.txt
 
@@ -10,35 +10,35 @@
 
 | URL | Title | Text | Imgs |
 |---|---|---|---|
-| / | SMA N 1 Rembang | 4146 | 137 |
-| /agenda | Agenda - SMA N 1 Rembang | 1414 | 72 |
-| /blog | Blog - SMA N 1 Rembang | 1021 | 67 |
-| /download | Download - SMA N 1 Rembang | 1039 | 60 |
-| /gallery | Gallery - SMA N 1 Rembang | 1118 | 165 |
+| / | SMA Negeri X Rembang | 4146 | 137 |
+| /agenda | Agenda - SMA Negeri X Rembang | 1414 | 72 |
+| /blog | Blog - SMA Negeri X Rembang | 1021 | 67 |
+| /download | Download - SMA Negeri X Rembang | 1039 | 60 |
+| /gallery | Gallery - SMA Negeri X Rembang | 1118 | 165 |
 | /kontak | 404 Not Found | 257 | 1 |
-| /pages/2-profil-sekolah.html | Profil Sekolah - SMA N 1 Rembang | 8889 | 79 |
-| /pages/3-makna-lambang.html | Makna Lambang - SMA N 1 Rembang | 2572 | 81 |
-| /pages/5-fasilitas.html | Fasilitas - SMA N 1 Rembang | 1122 | 79 |
-| /pages/8-struktur-organisasi.html | Struktur Organisasi - SMA N 1 Rembang | 1155 | 79 |
-| /pages/9-mars-dan-himne.html | Mars dan Himne - SMA N 1 Rembang | 1835 | 79 |
-| /pengumuman | Pengumuman - SMA N 1 Rembang | 1589 | 78 |
-| /siswa | Siswa - SMA N 1 Rembang | 701 | 55 |
-| /team/guru | Guru - SMA N 1 Rembang | 1450 | 123 |
-| /team/pegawai | Pegawai - SMA N 1 Rembang | 1158 | 123 |
-| /video | Video - SMA N 1 Rembang | 702 | 57 |
+| /pages/2-profil-sekolah.html | Profil Sekolah - SMA Negeri X Rembang | 8889 | 79 |
+| /pages/3-makna-lambang.html | Makna Lambang - SMA Negeri X Rembang | 2572 | 81 |
+| /pages/5-fasilitas.html | Fasilitas - SMA Negeri X Rembang | 1122 | 79 |
+| /pages/8-struktur-organisasi.html | Struktur Organisasi - SMA Negeri X Rembang | 1155 | 79 |
+| /pages/9-mars-dan-himne.html | Mars dan Himne - SMA Negeri X Rembang | 1835 | 79 |
+| /pengumuman | Pengumuman - SMA Negeri X Rembang | 1589 | 78 |
+| /siswa | Siswa - SMA Negeri X Rembang | 701 | 55 |
+| /team/guru | Guru - SMA Negeri X Rembang | 1450 | 123 |
+| /team/pegawai | Pegawai - SMA Negeri X Rembang | 1158 | 123 |
+| /video | Video - SMA Negeri X Rembang | 702 | 57 |
 
 Kontak 404 — halaman /kontak tidak ada (234 bytes).
 
 ---
 
-## SMA N 1 Rembang — https://smansarembang.sch.id/
+## SMA Negeri X Rembang — https://example.sch.id/
 
 ```
-(0295) - 691375
- sma1rbg@yahoo.co.id
-SMA N 1 Rembang
+(0295) - 000000
+ info@example.sch.id
+SMA Negeri X Rembang
 
-SMA N 1 Rembang
+SMA Negeri X Rembang
 
 Travel Lampung Palembang, Travel Palembang Lampung
 
@@ -51,10 +51,10 @@ Gallery
 Video
 Kontak
 Kepala Sekolah
-Bu Endang Sri Lestari, S.Pd.
-Selamat Datang di SMA N 1 Rembang
+Kepala Sekolah, S.Pd.
+Selamat Datang di SMA Negeri X Rembang
 
-SMA Negeri 1 Rembang, tempat di mana prestasi akademik, keterampilan, dan akhlak mulia berkembang bersama untuk membentuk generasi penerus bangsa yang unggul dan berkarakter.
+SMA Negeri X Rembang, tempat di mana prestasi akademik, keterampilan, dan akhlak mulia berkembang bersama untuk membentuk generasi penerus bangsa yang unggul dan berkarakter.
 
 Staf dan para pendidik kami berkomitmen untuk memberdayakan siswa kami untuk mencapai potensi maksimalnya. Didukung dengan fasilitas, kami yakin SMAN 1 Rembang adalah tempat yang tepat untuk mempersiapkan generasi muda untuk masa depan.
 
@@ -70,12 +70,12 @@ Ruang untuk mengembangkan kreativitas dan bakat siswa. Temukan peluang baru untu
 Learn More
 Berteknologi
 
-SMA N 1 Rembang, didukung teknologi modern dan fasilitas lengkap untuk mendukung pembelajaran yang inovatif dan nyaman.
+SMA Negeri X Rembang, didukung teknologi modern dan fasilitas lengkap untuk mendukung pembelajaran yang inovatif dan nyaman.
 
 Learn More
 Berakhlak Mulia
 
-SMA Negeri 1 Rembang, tempat tumbuhnya generasi berprestasi yang menjunjung tinggi nilai-nilai akhlak mulia dalam setiap langkahnya.
+SMA Negeri X Rembang, tempat tumbuhnya generasi berprestasi yang menjunjung tinggi nilai-nilai akhlak mulia dalam setiap langkahnya.
 
 Learn More
 Blog
@@ -119,10 +119,10 @@ Agenda
 01
 03-2025
 11:09:45
-Kegiatan Bulan Ramadhan di SMA Negeri 1 Rembang
+Kegiatan Bulan Ramadhan di SMA Negeri X Rembang
 Mohammad Mutho0 Komentar
 
-Kegiatan Bulan Ramadhan di SMA Negeri 1 Rembang
+Kegiatan Bulan Ramadhan di SMA Negeri X Rembang
 
 23
 10-2024
@@ -130,7 +130,7 @@ Kegiatan Bulan Ramadhan di SMA Negeri 1 Rembang
 Lomba Segara Buana
 Mohammad Mutho0 Komentar
 
-Lomba yang diadakan untuk memperingati Dies Natalis SMA N 1 Rembang tahun 2024
+Lomba yang diadakan untuk memperingati Dies Natalis SMA Negeri X Rembang tahun 2024
 
 Guru
 Selengkapnya
@@ -204,11 +204,11 @@ Selengkapnya
 
 Apa Kata mereka
 
-SMA Negeri 1 Rembang adalah sekolah yang tidak hanya fokus pada prestasi akademik, tetapi juga pada pembentukan karakter siswa melalui nilai-nilai akhlak mulia, kreativitas, dan pemanfaatan teknologi modern dengan fasilitas yang lengkap.
+SMA Negeri X Rembang adalah sekolah yang tidak hanya fokus pada prestasi akademik, tetapi juga pada pembentukan karakter siswa melalui nilai-nilai akhlak mulia, kreativitas, dan pemanfaatan teknologi modern dengan fasilitas yang lengkap.
 
 Mohammad Mutho
 
-SMA Negeri 1 Rembang merupakan wadah ideal bagi siswa untuk berkembang, dengan lingkungan yang mendukung prestasi, kreativitas, dan pembentukan karakter yang unggul.
+SMA Negeri X Rembang merupakan wadah ideal bagi siswa untuk berkembang, dengan lingkungan yang mendukung prestasi, kreativitas, dan pembentukan karakter yang unggul.
 
 Rival Pahlewi
 
@@ -223,26 +223,26 @@ Video
 Blog Post
 Hubungi Kami
 
-Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+Jl. Pendidikan No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
 
-(0295) - 691375
-sma1rbg@yahoo.co.id
+(0295) - 000000
+info@example.sch.id
 
-© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+© 2024 - 2026 SMA Negeri X Rembang - Design By: Mohammad Mutho
 
 Hari ini : 49Total Pengunjung : 167806Online : 1
 ```
 
 ---
 
-## Agenda - SMA N 1 Rembang — https://smansarembang.sch.id/agenda
+## Agenda - SMA Negeri X Rembang — https://example.sch.id/agenda
 
 ```
-(0295) - 691375
- sma1rbg@yahoo.co.id
-SMA N 1 Rembang
+(0295) - 000000
+ info@example.sch.id
+SMA Negeri X Rembang
 
-Agenda | SMA N 1 Rembang
+Agenda | SMA Negeri X Rembang
 
 Travel Lampung Palembang, Travel Palembang Lampung
 
@@ -259,10 +259,10 @@ BerandaAgenda
 01
 03-2025
 11:09:45
-Kegiatan Bulan Ramadhan di SMA Negeri 1 Rembang
+Kegiatan Bulan Ramadhan di SMA Negeri X Rembang
 Mohammad Mutho01-03-20250 Komentar
 
-Kegiatan Bulan Ramadhan di SMA Negeri 1 Rembang
+Kegiatan Bulan Ramadhan di SMA Negeri X Rembang
 
 23
 10-2024
@@ -270,13 +270,13 @@ Kegiatan Bulan Ramadhan di SMA Negeri 1 Rembang
 Lomba Segara Buana
 Mohammad Mutho23-10-20240 Komentar
 
-Lomba yang diadakan untuk memperingati Dies Natalis SMA N 1 Rembang tahun 2024
+Lomba yang diadakan untuk memperingati Dies Natalis SMA Negeri X Rembang tahun 2024
 
 1
 Agenda Baru
 01
 03-2025
-Kegiatan Bulan Ramadhan di SMA Negeri 1 Rembang
+Kegiatan Bulan Ramadhan di SMA Negeri X Rembang
  11:09:45
 23
 10-2024
@@ -320,26 +320,26 @@ Video
 Blog Post
 Hubungi Kami
 
-Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+Jl. Pendidikan No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
 
-(0295) - 691375
-sma1rbg@yahoo.co.id
+(0295) - 000000
+info@example.sch.id
 
-© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+© 2024 - 2026 SMA Negeri X Rembang - Design By: Mohammad Mutho
 
 Hari ini : 49Total Pengunjung : 167816Online : 1
 ```
 
 ---
 
-## Blog - SMA N 1 Rembang — https://smansarembang.sch.id/blog
+## Blog - SMA Negeri X Rembang — https://example.sch.id/blog
 
 ```
-(0295) - 691375
- sma1rbg@yahoo.co.id
-SMA N 1 Rembang
+(0295) - 000000
+ info@example.sch.id
+SMA Negeri X Rembang
 
-Blog | SMA N 1 Rembang
+Blog | SMA Negeri X Rembang
 
 Travel Lampung Palembang, Travel Palembang Lampung
 
@@ -394,26 +394,26 @@ Video
 Blog Post
 Hubungi Kami
 
-Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+Jl. Pendidikan No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
 
-(0295) - 691375
-sma1rbg@yahoo.co.id
+(0295) - 000000
+info@example.sch.id
 
-© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+© 2024 - 2026 SMA Negeri X Rembang - Design By: Mohammad Mutho
 
 Hari ini : 49Total Pengunjung : 167812Online : 1
 ```
 
 ---
 
-## Download - SMA N 1 Rembang — https://smansarembang.sch.id/download
+## Download - SMA Negeri X Rembang — https://example.sch.id/download
 
 ```
-(0295) - 691375
- sma1rbg@yahoo.co.id
-SMA N 1 Rembang
+(0295) - 000000
+ info@example.sch.id
+SMA Negeri X Rembang
 
-Download | SMA N 1 Rembang
+Download | SMA Negeri X Rembang
 
 Travel Lampung Palembang, Travel Palembang Lampung
 
@@ -459,26 +459,26 @@ Video
 Blog Post
 Hubungi Kami
 
-Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+Jl. Pendidikan No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
 
-(0295) - 691375
-sma1rbg@yahoo.co.id
+(0295) - 000000
+info@example.sch.id
 
-© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+© 2024 - 2026 SMA Negeri X Rembang - Design By: Mohammad Mutho
 
 Hari ini : 49Total Pengunjung : 167819Online : 1
 ```
 
 ---
 
-## Gallery - SMA N 1 Rembang — https://smansarembang.sch.id/gallery
+## Gallery - SMA Negeri X Rembang — https://example.sch.id/gallery
 
 ```
-(0295) - 691375
- sma1rbg@yahoo.co.id
-SMA N 1 Rembang
+(0295) - 000000
+ info@example.sch.id
+SMA Negeri X Rembang
 
-Gallery | SMA N 1 Rembang
+Gallery | SMA Negeri X Rembang
 
 Travel Lampung Palembang, Travel Palembang Lampung
 
@@ -536,19 +536,19 @@ Video
 Blog Post
 Hubungi Kami
 
-Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+Jl. Pendidikan No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
 
-(0295) - 691375
-sma1rbg@yahoo.co.id
+(0295) - 000000
+info@example.sch.id
 
-© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+© 2024 - 2026 SMA Negeri X Rembang - Design By: Mohammad Mutho
 
 Hari ini : 49Total Pengunjung : 167817Online : 1
 ```
 
 ---
 
-## 404 Not Found — https://smansarembang.sch.id/kontak
+## 404 Not Found — https://example.sch.id/kontak
 
 ```
 404
@@ -564,14 +564,14 @@ Please be advised that LiteSpeed Technologies Inc. is not a web hosting company 
 
 ---
 
-## Profil Sekolah - SMA N 1 Rembang — https://smansarembang.sch.id/pages/2-profil-sekolah.html
+## Profil Sekolah - SMA Negeri X Rembang — https://example.sch.id/pages/2-profil-sekolah.html
 
 ```
-(0295) - 691375
- sma1rbg@yahoo.co.id
-SMA N 1 Rembang
+(0295) - 000000
+ info@example.sch.id
+SMA Negeri X Rembang
 
-Profil Sekolah | SMA N 1 Rembang
+Profil Sekolah | SMA Negeri X Rembang
 
 Travel Lampung Palembang, Travel Palembang Lampung
 
@@ -587,8 +587,8 @@ Pages
 BerandaAbouts
 Profil Sekolah
  Mohammad Mutho17 Januari 20250 Comments3694 Pembaca
-Sejarah Singkat SMA Negeri 1 Rembang
-Tahun 1961
+Sejarah Singkat SMA Negeri X Rembang
+Tahun 1990
 Atas prakarsa Bupati KDH tk. II Rembang, R. Islan Soebroto, .maka didirikan “ SMA ABC Rembang” di Rembang. Sekolah Menengah Atas tersebut menempati gedung PGRI Rembang yang berlokasi di depan Alun - alun kota Rembang.
 Tahun 1962
 Menteri Pendidikan Dasar dan Kebudayaan Republik Indonesia memutuskan dan menetapkan bahwa terhitung mulai 1 Agustus 1962, membuka Sekolah Menengah Atas Negeri (gaya baru)  di Rermbang , Jawa Tengah, sekaligus mengambil alih SMA Swasta di  wilayah Kabupoaten Rembang  menjadi SMA Negeri gaya baru.  SMA ABC Rembang dinegerikan dengan SK. 21 / SK / B / III tgl. 10 - 9 – 1962. Pada saat itu dengan status filial SMA Negeri Pati.
@@ -608,18 +608,18 @@ Dibawah pimpinan Drs Koesnandar, Sekolah Menengah Umum Negeri 1 Rembang ditunjuk
 Tahun 2005
 Selain pembangunan dan pemenuhan sarana prasarana, sekolah membuka program baru yaitu kelas “immerse”, sejak tahun pelajaran 2005/2006. Berbeda dengan kelas regular, dua kelas immersi ini menggunakan pengantar Bahasa Inggris dalam proses belajar mengajar dengan persentase yang telah ditentukan.
 
-Undang-undang no 20 tahun 2003 tentang Sistem Pendidikan Nasional, pasal 50 ayat 3 mengamanatkan bahwa : Pemerintah Daerah menyelenggarakan sekurang-kurangnya satu satuan pendidikan pada setiap jenjang untuk dikembangkan menjadi bertaraf internasional. Sebagai upaya peningkatan mutu pendidikan di Kabupaten Rembang, SMAN 1 Rembang dipandang telah memiliki kesiapan dan kemampuan manajerial, kelengkapan sarana dan prasarana untuk disiapkan menjadi Sekolah Bertaraf Internasional (SBI). SMA N 1 Rembang ditunjuk oleh Dinas Pendidikan Kabupaten Rembang sebagai sekolah mandiri, serta menjadi anggota Association School pelaksanaan SNBI (Sekolah Nasional Bertaraf Internasional) di tingkat eks Karesidenan Pati.
+Undang-undang no 20 tahun 2003 tentang Sistem Pendidikan Nasional, pasal 50 ayat 3 mengamanatkan bahwa : Pemerintah Daerah menyelenggarakan sekurang-kurangnya satu satuan pendidikan pada setiap jenjang untuk dikembangkan menjadi bertaraf internasional. Sebagai upaya peningkatan mutu pendidikan di Kabupaten Rembang, SMAN 1 Rembang dipandang telah memiliki kesiapan dan kemampuan manajerial, kelengkapan sarana dan prasarana untuk disiapkan menjadi Sekolah Bertaraf Internasional (SBI). SMA Negeri X Rembang ditunjuk oleh Dinas Pendidikan Kabupaten Rembang sebagai sekolah mandiri, serta menjadi anggota Association School pelaksanaan SNBI (Sekolah Nasional Bertaraf Internasional) di tingkat eks Karesidenan Pati.
 Tahun  2007
 Kelas immerse yang telah dibuka pada tahun 2005, merupakan embriyo Rintisan Sekolah Bertaraf Internasional. Telaah tentang SMAN 1 Rembang sebagai Rintisan Sekolah Bertaraf Internasional dilaksanakan oleh Kepala Dinas Pendidikan Kabupaten Rembang.
 
-Pada tahun 2007, SMA Negeri 1 Rembang mendapatkan kepercayaan dari pemerintah untuk menyelenggarakan Rintisan Sekolah Menengah Atas Bertaraf Internasional. Kepercayaan tersebut dikuatkan dengan :
+Pada tahun 2007, SMA Negeri X Rembang mendapatkan kepercayaan dari pemerintah untuk menyelenggarakan Rintisan Sekolah Menengah Atas Bertaraf Internasional. Kepercayaan tersebut dikuatkan dengan :
 
 -  Persetujuan dari Dinas Pendidikan Kabupaten Rembang, nomor 000/8135.
 -  Penetapan Sekolah Penyelenggara Program SMA BI, dengan Surat keputusan Direktorat Pembinaan Sekolah Menengah Atas, Direktorat Jendral Manajemen Pendidikan Dasar dan Menengah, nomor 697/C4/MN/2007.
 
-Dengan demikian SMA Negeri 1 Rembang merupakan satu diantara sembilan puluh sembilan sekolah di Indonesia yang menyelenggarakan RSBI pada tahun tersebut.
+Dengan demikian SMA Negeri X Rembang merupakan satu diantara sembilan puluh sembilan sekolah di Indonesia yang menyelenggarakan RSBI pada tahun tersebut.
 Tahun 2011
-Keberlangsungan RSBI SMA Negeri 1 Rembang selama 4 tahun diimbangi dengan upaya peningkatan kualitas pendidik yang secara tidak langsung dapat meningkatkan kualitas output siswa. Upaya tersebut dapat dilihat dari keaktifan dalam menjalin kerjasama SMA Negeri 1 Rembang dengan beberapa pihak antara lain:
+Keberlangsungan RSBI SMA Negeri X Rembang selama 4 tahun diimbangi dengan upaya peningkatan kualitas pendidik yang secara tidak langsung dapat meningkatkan kualitas output siswa. Upaya tersebut dapat dilihat dari keaktifan dalam menjalin kerjasama SMA Negeri X Rembang dengan beberapa pihak antara lain:
 
 -  Pusat Studi Asia, Fakultas Sastra Universitas Diponegoro
 -  Nagoya University, Japan
@@ -630,13 +630,13 @@ Keberlangsungan RSBI SMA Negeri 1 Rembang selama 4 tahun diimbangi dengan upaya 
 -  Sekolah RSBI lain sebagai School sisters
 -  South China University Technology (SCUT)
 Tahun 2016 - 2018
-SMA Negeri 1 Rembang mendapat kepercayaan dari Direktorat Pembinaan SMA sebagai satu dari 614 SMA Rujukan di Indonesia, artinya SMA Negeri 1 Rembang diakui memiliki praktik baik dan inovasi pendidikan berbasis Standar Nasional Pendidikan sebagai rujukan mutu bagi SMA lain di Kabupaten Rembang.Selain itu jalinan kerjasama dengan dua perguruan tinggi luar negeri yaitu Malaysia Lincoln University dan Thailand Hatyai University terselenggara di tahun 2018.
+SMA Negeri X Rembang mendapat kepercayaan dari Direktorat Pembinaan SMA sebagai satu dari 614 SMA Rujukan di Indonesia, artinya SMA Negeri X Rembang diakui memiliki praktik baik dan inovasi pendidikan berbasis Standar Nasional Pendidikan sebagai rujukan mutu bagi SMA lain di Kabupaten Rembang.Selain itu jalinan kerjasama dengan dua perguruan tinggi luar negeri yaitu Malaysia Lincoln University dan Thailand Hatyai University terselenggara di tahun 2018.
  
 Visi, Misi, Dan Tujuan Sekolah
 
 A. VISI SEKOLAH
 
-Visi SMA Negeri 1 Rembang adalah “Berjatidiri dan Maju dalam Prestasi”
+Visi SMA Negeri X Rembang adalah “Berjatidiri dan Maju dalam Prestasi”
 
 B. MISI SEKOLAH
 
@@ -662,14 +662,14 @@ Tercapainya peningkatan jumlah tamatan yang diterima pada perguruan tinggi neger
 
 ---
 
-## Makna Lambang - SMA N 1 Rembang — https://smansarembang.sch.id/pages/3-makna-lambang.html
+## Makna Lambang - SMA Negeri X Rembang — https://example.sch.id/pages/3-makna-lambang.html
 
 ```
-(0295) - 691375
- sma1rbg@yahoo.co.id
-SMA N 1 Rembang
+(0295) - 000000
+ info@example.sch.id
+SMA Negeri X Rembang
 
-Makna Lambang | SMA N 1 Rembang
+Makna Lambang | SMA Negeri X Rembang
 
 Travel Lampung Palembang, Travel Palembang Lampung
 
@@ -687,7 +687,7 @@ Makna Lambang
  Mohammad Mutho17 Januari 20250 Comments1665 Pembaca
 MAKNA LAMBANG
 
-Lambang SMA Negeri 1 Rembang didominasi dengan warna biru. Latar belakang warna biru muda adalah langit, sedangkan warna biru adalah laut. Antara langit dan laut berbatasan gelombang putih.
+Lambang SMA Negeri X Rembang didominasi dengan warna biru. Latar belakang warna biru muda adalah langit, sedangkan warna biru adalah laut. Antara langit dan laut berbatasan gelombang putih.
 
 Tiga macam gambar berangkai menjadi satu, merupakan batang tubuh lambing, yaitu :
 
@@ -696,9 +696,9 @@ Menunjukkan jurusan budaya, yaitu kelompok siswa yang menggeluti keahlian sastra
 Lima helai daun hijau, menunjukkan jurusan sosial.
 Tengah pangkal daun berdiri tegak pipa pancuran (fountain). Tengah-tengah bagian luar pipa terdapat ion dan proton dengan garis lintasnya. Ini menunjukkan jurusan Ilmu Pengetahuan Alam (IPA).
 
-Bagian masing-masing lambang ini berjumlah lima, yaitu bagian bulu sayap, dan daun. Terkandung maksud bahwa SMA Negeri 1 Rembang dalam keaktifannya selalu berlandaskan Pancasila.
+Bagian masing-masing lambang ini berjumlah lima, yaitu bagian bulu sayap, dan daun. Terkandung maksud bahwa SMA Negeri X Rembang dalam keaktifannya selalu berlandaskan Pancasila.
 
-Huruf SMA Negeri 1 Rembang ditulis dibawah batang tubuh lambang menyatakan bahwa SMA Negeri 1 Rembang berdomisili di daerah pantai Kabupaten Rembang. Adapun arti warna yang terkandung dalam lambang adalah :
+Huruf SMA Negeri X Rembang ditulis dibawah batang tubuh lambang menyatakan bahwa SMA Negeri X Rembang berdomisili di daerah pantai Kabupaten Rembang. Adapun arti warna yang terkandung dalam lambang adalah :
 
 Merah : aktif, bersemangat, periang, dan optimis.
 Putih : menyatakan sifat tulus hati, ikhlas, suka berkorban
@@ -748,26 +748,26 @@ Video
 Blog Post
 Hubungi Kami
 
-Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+Jl. Pendidikan No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
 
-(0295) - 691375
-sma1rbg@yahoo.co.id
+(0295) - 000000
+info@example.sch.id
 
-© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+© 2024 - 2026 SMA Negeri X Rembang - Design By: Mohammad Mutho
 
 Hari ini : 49Total Pengunjung : 167808Online : 1
 ```
 
 ---
 
-## Fasilitas - SMA N 1 Rembang — https://smansarembang.sch.id/pages/5-fasilitas.html
+## Fasilitas - SMA Negeri X Rembang — https://example.sch.id/pages/5-fasilitas.html
 
 ```
-(0295) - 691375
- sma1rbg@yahoo.co.id
-SMA N 1 Rembang
+(0295) - 000000
+ info@example.sch.id
+SMA Negeri X Rembang
 
-Fasilitas | SMA N 1 Rembang
+Fasilitas | SMA Negeri X Rembang
 
 Travel Lampung Palembang, Travel Palembang Lampung
 
@@ -828,26 +828,26 @@ Video
 Blog Post
 Hubungi Kami
 
-Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+Jl. Pendidikan No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
 
-(0295) - 691375
-sma1rbg@yahoo.co.id
+(0295) - 000000
+info@example.sch.id
 
-© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+© 2024 - 2026 SMA Negeri X Rembang - Design By: Mohammad Mutho
 
 Hari ini : 49Total Pengunjung : 167810Online : 1
 ```
 
 ---
 
-## Struktur Organisasi - SMA N 1 Rembang — https://smansarembang.sch.id/pages/8-struktur-organisasi.html
+## Struktur Organisasi - SMA Negeri X Rembang — https://example.sch.id/pages/8-struktur-organisasi.html
 
 ```
-(0295) - 691375
- sma1rbg@yahoo.co.id
-SMA N 1 Rembang
+(0295) - 000000
+ info@example.sch.id
+SMA Negeri X Rembang
 
-Struktur Organisasi | SMA N 1 Rembang
+Struktur Organisasi | SMA Negeri X Rembang
 
 Travel Lampung Palembang, Travel Palembang Lampung
 
@@ -864,7 +864,7 @@ BerandaAbouts
 Struktur Organisasi
  Mohammad Mutho14 Januari 20250 Comments2268 Pembaca
 
-Struktur Organisasi SMA N 1 Rembang
+Struktur Organisasi SMA Negeri X Rembang
 
  
 
@@ -910,26 +910,26 @@ Video
 Blog Post
 Hubungi Kami
 
-Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+Jl. Pendidikan No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
 
-(0295) - 691375
-sma1rbg@yahoo.co.id
+(0295) - 000000
+info@example.sch.id
 
-© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+© 2024 - 2026 SMA Negeri X Rembang - Design By: Mohammad Mutho
 
 Hari ini : 49Total Pengunjung : 167811Online : 1
 ```
 
 ---
 
-## Mars dan Himne - SMA N 1 Rembang — https://smansarembang.sch.id/pages/9-mars-dan-himne.html
+## Mars dan Himne - SMA Negeri X Rembang — https://example.sch.id/pages/9-mars-dan-himne.html
 
 ```
-(0295) - 691375
- sma1rbg@yahoo.co.id
-SMA N 1 Rembang
+(0295) - 000000
+ info@example.sch.id
+SMA Negeri X Rembang
 
-Mars dan Himne | SMA N 1 Rembang
+Mars dan Himne | SMA Negeri X Rembang
 
 Travel Lampung Palembang, Travel Palembang Lampung
 
@@ -1033,26 +1033,26 @@ Video
 Blog Post
 Hubungi Kami
 
-Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+Jl. Pendidikan No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
 
-(0295) - 691375
-sma1rbg@yahoo.co.id
+(0295) - 000000
+info@example.sch.id
 
-© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+© 2024 - 2026 SMA Negeri X Rembang - Design By: Mohammad Mutho
 
 Hari ini : 49Total Pengunjung : 167809Online : 1
 ```
 
 ---
 
-## Pengumuman - SMA N 1 Rembang — https://smansarembang.sch.id/pengumuman
+## Pengumuman - SMA Negeri X Rembang — https://example.sch.id/pengumuman
 
 ```
-(0295) - 691375
- sma1rbg@yahoo.co.id
-SMA N 1 Rembang
+(0295) - 000000
+ info@example.sch.id
+SMA Negeri X Rembang
 
-Pengumuman | SMA N 1 Rembang
+Pengumuman | SMA Negeri X Rembang
 
 Travel Lampung Palembang, Travel Palembang Lampung
 
@@ -1132,26 +1132,26 @@ Video
 Blog Post
 Hubungi Kami
 
-Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+Jl. Pendidikan No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
 
-(0295) - 691375
-sma1rbg@yahoo.co.id
+(0295) - 000000
+info@example.sch.id
 
-© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+© 2024 - 2026 SMA Negeri X Rembang - Design By: Mohammad Mutho
 
 Hari ini : 49Total Pengunjung : 167813Online : 1
 ```
 
 ---
 
-## Siswa - SMA N 1 Rembang — https://smansarembang.sch.id/siswa
+## Siswa - SMA Negeri X Rembang — https://example.sch.id/siswa
 
 ```
-(0295) - 691375
- sma1rbg@yahoo.co.id
-SMA N 1 Rembang
+(0295) - 000000
+ info@example.sch.id
+SMA Negeri X Rembang
 
-Siswa | SMA N 1 Rembang
+Siswa | SMA Negeri X Rembang
 
 Travel Lampung Palembang, Travel Palembang Lampung
 
@@ -1189,26 +1189,26 @@ Video
 Blog Post
 Hubungi Kami
 
-Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+Jl. Pendidikan No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
 
-(0295) - 691375
-sma1rbg@yahoo.co.id
+(0295) - 000000
+info@example.sch.id
 
-© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+© 2024 - 2026 SMA Negeri X Rembang - Design By: Mohammad Mutho
 
 Hari ini : 49Total Pengunjung : 167820Online : 1
 ```
 
 ---
 
-## Guru - SMA N 1 Rembang — https://smansarembang.sch.id/team/guru
+## Guru - SMA Negeri X Rembang — https://example.sch.id/team/guru
 
 ```
-(0295) - 691375
- sma1rbg@yahoo.co.id
-SMA N 1 Rembang
+(0295) - 000000
+ info@example.sch.id
+SMA Negeri X Rembang
 
-Guru | SMA N 1 Rembang
+Guru | SMA Negeri X Rembang
 
 Travel Lampung Palembang, Travel Palembang Lampung
 
@@ -1279,26 +1279,26 @@ Video
 Blog Post
 Hubungi Kami
 
-Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+Jl. Pendidikan No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
 
-(0295) - 691375
-sma1rbg@yahoo.co.id
+(0295) - 000000
+info@example.sch.id
 
-© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+© 2024 - 2026 SMA Negeri X Rembang - Design By: Mohammad Mutho
 
 Hari ini : 49Total Pengunjung : 167814Online : 1
 ```
 
 ---
 
-## Pegawai - SMA N 1 Rembang — https://smansarembang.sch.id/team/pegawai
+## Pegawai - SMA Negeri X Rembang — https://example.sch.id/team/pegawai
 
 ```
-(0295) - 691375
- sma1rbg@yahoo.co.id
-SMA N 1 Rembang
+(0295) - 000000
+ info@example.sch.id
+SMA Negeri X Rembang
 
-Pegawai | SMA N 1 Rembang
+Pegawai | SMA Negeri X Rembang
 
 Travel Lampung Palembang, Travel Palembang Lampung
 
@@ -1365,26 +1365,26 @@ Video
 Blog Post
 Hubungi Kami
 
-Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+Jl. Pendidikan No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
 
-(0295) - 691375
-sma1rbg@yahoo.co.id
+(0295) - 000000
+info@example.sch.id
 
-© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+© 2024 - 2026 SMA Negeri X Rembang - Design By: Mohammad Mutho
 
 Hari ini : 49Total Pengunjung : 167815Online : 1
 ```
 
 ---
 
-## Video - SMA N 1 Rembang — https://smansarembang.sch.id/video
+## Video - SMA Negeri X Rembang — https://example.sch.id/video
 
 ```
-(0295) - 691375
- sma1rbg@yahoo.co.id
-SMA N 1 Rembang
+(0295) - 000000
+ info@example.sch.id
+SMA Negeri X Rembang
 
-Video | SMA N 1 Rembang
+Video | SMA Negeri X Rembang
 
 Travel Lampung Palembang, Travel Palembang Lampung
 
@@ -1415,12 +1415,12 @@ Video
 Blog Post
 Hubungi Kami
 
-Jl. Gajah Mada No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
+Jl. Pendidikan No.5, Mundu, Magersari, Kec. Rembang, Kabupaten Rembang, Jawa Tengah 59214
 
-(0295) - 691375
-sma1rbg@yahoo.co.id
+(0295) - 000000
+info@example.sch.id
 
-© 2024 - 2026 SMA N 1 Rembang - Design By: Mohammad Mutho
+© 2024 - 2026 SMA Negeri X Rembang - Design By: Mohammad Mutho
 
 Hari ini : 49Total Pengunjung : 167818Online : 1
 ```
@@ -1430,77 +1430,77 @@ Hari ini : 49Total Pengunjung : 167818Online : 1
 ## Daftar Semua Image URL (73 unique)
 
 ```
-https://smansarembang.sch.id/sw-content/sw-sw-logoweb.png
-https://smansarembang.sch.id/sw-content/slider/slider-366f1df418221b4a90076788c95be20c.jpeg
-https://smansarembang.sch.id/sw-content/slider/slider-49b14460d7427bbc62fde3e7db75cb87.jpeg
-https://smansarembang.sch.id/sw-content/pages/image/bu_endang.png
-https://smansarembang.sch.id/sw-content/upload/team/profil_icon.jpeg
-https://smansarembang.sch.id//sw-content/upload/powered/Logo_unnes.png
-https://smansarembang.sch.id//sw-content/upload/powered/undip-logo.png
-https://smansarembang.sch.id//sw-content/upload/powered/Logo_UNS.png
-https://smansarembang.sch.id//sw-content/upload/powered/UGM-Logo.png
-https://smansarembang.sch.id//sw-content/upload/powered/logo-ui.png
-https://smansarembang.sch.id//sw-content/upload/powered/logo-pip.png
-https://smansarembang.sch.id//sw-content/upload/powered/Logo_itb.png
-https://smansarembang.sch.id//sw-content/upload/powered/Logo_its.png
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/3b1071aab964e89dd25da7a9038c5fa9.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/31236a6ca4b64d5ff9aa644502b57498.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/88099fff5402d32cb61689380134e700.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/12108bbbc13568d02d4949a406f36b5b.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/ccec9ca3aaeb1796a28eaabf8dcb1a62.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/0ebcb65adab27065623df6b274095758.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/86f6378892c28953823ba1a3c4841bac.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/99472b6d5d1df8325a5f0e2880f4efc3.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/8091f720499814cbb9d94c52f6414e9e.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/c330c438fd2b078317d60395c289fb78.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/ace4b393463cdbde2ddd211f127773c9.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/ad7286dd300c40fd04883db5d8ea3781.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/fe2f2fa368a1d6e32b0c765db949c5fa.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/67e66ae4f02283c992284b97bb2ceacd.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/293005a5d741c661fe52c3b47ce303db.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/428b5effb3aacd742ebb4e326e81af54.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/dce156a87f1e634fdc495e5fc1f57398.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/2a96b6cfa52c459fc12844115413fc5e.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/756af809a7e0f2c217639de193a8794d.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/a8b4918f9b29e68e73552afbc828f195.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/a8013ef2b2df5c98752f818155e54222.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/38b772fe8c05709a38b226767409e1fc.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/127790fbbe062dec769c2f26a5b45392.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/cdfc16eef08ab3dbc7a488930a241347.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/baf52767aa0b192a8faf1da18496d0d0.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/25974b5e895095c52efb63bf4b9e3696.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/049c3ce2a740d7680bd34dad28bc3f00.png
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/e7e75f835299fe5f7ed1dac89b4f2c77.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/a3fa8017c83dfded6c10de14f548bbfc.jpg
-https://smansarembang.sch.id/timthumb?src=https://smansarembang.sch.id/sw-content/upload/galery/05d0e7b29d64e56dc46ac86ef0afb3d7.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/3b1071aab964e89dd25da7a9038c5fa9.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/31236a6ca4b64d5ff9aa644502b57498.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/88099fff5402d32cb61689380134e700.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/12108bbbc13568d02d4949a406f36b5b.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/ccec9ca3aaeb1796a28eaabf8dcb1a62.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/0ebcb65adab27065623df6b274095758.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/86f6378892c28953823ba1a3c4841bac.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/99472b6d5d1df8325a5f0e2880f4efc3.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/8091f720499814cbb9d94c52f6414e9e.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/c330c438fd2b078317d60395c289fb78.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/ace4b393463cdbde2ddd211f127773c9.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/ad7286dd300c40fd04883db5d8ea3781.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/fe2f2fa368a1d6e32b0c765db949c5fa.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/67e66ae4f02283c992284b97bb2ceacd.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/293005a5d741c661fe52c3b47ce303db.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/428b5effb3aacd742ebb4e326e81af54.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/dce156a87f1e634fdc495e5fc1f57398.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/2a96b6cfa52c459fc12844115413fc5e.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/756af809a7e0f2c217639de193a8794d.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/a8b4918f9b29e68e73552afbc828f195.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/a8013ef2b2df5c98752f818155e54222.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/38b772fe8c05709a38b226767409e1fc.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/127790fbbe062dec769c2f26a5b45392.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/cdfc16eef08ab3dbc7a488930a241347.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/baf52767aa0b192a8faf1da18496d0d0.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/25974b5e895095c52efb63bf4b9e3696.jpg
-https://smansarembang.sch.id/sw-content/upload/galery/049c3ce2a740d7680bd34dad28bc3f00.png
-https://smansarembang.sch.id/sw-content/upload/avatar/user-2025-01-12_15-10-20smansa.jpg.jpg
-https://smansarembang.sch.id/sman1-waylima/sw-content/pages/image/LOGO_SMAN_1_WAYLIMA.jpg
-https://smansarembang.sch.id/sekolah.v3/sw-content/pages/image/Makna_Lambang.png
+https://example.sch.id/sw-content/sw-sw-logoweb.png
+https://example.sch.id/sw-content/slider/slider-366f1df418221b4a90076788c95be20c.jpeg
+https://example.sch.id/sw-content/slider/slider-49b14460d7427bbc62fde3e7db75cb87.jpeg
+https://example.sch.id/sw-content/pages/image/bu_endang.png
+https://example.sch.id/sw-content/upload/team/profil_icon.jpeg
+https://example.sch.id//sw-content/upload/powered/Logo_unnes.png
+https://example.sch.id//sw-content/upload/powered/undip-logo.png
+https://example.sch.id//sw-content/upload/powered/Logo_UNS.png
+https://example.sch.id//sw-content/upload/powered/UGM-Logo.png
+https://example.sch.id//sw-content/upload/powered/logo-ui.png
+https://example.sch.id//sw-content/upload/powered/logo-pip.png
+https://example.sch.id//sw-content/upload/powered/Logo_itb.png
+https://example.sch.id//sw-content/upload/powered/Logo_its.png
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/3b1071aab964e89dd25da7a9038c5fa9.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/31236a6ca4b64d5ff9aa644502b57498.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/88099fff5402d32cb61689380134e700.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/12108bbbc13568d02d4949a406f36b5b.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/ccec9ca3aaeb1796a28eaabf8dcb1a62.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/0ebcb65adab27065623df6b274095758.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/86f6378892c28953823ba1a3c4841bac.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/99472b6d5d1df8325a5f0e2880f4efc3.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/8091f720499814cbb9d94c52f6414e9e.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/c330c438fd2b078317d60395c289fb78.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/ace4b393463cdbde2ddd211f127773c9.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/ad7286dd300c40fd04883db5d8ea3781.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/fe2f2fa368a1d6e32b0c765db949c5fa.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/67e66ae4f02283c992284b97bb2ceacd.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/293005a5d741c661fe52c3b47ce303db.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/428b5effb3aacd742ebb4e326e81af54.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/dce156a87f1e634fdc495e5fc1f57398.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/2a96b6cfa52c459fc12844115413fc5e.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/756af809a7e0f2c217639de193a8794d.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/a8b4918f9b29e68e73552afbc828f195.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/a8013ef2b2df5c98752f818155e54222.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/38b772fe8c05709a38b226767409e1fc.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/127790fbbe062dec769c2f26a5b45392.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/cdfc16eef08ab3dbc7a488930a241347.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/baf52767aa0b192a8faf1da18496d0d0.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/25974b5e895095c52efb63bf4b9e3696.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/049c3ce2a740d7680bd34dad28bc3f00.png
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/e7e75f835299fe5f7ed1dac89b4f2c77.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/a3fa8017c83dfded6c10de14f548bbfc.jpg
+https://example.sch.id/timthumb?src=https://example.sch.id/sw-content/upload/galery/05d0e7b29d64e56dc46ac86ef0afb3d7.jpg
+https://example.sch.id/sw-content/upload/galery/3b1071aab964e89dd25da7a9038c5fa9.jpg
+https://example.sch.id/sw-content/upload/galery/31236a6ca4b64d5ff9aa644502b57498.jpg
+https://example.sch.id/sw-content/upload/galery/88099fff5402d32cb61689380134e700.jpg
+https://example.sch.id/sw-content/upload/galery/12108bbbc13568d02d4949a406f36b5b.jpg
+https://example.sch.id/sw-content/upload/galery/ccec9ca3aaeb1796a28eaabf8dcb1a62.jpg
+https://example.sch.id/sw-content/upload/galery/0ebcb65adab27065623df6b274095758.jpg
+https://example.sch.id/sw-content/upload/galery/86f6378892c28953823ba1a3c4841bac.jpg
+https://example.sch.id/sw-content/upload/galery/99472b6d5d1df8325a5f0e2880f4efc3.jpg
+https://example.sch.id/sw-content/upload/galery/8091f720499814cbb9d94c52f6414e9e.jpg
+https://example.sch.id/sw-content/upload/galery/c330c438fd2b078317d60395c289fb78.jpg
+https://example.sch.id/sw-content/upload/galery/ace4b393463cdbde2ddd211f127773c9.jpg
+https://example.sch.id/sw-content/upload/galery/ad7286dd300c40fd04883db5d8ea3781.jpg
+https://example.sch.id/sw-content/upload/galery/fe2f2fa368a1d6e32b0c765db949c5fa.jpg
+https://example.sch.id/sw-content/upload/galery/67e66ae4f02283c992284b97bb2ceacd.jpg
+https://example.sch.id/sw-content/upload/galery/293005a5d741c661fe52c3b47ce303db.jpg
+https://example.sch.id/sw-content/upload/galery/428b5effb3aacd742ebb4e326e81af54.jpg
+https://example.sch.id/sw-content/upload/galery/dce156a87f1e634fdc495e5fc1f57398.jpg
+https://example.sch.id/sw-content/upload/galery/2a96b6cfa52c459fc12844115413fc5e.jpg
+https://example.sch.id/sw-content/upload/galery/756af809a7e0f2c217639de193a8794d.jpg
+https://example.sch.id/sw-content/upload/galery/a8b4918f9b29e68e73552afbc828f195.jpg
+https://example.sch.id/sw-content/upload/galery/a8013ef2b2df5c98752f818155e54222.jpg
+https://example.sch.id/sw-content/upload/galery/38b772fe8c05709a38b226767409e1fc.jpg
+https://example.sch.id/sw-content/upload/galery/127790fbbe062dec769c2f26a5b45392.jpg
+https://example.sch.id/sw-content/upload/galery/cdfc16eef08ab3dbc7a488930a241347.jpg
+https://example.sch.id/sw-content/upload/galery/baf52767aa0b192a8faf1da18496d0d0.jpg
+https://example.sch.id/sw-content/upload/galery/25974b5e895095c52efb63bf4b9e3696.jpg
+https://example.sch.id/sw-content/upload/galery/049c3ce2a740d7680bd34dad28bc3f00.png
+https://example.sch.id/sw-content/upload/avatar/user-2025-01-12_15-10-20smansa.jpg.jpg
+https://example.sch.id/sman1-waylima/sw-content/pages/image/LOGO_SMAN_1_WAYLIMA.jpg
+https://example.sch.id/sekolah.v3/sw-content/pages/image/Makna_Lambang.png
 ```

@@ -23,7 +23,7 @@ export default function Hero(){
           <div>
             <motion.p initial={{opacity:0,y:12}} animate={{opacity:1,y:0}} transition={{duration:0.6,ease}} className="inline-flex items-center gap-2 text-[11px] tracking-[0.18em] text-[var(--yellow)] font-bold bg-white/[0.08] border border-white/10 px-3.5 py-1.5 rounded-full backdrop-blur"><Award size={12}/> AKREDITASI A — KEMDIKBUD</motion.p>
             <motion.h1 initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} transition={{duration:0.7,ease,delay:0.08}} className="mt-4 text-[clamp(32px,6vw,56px)] font-extrabold leading-[0.92] tracking-[-0.03em]">Sekolah Unggul<br/>Berkarakter,<br/><span className="text-[var(--yellow)]">Berprestasi.</span></motion.h1>
-            <motion.p initial={{opacity:0,y:12}} animate={{opacity:1,y:0}} transition={{duration:0.6,ease,delay:0.18}} className="mt-4 text-white/65 max-w-[48ch] leading-relaxed text-[15px]">SMA Negeri 1 Rembang — membina 1.200+ peserta didik dengan kurikulum merdeka, fasilitas modern & pembinaan prestasi nasional.</motion.p>
+            <motion.p initial={{opacity:0,y:12}} animate={{opacity:1,y:0}} transition={{duration:0.6,ease,delay:0.18}} className="mt-4 text-white/65 max-w-[48ch] leading-relaxed text-[15px]">SMA Negeri X Rembang — membina 1.200+ peserta didik dengan kurikulum merdeka, fasilitas modern & pembinaan prestasi nasional.</motion.p>
             <motion.div initial={{opacity:0,y:12}} animate={{opacity:1,y:0}} transition={{duration:0.6,ease,delay:0.28}} className="mt-8 flex flex-wrap gap-3">
               <a href="#contact" className="h-11 px-7 rounded-full bg-[var(--yellow)] text-[var(--green-dark)] font-bold inline-flex items-center gap-2 hover:brightness-[1.04] active:scale-[0.97] transition-all shadow-[0_8px_24px_rgba(255,184,0,0.35)] btn-press">Daftar PPDB <ArrowRight size={16}/></a>
               <a href="#about" className="h-11 px-6 rounded-full bg-white/10 border border-white/15 inline-flex items-center gap-2 hover:bg-white/15 active:scale-[0.97] transition-all backdrop-blur"><span className="w-7 h-7 rounded-full bg-[var(--green-bright)] grid place-items-center shadow-sm"><Play size={12} fill="white" className="ml-[1px]"/></span> Profil Sekolah</a>
@@ -34,9 +34,9 @@ export default function Hero(){
           </div>
           <div className="relative">
             <motion.div initial={{opacity:0,scale:0.97}} animate={{opacity:1,scale:1}} transition={{duration:0.8,ease,delay:0.12}} className="relative aspect-[4/3.2] rounded-[24px] overflow-hidden bg-white border border-white/10 shadow-[0_24px_64px_rgba(0,0,0,0.35)]">
-              <PhotoPlaceholder label="Gedung SMA N 1 Rembang" seed="sman5_hero" />
+              <PhotoPlaceholder label="Gedung SMA Negeri X Rembang" seed="sman5_hero" />
               <AnimatePresence mode="wait">
-                <motion.img key={slides[idx]} src={slides[idx]} alt="SMA Negeri 1 Rembang — Kabupaten Rembang" width={640} height={480} initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.6}} className="absolute inset-0 w-full h-full object-cover" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/>
+                <motion.img key={slides[idx]} src={slides[idx]} alt="SMA Negeri X Rembang — Kabupaten Rembang" width={640} height={480} initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.6}} className="absolute inset-0 w-full h-full object-cover" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/>
               </AnimatePresence>
               <div className="absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-transparent pointer-events-none"/>
               <div className="absolute bottom-3 right-3 flex gap-1.5">
