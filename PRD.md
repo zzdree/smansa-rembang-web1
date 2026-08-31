@@ -1,9 +1,9 @@
 # 🎓 PRD — Green School Web
 
-> **Project:** `green-school-web` — Website Sekolah Modern (CMS-Driven + High Animation + Super Responsive)
+> **Project:** `smanma-rembang-web` — Website Sekolah Modern (CMS-Driven + High Animation + Super Responsive)
 > **Brand di UI:** **SMA Negeri 5 Rembang**
 > **Owner:** zzdree (Andreas) — Portofolio
-> **Repo:** https://github.com/zzdree/green-school-web
+> **Repo:** https://github.com/zzdree/smanma-rembang-web
 > **Referensi Visual:** https://dribbble.com/shots/24675256-LMS-Education-Website (adaptasi layout — bukan brand SMA N 5 Rembang)
 > **Catatan:** Dokumen referensi internal (GEMINI.md) sudah dihapus; yang berlaku adalah versi SMA N 5 Rembang ini
 > **Tanggal:** 31 Agustus 2026

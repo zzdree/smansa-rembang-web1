@@ -4,8 +4,8 @@
 
 <p>
 
-[![Live — Website Utama](https://img.shields.io/badge/LIVE-green--school--web.pages.dev-0ea5e9?style=for-the-badge&logo=cloudflare&logoColor=white)](https://green-school-web.pages.dev)
-[![CMS — Sanity Studio](https://img.shields.io/badge/CMS-green--school--web.sanity.studio-ff615b?style=for-the-badge&logo=sanity&logoColor=white)](https://green-school-web.sanity.studio)
+[![Live — Website Utama](https://img.shields.io/badge/LIVE-green--school--web.pages.dev-0ea5e9?style=for-the-badge&logo=cloudflare&logoColor=white)](https://smanma-rembang-web.pages.dev)
+[![CMS — Sanity Studio](https://img.shields.io/badge/CMS-green--school--web.sanity.studio-ff615b?style=for-the-badge&logo=sanity&logoColor=white)](https://smanma-rembang-web.sanity.studio)
 
 </p>
 
@@ -20,9 +20,9 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?style=flat-square&logo=typescript)
 ![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square&logo=apache)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)
-![Last Commit](https://img.shields.io/github/last-commit/zzdree/green-school-web?style=flat-square)
-![Repo Size](https://img.shields.io/github/repo-size/zzdree/green-school-web?style=flat-square)
-![Stars](https://img.shields.io/github/stars/zzdree/green-school-web?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/zzdree/smanma-rembang-web?style=flat-square)
+![Repo Size](https://img.shields.io/github/repo-size/zzdree/smanma-rembang-web?style=flat-square)
+![Stars](https://img.shields.io/github/stars/zzdree/smanma-rembang-web?style=flat-square)
 
 </p>
 
@@ -32,17 +32,17 @@
 
 | | URL | Deskripsi |
 |---|---|---|
-| 🌐 **Website Utama** | **https://green-school-web.pages.dev** | Landing + profil lengkap (untuk pengunjung & calon siswa) |
-| 🛠️ **CMS — Sanity Studio** | **https://green-school-web.sanity.studio** | Kelola konten (berita, guru, galeri, FAQ) — login pakai akun Sanity owner project |
+| 🌐 **Website Utama** | **https://smanma-rembang-web.pages.dev** | Landing + profil lengkap (untuk pengunjung & calon siswa) |
+| 🛠️ **CMS — Sanity Studio** | **https://smanma-rembang-web.sanity.studio** | Kelola konten (berita, guru, galeri, FAQ) — login pakai akun Sanity owner project |
 
-> Repo: **https://github.com/zzdree/green-school-web** — `git clone` lalu `npm run dev`.
+> Repo: **https://github.com/zzdree/smanma-rembang-web** — `git clone` lalu `npm run dev`.
 
 ---
 
 ## ✨ Kenapa Template Ini?
 
 - **Dibuat untuk sekolah beneran** — 13 section lengkap: Hero → Trusted → Stats → About → Fasilitas → Kategori → Program Unggulan → Galeri → Testimoni → Guru → FAQ → Berita → CTA. Tidak perlu ngerakit dari nol.
-- **CMS beneran, bukan dummy** — Sanity Live (`next-sanity` + SWR). Edit berita/guru/galeri dari `green-school-web.sanity.studio`, langsung tampil di web tanpa deploy ulang. Ada fallback kalau CMS belum diisi.
+- **CMS beneran, bukan dummy** — Sanity Live (`next-sanity` + SWR). Edit berita/guru/galeri dari `smanma-rembang-web.sanity.studio`, langsung tampil di web tanpa deploy ulang. Ada fallback kalau CMS belum diisi.
 - **Foto real, bukan placeholder abu-abu** — 28 foto SMA asli (kelas, lab, lapangan, perpustakaan, close-up guru) di `public/images/`. Gak pakai `picsum` lagi.
 - **Cepat & halus** — Static export (`output: export`) ke Cloudflare Pages, Lenis smooth scroll, Framer Motion (`whileInView` + `once:true`), transform GPU-only, respect `prefers-reduced-motion`.
 
@@ -111,7 +111,7 @@ SANITY_API_READ_TOKEN=sk...   # read token Sanity (jangan commit)
 
 ```bash
 npm run build
-npx wrangler pages deploy out --project-name green-school-web --branch master
+npx wrangler pages deploy out --project-name smanma-rembang-web --branch master
 # atau hubungkan repo di Cloudflare Dashboard → Pages → Create → Git
 # Build command: npm run build / Output: out
 ```
@@ -120,7 +120,7 @@ npx wrangler pages deploy out --project-name green-school-web --branch master
 
 ```bash
 npm run sanity:dev   # http://localhost:3333
-# deploy studio ke cloud (sudah live di green-school-web.sanity.studio):
+# deploy studio ke cloud (sudah live di smanma-rembang-web.sanity.studio):
 npm run sanity:deploy
 ```
 
@@ -138,9 +138,9 @@ Detail ada di [`DESIGN.md`](./DESIGN.md) & kebutuhan produk di [`PRD.md`](./PRD.
 
 ## 🔌 CMS — Cara Pakai
 
-1. Buka **https://green-school-web.sanity.studio** → login pakai akun Sanity yang punya project `g061zdty`.
+1. Buka **https://smanma-rembang-web.sanity.studio** → login pakai akun Sanity yang punya project `g061zdty`.
 2. Tambah **Post / Teacher / Course / Testimonial / FAQ / Category** → Publish.
-3. Refresh **https://green-school-web.pages.dev** — konten baru langsung muncul (ISR/SWR, fallback tetap jalan kalau kosong).
+3. Refresh **https://smanma-rembang-web.pages.dev** — konten baru langsung muncul (ISR/SWR, fallback tetap jalan kalau kosong).
 
 Skema ada di `src/sanity/schemaTypes/`. Tambah field baru → `npm run sanity:schema:extract` biar typed.
 
@@ -155,5 +155,6 @@ Skema ada di `src/sanity/schemaTypes/`. Tambah field baru → `npm run sanity:sc
 <p align="center">
   Dibuat dengan ♥ untuk pendidikan — PR & issue sangat welcome!
   <br/>
-  <a href="https://green-school-web.pages.dev">🌐 Website</a> · <a href="https://green-school-web.sanity.studio">🛠️ CMS</a> · <a href="https://github.com/zzdree/green-school-web">💻 Repo</a>
+  <a href="https://smanma-rembang-web.pages.dev">🌐 Website</a> · <a href="https://smanma-rembang-web.sanity.studio">🛠️ CMS</a> · <a href="https://github.com/zzdree/smanma-rembang-web">💻 Repo</a>
 </p>
+
