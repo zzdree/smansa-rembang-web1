@@ -25,11 +25,11 @@ export default function CTA(){
               <p className="text-sm font-extrabold tracking-tight">Kunjungi Kampus</p>
               <span className="text-[11px] font-bold tracking-wide px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">Buka • 08.00–15.00</span>
             </div>
-            <p className="text-xs text-black/55 mt-1 leading-relaxed">SMA Negeri 5 Rembang — Jl. Pemuda No. 45, Kab. Rembang, Jawa Tengah 59211</p>
+            <p className="text-xs text-black/55 mt-1 leading-relaxed">SMA Negeri 1 Rembang — Jl. Pahlawan No. 68, Tasikagung, Rembang, Jawa Tengah 59212</p>
             <div className="mt-4 aspect-[16/10] rounded-[16px] overflow-hidden bg-[var(--bg-light)] border border-black/5">
-              <iframe title="Peta SMA Negeri 5 Rembang" src="https://www.google.com/maps?q=SMA+Negeri+5+Rembang,+Jawa+Tengah&z=14&output=embed" className="w-full h-full border-0" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
+              <iframe title="Peta SMA Negeri 1 Rembang" src="https://www.google.com/maps?q=-6.6999767,111.3198523&z=15&output=embed" className="w-full h-full border-0" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
             </div>
-            <a href="https://www.google.com/maps/search/SMA+Negeri+5+Rembang+Jawa+Tengah" target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex text-xs font-bold text-[var(--green-dark)] underline underline-offset-4 hover:text-black">Buka di Google Maps →</a>
+            <a href="https://www.google.com/maps/search/SMA+Negeri+1+Rembang,+Jawa+Tengah/@-6.6999767,111.3198523,16z" target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex text-xs font-bold text-[var(--green-dark)] underline underline-offset-4 hover:text-black">Buka di Google Maps →</a>
           </div>
         </div>
       </div>
