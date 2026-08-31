@@ -12,14 +12,15 @@ export default function Categories(){
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
         <p className="text-center text-xs tracking-[0.16em] font-semibold text-[var(--green-bright)]">KATEGORI</p>
         <h2 className="text-center text-[clamp(26px,4vw,36px)] font-bold">Jelajahi Minat & Bakat</h2>
-        <div className="mt-8 grid grid-cols-2 md:grid-cols-5 gap-4">
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
           {list.map((c:any)=>(
-            <div key={c.title} className={"rounded-2xl border p-5 text-center transition "+(c.active?"bg-[var(--green)] text-white border-[var(--green)] shadow":"bg-[var(--bg-light)]")}>
-              <div className="text-2xl">{c.icon}</div><p className="font-semibold text-sm mt-2">{c.title}</p><p className={"text-xs mt-1 "+(c.active?"text-white/80":"text-black/50")}>{c.desc}</p>
+            <div key={c.title} className={"flex flex-col items-center justify-center rounded-2xl border p-5 text-center transition min-h-[132px] w-[calc(50%-8px)] sm:w-[200px] lg:flex-1 lg:min-w-0 "+(c.active?"bg-[var(--green)] text-white border-[var(--green)] shadow":"bg-[var(--bg-light)] border-black/5")}>
+              <div className="text-2xl leading-none">{c.icon}</div><p className="font-semibold text-sm mt-2 leading-tight">{c.title}</p><p className={"text-xs mt-1 "+(c.active?"text-white/80":"text-black/50")}>{c.desc}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+   )
 }
+
