@@ -8,7 +8,7 @@ import { SearchProvider } from "@/components/search/SearchContext";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://webschool-cms-template1.pages.dev";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://webschool-01.pages.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

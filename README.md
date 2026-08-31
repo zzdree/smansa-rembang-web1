@@ -1,12 +1,12 @@
-# SMA Negeri X Rembang — `webschool-cms-template1`
+# SMA Negeri X Rembang — `webschool-01`
 
-> Website profil sekolah modern untuk **SMA Negeri X Rembang (WebSchool)** — animasi halus, 100% responsive, performa ngebut, dan **Sanity CMS** live. Template **#1** dari seri `webschool-cms-template{N}`. Dibuat dengan ♥ oleh alumni.
+> Website profil sekolah modern untuk **SMA Negeri X Rembang (WebSchool)** — animasi halus, 100% responsive, performa ngebut, dan **Sanity CMS** live. Template **#1** dari seri `webschool-{N}`. Dibuat dengan ♥ oleh alumni.
 
 <p align="center">
 
-[![Live — Website](https://img.shields.io/badge/LIVE-smansa--rembang--web1.pages.dev-0ea5e9?style=for-the-badge&logo=cloudflare&logoColor=white)](https://webschool-cms-template1.pages.dev)
-[![CMS — Sanity Studio](https://img.shields.io/badge/CMS-smansa--rembang--web1.sanity.studio-ff615b?style=for-the-badge&logo=sanity&logoColor=white)](https://webschool-cms-template1.sanity.studio)
-[![Repo](https://img.shields.io/badge/REPO-github.com%2Fzzdree%2Fsmansa--rembang--web1-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zzdree/webschool-cms-template1)
+[![Live — Website](https://img.shields.io/badge/LIVE-webschool--01.pages.dev-0ea5e9?style=for-the-badge&logo=cloudflare&logoColor=white)](https://webschool-01.pages.dev)
+[![CMS — Sanity Studio](https://img.shields.io/badge/CMS-webschool--01.sanity.studio-ff615b?style=for-the-badge&logo=sanity&logoColor=white)](https://webschool-01.sanity.studio)
+[![Repo](https://img.shields.io/badge/REPO-github.com%2Fzzdree%2Fwebschool--01-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zzdree/webschool-01)
 
 </p>
 
@@ -22,11 +22,11 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?style=flat-square&logo=typescript)
 ![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square&logo=apache)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)
-![Last Commit](https://img.shields.io/github/last-commit/zzdree/webschool-cms-template1?style=flat-square)
-![Repo Size](https://img.shields.io/github/repo-size/zzdree/webschool-cms-template1?style=flat-square)
-![Stars](https://img.shields.io/github/stars/zzdree/webschool-cms-template1?style=flat-square)
-![Issues](https://img.shields.io/github/issues/zzdree/webschool-cms-template1?style=flat-square)
-![Top Language](https://img.shields.io/github/languages/top/zzdree/webschool-cms-template1?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/zzdree/webschool-01?style=flat-square)
+![Repo Size](https://img.shields.io/github/repo-size/zzdree/webschool-01?style=flat-square)
+![Stars](https://img.shields.io/github/stars/zzdree/webschool-01?style=flat-square)
+![Issues](https://img.shields.io/github/issues/zzdree/webschool-01?style=flat-square)
+![Top Language](https://img.shields.io/github/languages/top/zzdree/webschool-01?style=flat-square)
 
 </p>
 
@@ -55,9 +55,9 @@
 
 |  | URL | Untuk siapa? |
 |---|---|---|
-| 🌐 **Website Utama** | **https://webschool-cms-template1.pages.dev** | Pengunjung, calon siswa & orang tua |
-| 🛠️ **CMS — Sanity Studio** | **https://webschool-cms-template1.sanity.studio** | Admin — kelola berita, guru, galeri, FAQ |
-| 💻 **Repository** | **https://github.com/zzdree/webschool-cms-template1** | Developer — `git clone` lalu `npm run dev` |
+| 🌐 **Website Utama** | **https://webschool-01.pages.dev** | Pengunjung, calon siswa & orang tua |
+| 🛠️ **CMS — Sanity Studio** | **https://webschool-01.sanity.studio** | Admin — kelola berita, guru, galeri, FAQ |
+| 💻 **Repository** | **https://github.com/zzdree/webschool-01** | Developer — `git clone` lalu `npm run dev` |
 | 📊 **Sanity Manage** | **https://www.sanity.io/manage/project/g061zdty** | Owner project `g061zdty` dataset `production` |
 | 🏫 **Website Resmi WebSchool** | **https://example.sch.id** | Referensi data & konten |
 | 📸 **Instagram WebSchool** | **https://www.instagram.com/exampleofficial** | Kegiatan siswa |
@@ -107,7 +107,7 @@ Hero → TrustedBy → Stats → About → Facilities → Categories
 
 > Foto di `public/images/hero/hero-1.jpg` & `public/images/gallery/g*.jpg` — ganti file, `npm run build` + `wrangler pages deploy`.
 
-**Coba langsung:** [Website Live](https://webschool-cms-template1.pages.dev) · [CMS Studio](https://webschool-cms-template1.sanity.studio) · [Repo](https://github.com/zzdree/webschool-cms-template1)
+**Coba langsung:** [Website Live](https://webschool-01.pages.dev) · [CMS Studio](https://webschool-01.sanity.studio) · [Repo](https://github.com/zzdree/webschool-01)
 
 ---
 
@@ -119,7 +119,7 @@ Hero → TrustedBy → Stats → About → Facilities → Categories
 | UI | React 19 + Tailwind CSS v4 + `lucide-react` |
 | Motion | Framer Motion 13 + Lenis 1.3 |
 | CMS | Sanity 6 + `next-sanity` — project `g061zdty`, dataset `production` |
-| Hosting | Cloudflare Pages — `wrangler pages deploy out --project-name webschool-cms-template1` |
+| Hosting | Cloudflare Pages — `wrangler pages deploy out --project-name webschool-01` |
 | Language | TypeScript 5 strict |
 | Testing | Playwright 1.62 |
 
@@ -128,14 +128,14 @@ Hero → TrustedBy → Stats → About → Facilities → Categories
 ## 🗂️ Struktur Project
 
 ```
-webschool-cms-template1/
+webschool-01/
 ├── src/app/page.tsx                 # urutan 13 section
 ├── src/components/layout/{Navbar,Footer}.tsx
 ├── src/components/sections/         # Hero, About, Courses, Gallery, Blog, FAQ, ...
 ├── src/lib/{data,sanity.client,sanity.queries}.ts
 ├── src/sanity/schemaTypes/          # course, post, teacher, testimonial, faq, category
 ├── public/images/{hero,gallery,blog,teachers,courses,facilities}/
-├── sanity.config.ts / sanity.cli.ts # studioHost: webschool-cms-template1
+├── sanity.config.ts / sanity.cli.ts # studioHost: webschool-01
 ├── next.config.ts                   # output: export
 └── out/                             # hasil build → Cloudflare Pages
 ```
@@ -145,8 +145,8 @@ webschool-cms-template1/
 ## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/zzdree/webschool-cms-template1.git
-cd webschool-cms-template1
+git clone https://github.com/zzdree/webschool-01.git
+cd webschool-01
 npm install          # --legacy-peer-deps kalau peer protes
 npm run dev          # http://localhost:3000
 npm run build        # output ke /out
@@ -159,21 +159,21 @@ NEXT_PUBLIC_SANITY_PROJECT_ID=g061zdty
 NEXT_PUBLIC_SANITY_DATASET=production
 NEXT_PUBLIC_SANITY_API_VERSION=2024-01-01
 SANITY_API_READ_TOKEN=sk...          # jangan commit!
-SANITY_REVALIDATE_SECRET=changeme-smansa1
-NEXT_PUBLIC_SITE_URL=https://webschool-cms-template1.pages.dev
+SANITY_REVALIDATE_SECRET=changeme-webschool01
+NEXT_PUBLIC_SITE_URL=https://webschool-01.pages.dev
 ```
 
 ---
 
 ## 🔌 CMS — Sanity Studio
 
-1. Buka **https://webschool-cms-template1.sanity.studio** → login Sanity (owner `g061zdty`).
+1. Buka **https://webschool-01.sanity.studio** → login Sanity (owner `g061zdty`).
 2. Tambah **Post / Teacher / Course / Testimonial / FAQ / Category** → Publish.
-3. Refresh **https://webschool-cms-template1.pages.dev** — langsung muncul (fallback tetap jalan kalau kosong).
+3. Refresh **https://webschool-01.pages.dev** — langsung muncul (fallback tetap jalan kalau kosong).
 
 ```bash
 npm run sanity:dev      # http://localhost:3333
-npm run sanity:deploy   # deploy ke webschool-cms-template1.sanity.studio
+npm run sanity:deploy   # deploy ke webschool-01.sanity.studio
 ```
 
 ---
@@ -184,12 +184,12 @@ npm run sanity:deploy   # deploy ke webschool-cms-template1.sanity.studio
 
 ```bash
 npm run build
-npx wrangler pages deploy out --project-name webschool-cms-template1 --commit-dirty=true
+npx wrangler pages deploy out --project-name webschool-01 --commit-dirty=true
 # atau via Dashboard → Pages → Create → Connect to Git
 # Build: npm run build / Output: out
 ```
 
-Pages: `webschool-cms-template1` → https://webschool-cms-template1.pages.dev
+Pages: `webschool-01` → https://webschool-01.pages.dev
 
 ---
 
@@ -207,7 +207,7 @@ Detail: [`DESIGN.md`](./DESIGN.md) & [`PRD.md`](./PRD.md).
 
 | Template | Status | Link |
 |---|---|---|
-| **web1** (ini) | ✅ Live | [webschool-cms-template1.pages.dev](https://webschool-cms-template1.pages.dev) |
+| **web1** (ini) | ✅ Live | [webschool-01.pages.dev](https://webschool-01.pages.dev) |
 | **web2** | 🔜 Next — layout & palet beda total | — |
 | **web3** | 💡 Planned | — |
 
@@ -246,9 +246,9 @@ http://www.apache.org/licenses/LICENSE-2.0
 - Dibuat ♥ oleh **Andreas (zzdree)** — alumni WebSchool, untuk pendidikan.
 
 <p align="center">
-  <a href="https://webschool-cms-template1.pages.dev">🌐 Website</a> ·
-  <a href="https://webschool-cms-template1.sanity.studio">🛠️ CMS</a> ·
-  <a href="https://github.com/zzdree/webschool-cms-template1">💻 Repo</a> ·
+  <a href="https://webschool-01.pages.dev">🌐 Website</a> ·
+  <a href="https://webschool-01.sanity.studio">🛠️ CMS</a> ·
+  <a href="https://github.com/zzdree/webschool-01">💻 Repo</a> ·
   <a href="https://example.sch.id">🏫 WebSchool Resmi</a>
 </p>
 

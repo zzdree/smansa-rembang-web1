@@ -1,9 +1,9 @@
 # 🎓 PRD — SMA Negeri X Rembang
 
-> **Project:** `webschool-cms-template1` — Website Sekolah Modern (CMS-Driven + High Animation + Super Responsive)
+> **Project:** `webschool-01` — Website Sekolah Modern (CMS-Driven + High Animation + Super Responsive)
 > **Brand di UI:** **SMA Negeri X Rembang**
 > **Owner:** zzdree (Andreas) — Portofolio
-> **Repo:** https://github.com/zzdree/webschool-cms-template1
+> **Repo:** https://github.com/zzdree/webschool-01
 > **Referensi Visual:** https://dribbble.com/shots/24675256-LMS-Education-Website (adaptasi layout — bukan brand SMA Negeri X Rembang)
 > **Catatan:** Dokumen referensi internal (GEMINI.md) sudah dihapus; yang berlaku adalah versi SMA Negeri X Rembang ini
 > **Tanggal:** 31 Agustus 2026
