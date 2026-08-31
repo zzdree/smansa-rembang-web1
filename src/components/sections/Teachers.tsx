@@ -24,7 +24,7 @@ export default function Teachers(){
             <button key={t.name} type="button" onClick={()=>setActive(t)} className="text-center group">
               <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-white border relative shadow-sm group-hover:shadow-lg group-hover:-translate-y-1 transition-all">
                 <div className="absolute inset-0 grid place-items-center bg-[var(--bg-light)]"><AvatarSilhouette/></div>
-                {img && <img src={img} alt={t.name} className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-[1.04] transition duration-500" loading="lazy" onLoad={(e:any)=>e.currentTarget.previousElementSibling?.classList.add('hidden')} onError={(e:any)=>e.currentTarget.style.display='none'} />}
+                {img && <img src={img} alt={t.name} className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-[1.04] transition duration-500" loading="lazy" decoding="async" onLoad={(e:any)=>e.currentTarget.previousElementSibling?.classList.add('hidden')} onError={(e:any)=>e.currentTarget.style.display='none'} />}
                 <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-3 text-white text-[11px] leading-tight opacity-0 group-hover:opacity-100 transition">{t.role}</span>
               </div>
               <p className="font-semibold text-sm mt-3 leading-tight group-hover:text-[var(--green-bright)] transition">{t.name}</p><p className="text-xs text-black/50">{t.role}</p>

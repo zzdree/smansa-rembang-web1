@@ -35,7 +35,7 @@ export default function Courses(){
             <motion.button key={c.title} type="button" onClick={()=>setActive(c)} variants={{hidden:{opacity:0,y:16},visible:{opacity:1,y:0,transition:{duration:0.6,ease:[0.22,1,0.36,1]}}}} className="text-left bg-white rounded-2xl overflow-hidden border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 w-full">
               <div className="aspect-[16/10] overflow-hidden relative bg-[var(--bg-light)]">
                 <PhotoPlaceholder label={c.title} seed={c.title} />
-                {img && <img src={img} alt={c.title} className="absolute inset-0 w-full h-full object-cover" loading="lazy" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/>}
+                {img && <img src={img} alt={c.title} className="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/>}
               </div>
               <div className="p-5">
                 <div className="flex items-center gap-1 text-xs"><Star size={14} className="fill-[var(--yellow)] text-[var(--yellow)]"/>{c.rating ?? '—'}</div>

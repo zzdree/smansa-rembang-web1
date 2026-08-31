@@ -22,7 +22,7 @@ export default function Facilities(){
           {items.map((x,i)=>(
             <motion.div key={x.t} initial={{opacity:0,y:14}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:i*0.05,duration:0.5}} className="rounded-2xl overflow-hidden border bg-white hover:shadow-md hover:-translate-y-1 transition-all">
               <div className="aspect-[16/10] overflow-hidden bg-[var(--bg-light)] relative">
-                <img src={x.img} alt={x.t} className="w-full h-full object-cover" loading="lazy" />
+                <img src={x.img} alt={x.t} className="w-full h-full object-cover" loading="lazy" decoding="async" />
                 <span className="absolute left-3 top-3 w-9 h-9 rounded-xl bg-white/95 backdrop-blur border grid place-items-center text-lg shadow-sm">{x.icon}</span>
               </div>
               <div className="p-5">

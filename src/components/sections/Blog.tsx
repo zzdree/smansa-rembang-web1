@@ -27,7 +27,7 @@ export default function Blog(){
             const img = p.image && typeof p.image === 'object' ? sanityImg(p.image,600) : p.image
             return (
             <button key={p.title} type="button" onClick={()=>setActive(p)} className="text-left rounded-2xl overflow-hidden border bg-white hover:shadow-lg transition">
-              <div className="aspect-[16/10] relative bg-[var(--bg-light)] overflow-hidden"><PhotoPlaceholder label={p.title} seed={p.title}/>{img && <img src={img} alt={p.title} className="absolute inset-0 w-full h-full object-cover" loading="lazy" onLoad={(e:any)=>e.currentTarget.previousElementSibling?.classList.add('hidden')} onError={(e:any)=>e.currentTarget.style.display='none'} />}</div>
+              <div className="aspect-[16/10] relative bg-[var(--bg-light)] overflow-hidden"><PhotoPlaceholder label={p.title} seed={p.title}/>{img && <img src={img} alt={p.title} className="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" onLoad={(e:any)=>e.currentTarget.previousElementSibling?.classList.add('hidden')} onError={(e:any)=>e.currentTarget.style.display='none'} />}</div>
               <div className="p-5"><span className="text-xs font-semibold text-[var(--green-bright)]">{p.cat}</span><h3 className="font-bold mt-1 line-clamp-2">{p.title}</h3><p className="text-xs text-black/40 mt-2">{p.date} • {p.author} {p.comments? '• '+p.comments+' komentar':''}</p></div>
             </button>
           )}) : <p className="col-span-full text-center text-sm text-black/50 py-8">Tidak ada berita untuk “{q}”.</p>}

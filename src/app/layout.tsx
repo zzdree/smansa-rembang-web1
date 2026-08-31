@@ -21,9 +21,19 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HighSchool",
+    name: "SMA Negeri 5 Rembang",
+    url: "https://green-school-web.pages.dev",
+    address: { "@type": "PostalAddress", addressLocality: "Rembang", addressRegion: "Jawa Tengah", addressCountry: "ID" },
+    description: "SMA Negeri 5 Rembang — Sekolah Unggul, Berkarakter, Berprestasi. Akreditasi A.",
+  }
   return (
     <html lang="id" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <a href="#beranda" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[90] focus:bg-white focus:text-black focus:px-4 focus:py-2 focus:rounded-full focus:shadow">Lompat ke konten</a>
         <SearchProvider>
           <SmoothScroll />
           <Navbar />

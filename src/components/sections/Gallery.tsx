@@ -24,7 +24,7 @@ export default function Gallery(){
           {pics.map((p,i)=>(
             <motion.button key={p.src} type="button" onClick={()=>setLight(p)} initial={{opacity:0,scale:0.98}} whileInView={{opacity:1,scale:1}} viewport={{once:true}} transition={{delay:i*0.05,duration:0.5}} className={`relative overflow-hidden rounded-2xl border bg-white text-left group ${i===0?"lg:row-span-2 lg:col-span-1":""} ${i===4?"lg:col-span-2":""}`}>
               <PhotoPlaceholder label={p.cap} seed={p.src}/>
-              <img src={p.src} alt={p.cap} className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition duration-500" loading="lazy" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/>
+              <img src={p.src} alt={p.cap} className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition duration-500" loading="lazy" decoding="async" onLoad={(e:any)=>{(e.target as HTMLImageElement).previousElementSibling?.classList.add("hidden")}} onError={(e:any)=>{(e.target as HTMLImageElement).style.display="none"}}/>
               <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white text-xs leading-tight text-left">{p.cap}</span>
             </motion.button>
           ))}
