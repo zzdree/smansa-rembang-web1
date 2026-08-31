@@ -14,7 +14,7 @@ export default function Navbar(){
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 border-b border-black/5">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8 h-[64px] flex items-center justify-between gap-6">
         <a href="#beranda" className="flex items-center gap-2.5 font-extrabold tracking-tight leading-none shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--green-bright)] rounded-xl">
-          <span className="w-9 h-9 rounded-xl bg-[var(--green-dark)] grid place-items-center text-white shadow-sm"><GraduationCap size={18}/></span>
+          <img src="/logo.png" alt="Logo SMA N 1 Rembang" width={36} height={36} className="w-9 h-9 rounded-xl object-contain bg-white border border-black/5 shadow-sm"/>
           <span className="flex flex-col"><span className="text-[15px] leading-none tracking-tight">SMA NEGERI 1</span><span className="text-[11px] tracking-[0.18em] text-[var(--green-bright)] font-bold leading-none">REMBANG</span></span>
         </a>
         <nav className="hidden lg:flex items-center gap-1">

@@ -4,12 +4,12 @@ import { motion } from "framer-motion"
 import { PhotoPlaceholder } from "@/components/illustrations/PhotoPlaceholder"
 import { Lightbox } from "@/components/ui/Modals"
 const pics=[
-  { src:"/images/gallery/g1.jpg", cap:"Upacara Senin — disiplin & nasionalisme" },
-  { src:"/images/gallery/g2.jpg", cap:"Praktikum IPA di laboratorium" },
-  { src:"/images/gallery/g3.jpg", cap:"Latihan Paskibra & baris-berbaris" },
-  { src:"/images/gallery/g4.jpg", cap:"Kegiatan Pramuka di alam terbuka" },
-  { src:"/images/gallery/g5.jpg", cap:"Lomba futsal antar kelas" },
-  { src:"/images/gallery/g6.jpg", cap:"Pentas seni & budaya Jawa" },
+  { src:"/images/gallery/3b1071aab964e89dd25da7a9038c5fa9.jpg", cap:"Gedung SMA N 1 Rembang — Jl. Gajah Mada No.5" },
+  { src:"/images/gallery/31236a6ca4b64d5ff9aa644502b57498.jpg", cap:"Kegiatan siswa & upacara" },
+  { src:"/images/gallery/88099fff5402d32cb61689380134e700.jpg", cap:"Prestasi siswa" },
+  { src:"/images/gallery/12108bbbc13568d02d4949a406f36b5b.jpg", cap:"Fasilitas sekolah" },
+  { src:"/images/gallery/ccec9ca3aaeb1796a28eaabf8dcb1a62.jpg", cap:"Perpustakaan" },
+  { src:"/images/gallery/0ebcb65adab27065623df6b274095758.jpg", cap:"Lapangan & olahraga" },
 ]
 export default function Gallery(){
   const [light,setLight]=useState<{src:string;cap:string}|null>(null)

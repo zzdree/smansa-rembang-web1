@@ -12,14 +12,14 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://smansa-rembang-web1
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: { default: "SMA Negeri 1 Rembang — Sekolah Unggul, Berkarakter, Berprestasi", template: "%s | SMA N 1 Rembang" },
-  description: "Website resmi SMA Negeri 1 Rembang. Sekolah unggul berkarakter di Kabupaten Rembang, Jawa Tengah. Informasi PPDB, profil, akademik & prestasi.",
-  keywords: ["SMA N 1 Rembang","SMA Rembang","sekolah Rembang","PPDB Rembang","Jawa Tengah"],
+  title: { default: "SMA Negeri 1 Rembang — Berjatidiri dan Maju dalam Prestasi", template: "%s | SMA N 1 Rembang" },
+  description: "Website resmi SMA Negeri 1 Rembang (SMANSA) — Jl. Gajah Mada No.5, Rembang. Berdiri 1961, RSBI 2007, SMA Rujukan 2016. Visi: Berjatidiri dan Maju dalam Prestasi.",
+  keywords: ["SMA N 1 Rembang","SMANSA Rembang","SMA Rembang","PPDB Rembang","Jawa Tengah"],
   alternates: { canonical: "/" },
-  openGraph: { title: "SMA Negeri 1 Rembang", description: "Sekolah Unggul, Berkarakter, Berprestasi — Kabupaten Rembang, Jawa Tengah", type: "website", url: siteUrl, siteName: "SMA N 1 Rembang", locale: "id_ID", images: [{ url: "/images/hero/hero-1.jpg", width: 1200, height: 630, alt: "Gedung SMA N 1 Rembang" }] },
-  twitter: { card: "summary_large_image", title: "SMA Negeri 1 Rembang", description: "Sekolah Unggul, Berkarakter, Berprestasi", images: ["/images/hero/hero-1.jpg"] },
+  openGraph: { title: "SMA Negeri 1 Rembang — SMANSA", description: "Berjatidiri dan Maju dalam Prestasi — Jl. Gajah Mada No.5, Rembang", type: "website", url: siteUrl, siteName: "SMA N 1 Rembang", locale: "id_ID", images: [{ url: "/images/gallery/3b1071aab964e89dd25da7a9038c5fa9.jpg", width: 1200, height: 630, alt: "Gedung SMA N 1 Rembang" }] },
+  twitter: { card: "summary_large_image", title: "SMA Negeri 1 Rembang", description: "Berjatidiri dan Maju dalam Prestasi", images: ["/images/gallery/3b1071aab964e89dd25da7a9038c5fa9.jpg"] },
   robots: { index: true, follow: true },
-  icons: { icon: "/icon.svg", shortcut: "/icon.svg", apple: "/icon.svg" },
+  icons: { icon: "/favicon.png", shortcut: "/favicon.png", apple: "/favicon.png" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
